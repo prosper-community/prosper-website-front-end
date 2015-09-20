@@ -1,0 +1,9 @@
+{
+  "name": "landing-page",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "mocha": "~2.3.2"
+  }
+}

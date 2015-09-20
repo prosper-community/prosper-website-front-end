@@ -15,3 +15,10 @@ This is an open-source project which means anyone who wants to make changes to t
 - Fixes a bug
 - Improves documentation
 - Makes some other incremental improvement not stated above but is reasonable to suggest
+
+If you are creating new functionality, please write a mocha test in the ./test/spec suite. Functionality without tests will not be merged into master.
+
+## Trello Board
+I've created a public trello board if anyone wants to help move this project forward they can assign themselves to a specific task and join the Refugee.Community Design & Development Team.
+
+[Refugee Community Trello Board](https://trello.com/b/E3v2VsRh/refuge-community-on-slack)
