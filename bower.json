@@ -6,6 +6,7 @@
     "chai": "~3.3.0",
     "jquery": "~2.1.4",
     "mocha": "~2.3.2",
-    "modular-scale": "~2.1.1"
+    "modular-scale": "~2.1.1",
+    "sass-burger": "~1.2.1"
   }
 }

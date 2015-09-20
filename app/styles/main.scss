@@ -17,6 +17,9 @@ body {
   padding: 0.2em 0;
 }
 
+// Components
+@import 'bower_components/sass-burger/burger.scss';
+
 // Modular Scale
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
 
@@ -36,6 +39,8 @@ body {
 
 // 04 States
 @import '04-states/home-nav';
+
+
 
 // Debug
 // @import 'debug';

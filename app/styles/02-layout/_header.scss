@@ -23,21 +23,9 @@
     margin-right: 10px;
   }
 
-  .menu-icon, .menu-icon:before, .menu-icon:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: white;
+  .menu-icon {
+    @include burger(25px, 3px, 5px, white);
     float: right;
-    display: block;
-    content: '';
-    :before {
-      top: -10px;
-    }
-    :after {
-      bottom: -10px;
-    }
   }
 
   .site-title-text {
