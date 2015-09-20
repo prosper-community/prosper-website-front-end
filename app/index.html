@@ -23,13 +23,28 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <aside>
-      <nav class="top-nav">
-        <ul>
+    <header class="site-header">
+      <h1 class="site-title">
+        <a href="/">
+          <span class="site-logo">
+            RC
+          </span>
+          <span class="site-title-text">
+            Refugee Community
+          </span>
+        </a>
+      </h1>
+
+      <h2 class="menu-label">
+        <a href="javascript:void(0)">
+          <span class="menu-text">Menu</span>
+          <span class="menu-icon"> <span>
+        </a>
+      </h2>
+      <nav class="home-nav">
+
+        <ul class="home-nav--list">
           <li><a href="/">Home</a></li>
-          <li><a href="blog.refugee.community">Blog</a></li>
-        </ul>
-        <ul>
           <li><a href="/#about">What Is This?</a></li>
           <li><a href="/#who">Who Is This For?</a></li>
           <li><a href="javascript:void(0)">How Did It Begin?</a></li>
@@ -37,13 +52,13 @@
           <li><a href="javascript:void(0)" class="button">Join Now</a></li>
         </ul>
       </nav>
-    </aside>
+    </header>
     
     <article role="main" class="main-content">
       <section class="welcome">
         <hgroup>
           <h1>Refugee Community on Slack</h1>
-          <h2>Join caring people from around the world who want to help solve the refugee crisis</h2>
+          <h2 class="subheader">Join people from around the world working together to help solve the refugee crisis</h2>
           <a href="javascript:void(0)" class="button">Join Now</a>
           <form action="#">
             <label for="your-name">Your Name</label>
@@ -96,8 +111,7 @@
         </p>
         <h4>Inspiration</h4>
         <p>
-          Inspired by <a href="https://twitter.com/willsh">John Willshire</a>'s <em>Popular Thing for Broken Thing</em> workshop, John Ellison had an idea to take a popular thing (<a href="https://slack.com/">Slack</a>&mdash;a successful messaging app) to help fix a broken thing (the refugee crisis). In pairing two sticky notes together, the concept for Refugee Community on Slack was born. You can read more about the workshop on <a href="https://90days.john-ellison.com/2015/day-43-popular-thing-for-broken-thing-workshop">John's 90 Day blog.</a>
-          <img src="http://placehold.it/400x400" alt="">
+          Inspired by <a href="https://twitter.com/willsh">John Willshire</a>'s <em>Popular Thing for Broken Thing</em> workshop, John Ellison had an idea to take a popular thing (<a href="https://slack.com/">Slack</a>&mdash;a successful messaging app) to help fix a broken thing (the refugee crisis). In pairing two sticky notes together, the concept for the Refugee Community on Slack was born. You can read more about the workshop on <a href="https://90days.john-ellison.com/2015/day-43-popular-thing-for-broken-thing-workshop">John's 90 Day blog.</a>
         </p>
         <h4>The Refugee Community Concept</h4>
         <p>
@@ -150,7 +164,9 @@
         </p>
         <div class="callout">
           <a href="#">Join Now</a>
-          <em>We need your help...</em>
+          <p>
+            <em>We need your help...</em>
+          </p>
         </div>
       </section>
 
@@ -175,9 +191,11 @@
         </p>
         <div class="callout">
           <a href="javascript:void(0)">Join Us</a>
-          <em>
-            We can do this together...
-          </em>
+          <p>
+            <em>
+              We can do this together...
+            </em>
+          </p>
         </div>
       </section>
 
@@ -199,6 +217,7 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

@@ -1,0 +1,62 @@
+.site-header {
+  background-color: $header-font-color;
+  padding: $base-leading;
+  margin: 0;
+
+  h1.site-title, h2.menu-label {
+    @include ms-respond(font-size, 1);
+    margin: 0;
+    // position: relative;
+    // top: -.5em;
+  }
+
+  h1.site-title {
+    width: 2em;
+    float: left;
+  }
+
+  h2.menu-label {
+    float: right;
+  }
+
+  .menu-text {
+    margin-right: 10px;
+  }
+
+  .menu-icon, .menu-icon:before, .menu-icon:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    float: right;
+    display: block;
+    content: '';
+    :before {
+      top: -10px;
+    }
+    :after {
+      bottom: -10px;
+    }
+  }
+
+  .site-title-text {
+    // Display: normal; for non-mobile breakpoints
+    display: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul.home-nav--list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: none;
+    }
+  }
+
+}

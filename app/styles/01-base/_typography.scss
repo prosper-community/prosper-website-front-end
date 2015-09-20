@@ -1,0 +1,34 @@
+// Inspired by http://madebymike.com.au/writing/precise-control-responsive-typography/
+// Taken from https://github.com/modularscale/modularscale-sass#responsive-scales
+
+$ms-range:
+  1.1 20em,
+  $golden 175em;
+
+body {
+  @include ms-respond(font-size, 1);
+}
+
+h1 {
+  @include ms-respond(font-size, 4);
+}
+
+h2 {
+  @include ms-respond(font-size, 3);
+  &.subheader {
+    @include ms-respond(font-size, 2);
+  }
+}
+
+h3 {
+  @include ms-respond(font-size, 2);
+}
+
+.subheader {
+  font-style: italic;
+}
+
+img {
+  // display: block;
+  max-width: 100%;
+}
