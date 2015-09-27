@@ -10,24 +10,65 @@ body {
 }
 
 h1 {
-  @include ms-respond(font-size, 4);
+  @include ms-respond(font-size, 5);
 }
 
 h2 {
-  @include ms-respond(font-size, 3);
+  @include ms-respond(font-size, 4);
   &.subheader {
-    @include ms-respond(font-size, 2);
+    @include ms-respond(font-size, 3);
   }
 }
 
 h3 {
+  @include ms-respond(font-size, 3);
+}
+
+h4 {
   @include ms-respond(font-size, 2);
 }
 
 .subheader {
   font-style: italic;
+  font-weight: 300;
+}
+
+p {
+  margin: auto auto $base-leading;
+}
+
+p + p {
+  text-indent: $base-leading;
+  margin-top: -$base-leading;
 }
 
 img {
-  // display: block;
-  max-width: 100%;}
+  max-width: 100%;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+em {
+  font-weight: 300;
+}
+
+.button {
+  display: block;
+  background-color: $primary-color;
+  padding: .5em 1.25em;
+  @include smcps;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  &:hover {
+    background-color: darken($primary-color, 15%);
+  }
+  @media all and (min-width: $homeNavBreak) {
+    width: max-content; 
+  }
+}

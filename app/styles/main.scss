@@ -23,18 +23,22 @@ body {
 // Modular Scale
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
 
-// Normalize
-// @import 'bower_components/'
+// Normalize — need to refactor to reduce bloat
+
+@import 'bower_components/modularized-normalize-scss/normalize';
 
 // 01 Base
-@import '01-base/variables',
+// Need to reduce normalized bloat
+@import '01-base/normalize',
+        '01-base/variables',
+        '01-base/mixins',
         '01-base/typography',
-        '01-base/buttons';
+        '01-base/forms';
 
 // 02 Layout
-@import '02-layout/index',
-        '02-layout/header',
-        '02-layout/footer';
+@import '02-layout/l-index',
+        '02-layout/l-header',
+        '02-layout/l-footer';
 
 // 03 Modules
 
