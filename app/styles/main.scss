@@ -28,7 +28,8 @@ body {
 
 // 01 Base
 @import '01-base/variables',
-        '01-base/typography';
+        '01-base/typography',
+        '01-base/buttons';
 
 // 02 Layout
 @import '02-layout/index',
