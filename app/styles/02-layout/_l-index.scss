@@ -7,6 +7,22 @@
   text-align: center;
 }
 
+.about {
+  @media all and (min-width: 650px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+  @media all and (min-width: 800px) {
+    width: 65%;
+  }
+  @media all and (min-width: 950px) {
+    width: 55%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 45%;
+  }
+}
+
 .join {
   background-color: $secondary-color;
 }
