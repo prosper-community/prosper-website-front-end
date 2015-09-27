@@ -13,9 +13,16 @@
     margin-top: -.7em;
     .site-title-text {
       display: none;
+      font-weight: 100;
       @media all and (min-width: $homeNavBreak) {
         display: inline;
       }
+    }
+    .site-logo {
+      @media all and (min-width: $homeNavBreak) {
+        display: none;
+      }
+      font-weight: 300;
     }
   }
 

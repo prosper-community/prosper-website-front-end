@@ -15,10 +15,10 @@
   }
 
   // toggle mobile home nav when document loads
-  toggleMobileHomeNav(865);
+  toggleMobileHomeNav(553);
 
   $(window).resize(function() {
-    toggleMobileHomeNav(865);
+    toggleMobileHomeNav(553);
   });
 
   
