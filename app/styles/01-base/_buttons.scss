@@ -1,4 +1,9 @@
 .button {
   background-color: $primary-color;
   padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: darken($primary-color, 15%);
+  }
 }

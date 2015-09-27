@@ -2,9 +2,26 @@
   'use strict';
   console.log('\'Allo \'Allo!');
 
-  // For mobile, hide menu on open
-  $('.home-nav--list').hide();
 
+  // For mobile, hide menu on open
+  function toggleMobileHomeNav(breakpoint) {
+    var $windowWidth = $(window).width();
+
+    if ($windowWidth < breakpoint) {
+      $('.home-nav--list').hide();
+    } else {
+      $('.home-nav--list').show();
+    }
+  }
+
+  // toggle mobile home nav when document loads
+  toggleMobileHomeNav(865);
+
+  $(window).resize(function() {
+    toggleMobileHomeNav(865);
+  });
+
+  
   // Toggle Menu
   $('.menu-label').click(function(e){
     e.preventDefault();
