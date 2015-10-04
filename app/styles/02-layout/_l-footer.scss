@@ -4,15 +4,25 @@ footer.l-site-footer {
   .l-footer-columns-wrapper {
     background: $header-font-color;
     margin: 0 auto;
-    padding: 1.6em .4em;
+    padding: 1.6em .8em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    @media all and (min-width: $footerBreak1) {
+      justify-content: space-around;
+    }
   }
   .l-footer-column {
     background: $header-font-color;
-    padding: .4em;
+    margin-right: .8em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   .l-social-icon-list {
     margin: 0;

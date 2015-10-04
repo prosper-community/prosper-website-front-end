@@ -14,9 +14,9 @@
 }
 
 .about {
+  margin: 0 auto;
   @media all and (min-width: 650px) {
     width: 85%;
-    margin: 0 auto;
   }
   @media all and (min-width: 800px) {
     width: 65%;
