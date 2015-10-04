@@ -33,13 +33,16 @@ h4 {
   font-weight: 300;
 }
 
-p {
-  margin: auto auto $base-leading;
+body, p, li {
+  line-height: 1.6;
 }
 
-p + p {
-  text-indent: $base-leading;
-  margin-top: -$base-leading;
+p, li {
+  margin-bottom: $base-leading;
+}
+
+figure {
+  margin: $base-leading $base-leading/2;
 }
 
 img {
@@ -69,6 +72,15 @@ em {
     background-color: darken($primary-color, 15%);
   }
   @media all and (min-width: $homeNavBreak) {
-    width: max-content; 
+    width: max-content;
   }
+}
+
+p.drop-cap:first-letter {
+  color: $primary-color;
+  float: left;
+  font-size: 5.2em;
+  line-height: .8;
+  padding-right: .2em;
+  margin-top: .06em;
 }

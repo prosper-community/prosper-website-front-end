@@ -15,13 +15,13 @@
   }
 
   // toggle mobile home nav when document loads
-  toggleMobileHomeNav(553);
+  toggleMobileHomeNav(762);
 
   $(window).resize(function() {
-    toggleMobileHomeNav(553);
+    toggleMobileHomeNav(762);
   });
 
-  
+
   // Toggle Menu
   $('.menu-label').click(function(e){
     e.preventDefault();
@@ -31,4 +31,3 @@
   });
 
 }(jQuery));
-

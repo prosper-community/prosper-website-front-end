@@ -3,13 +3,6 @@
 
 @charset "UTF-8";
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-  margin: 0;
-}
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -24,7 +17,6 @@ body {
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
 
 // Normalize — need to refactor to reduce bloat
-
 @import 'bower_components/modularized-normalize-scss/normalize';
 
 // 01 Base

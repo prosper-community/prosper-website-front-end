@@ -1,10 +1,16 @@
 // Layout styles for the index page here
 .content-section {
-  padding: 1.6em .4em;
+  padding: .8em .4em 3.2em .4em;
   border-bottom: 1px solid $secondary-color;
 }
 .l-welcome-text, .l-welcome-image {
   text-align: center;
+}
+
+.l-welcome-text {
+  .button {
+    margin: 0 auto;
+  }
 }
 
 .about {
@@ -26,4 +32,3 @@
 .join {
   background-color: $secondary-color;
 }
-

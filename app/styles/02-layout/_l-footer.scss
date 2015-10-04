@@ -1,0 +1,27 @@
+footer.l-site-footer {
+  min-height: 3.2em;
+  color: white;
+  .l-footer-columns {
+    background: $header-font-color;
+    margin: 0;
+    padding: 1.6em .4em;
+  }
+  .l-footer-bottom {
+    background: $body-font-color;
+    padding: 1.6em .4em;
+  }
+  .l-social-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      width: 2em;
+      height: 2em;
+      display: inline-block;
+      margin-bottom: 1.2em;
+      &:not(.last) {
+        margin-right: 1.2em;
+      }
+    }
+  }
+}

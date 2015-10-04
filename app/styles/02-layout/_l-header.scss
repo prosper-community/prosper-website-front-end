@@ -76,9 +76,7 @@
       margin-top: -.7em;
     }
     li:not(.has-button) {
-      border-bottom: 1px solid $secondary-color;
       @media all and (min-width: $homeNavBreak) {
-        margin-right: .8em;
         padding-bottom: .35em;
         &:hover {
           border-bottom: darken($secondary-color, 10%);
@@ -86,9 +84,19 @@
       }
     }
     li.has-button {
-      margin-bottom: 0;
+      padding-bottom: .3em;
+      @media all and (min-width: $homeNavBreak) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    li.login {
+      @include smcps;
+      border-bottom: none;
     }
     li {
+      border-bottom: 1px solid $secondary-color;
+      margin-right: .8em;
       margin-bottom: .4em;
       text-align: center;
       @media all and (min-width: $homeNavBreak) {
