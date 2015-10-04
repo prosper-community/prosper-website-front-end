@@ -1,6 +1,9 @@
 footer.l-site-footer {
+  z-index: 99;
+  position: relative;
   min-height: 3.2em;
   color: white;
+  margin-top: -$base-leading*3;
   .l-footer-columns-wrapper {
     background: $header-font-color;
     margin: 0 auto;
@@ -29,12 +32,12 @@ footer.l-site-footer {
     padding: 0;
     list-style: none;
     li {
-      width: 2em;
-      height: 2em;
+      width: $base-leading;
+      height: $base-leading;
       display: inline-block;
-      margin-bottom: 1.2em;
+      margin-bottom: $base-leading;
       &:not(.last) {
-        margin-right: 1.2em;
+        margin-right: $base-leading;
       }
     }
   }

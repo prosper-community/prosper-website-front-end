@@ -94,6 +94,10 @@ p.drop-cap:first-letter {
   float: left;
   font-size: 5.2em;
   line-height: .8;
-  padding-right: .2em;
+  padding-right: .15em;
   margin-top: .06em;
+}
+
+.success {
+  color: $primary-color;
 }

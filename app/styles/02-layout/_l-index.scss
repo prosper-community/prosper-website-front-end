@@ -1,10 +1,20 @@
 // Layout styles for the index page here
-.content-section {
-  border-bottom: 1px solid $secondary-color;
-}
-.l-welcome-text {
+
+// Welcome
+.l-welcome-wrapper {
   background: $secondary-color;
-  padding: $base-leading*4 $base-leading/2 $base-leading*6 $base-leading/2;
+  transform: skewY(8deg);
+  padding-top: $base-leading;
+  z-index: -1;
+  @media all and (min-width: 800px) {
+    padding-top: $base-leading*4;
+    margin-top: -$base-leading*3;
+  }
+}
+
+.l-welcome-text {
+  padding: $base-leading*4 $base-leading/2 $base-leading*3 $base-leading/2;
+  transform: skewY(-8deg);
   br {
     display: none;
     @media all and (min-width: 605px) {
@@ -23,36 +33,93 @@
   }
 }
 
-.l-welcome-slack-wrapper, .about, .situation, .l-help-heading-wrapper {
+// This gives the cool angled Y line bg effect
+.l-welcome-slack-wrapper, .l-situation-wrapper, .l-join-wrapper {
   z-index: 1;
   background: white;
-  margin-top: -2em;
   transform: skewY(-8deg);
-  padding: $base-leading*2 $base-leading/2 $base-leading*4 $base-leading/2;
+  padding: $base-leading*2 $base-leading/2;
+}
+
+.l-welcome-slack-content {
+  margin-top: -$base-leading;
+}
+
+// reverse transform to display straight text
+.l-welcome-slack-content,
+.l-about-content,
+.l-situation-content,
+.l-join-form {
+  transform: skewY(8deg);
+}
+
+// About
+.l-about-bg {
+  background: $header-font-color;
+  transform: skewY(-8deg);
+}
+
+.l-about-wrapper {
+  background: lighten($secondary-color, 5%);
+  padding: $base-leading*2 $base-leading/2;
+}
+
+.l-about-content {
+  @media all and (min-width: 800px) {
+    padding: 0 $base-leading;
+  }
+}
+
+// Situation
+.l-situation-wrapper, .l-help-content {
+  margin: 0 auto;
+  @media all and (min-width: 650px) {
+    width: 90%;
+  }
+  @media all and (min-width: 800px) {
+    width: 70%;
+  }
+  @media all and (min-width: 950px) {
+    width: 60%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+// Help
+
+.l-help-heading-bg {
+  background: $header-font-color;
+  transform: skewY(-8deg);
+  margin-bottom: $base-leading*2;
 }
 
 .l-help-heading-wrapper {
   background: $primary-color;
-  padding: $base-leading $base-leading/4 $base-leading/2 $base-leading/4;
-  // margin: 0 auto;
+  // padding: $base-leading*2 $base-leading/2;
+  display: flex;
+  justify-content: center;
+  h3 {
+    margin: 0 0 -.5em 0;
+  }
 }
 
 .l-help-heading-content {
-  margin: 0 auto;
-}
-
-.l-welcome-slack-content,
-.l-about-content,
-.l-situation-content,
-.l-help-heading-content {
+  padding: $base-leading;
   transform: skewY(8deg);
+  h3{
+    font-weight: 500;
+    color: white;
+  }
 }
 
-.about {
-  background: lighten($secondary-color, 5%);
+.l-help-content {
+  padding: $base-leading $base-leading/2 $base-leading*3 $base-leading/2;
 }
 
-.about, .join-form {
+// Liquid scalable content
+.l-about-wrapper, .l-help-heading-wrapper, .l-join-form, .l-join-wrapper h2 {
   margin: 0 auto;
   @media all and (min-width: 650px) {
     width: 85%;
@@ -68,15 +135,23 @@
   }
 }
 
-.about {
+.l-about-wrapper, .l-help-heading-wrapper, .l-join-wrapper {
   padding: $base-leading*2 $base-leading/2;
 }
 
-.join {
+.l-join-wrapper {
   background-color: $secondary-color;
+  padding-bottom: $base-leading*5;
+  h2 {
+    margin-top: 0;
+    transform: skewY(8deg);
+    &.success {
+      color: $primary-color;
+    }
+  }
 }
 
-.join-form {
+.l-join-form {
   font-weight: 300;
   @media all and (min-width: 1440px) {
     width: 40%;

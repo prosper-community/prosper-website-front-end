@@ -1,8 +1,12 @@
 .site-header {
+  z-index: 99;
   background-color: $header-font-color;
-  padding: $base-leading;
+  padding: $base-leading 0;
   font-weight: 300;
-
+  position: fixed;
+  width: 100%;
+  height: .3em;
+  -webkit-transform: translateZ(0);
   h1.site-title, h2.menu-label {
     @include ms-respond(font-size, 1);
     margin: -0.7em 0 0 0;
@@ -11,6 +15,7 @@
   h1.site-title {
     float: left;
     margin-top: -.7em;
+    padding-left: .8em;
     .site-title-text {
       display: none;
       font-weight: 100;

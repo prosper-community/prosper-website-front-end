@@ -3,6 +3,11 @@
 
 @charset "UTF-8";
 
+html, body {
+  height:100%;
+  overflow:auto;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
