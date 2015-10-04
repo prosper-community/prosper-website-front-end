@@ -13,7 +13,7 @@
   }
 }
 
-.about {
+.about, .join-form {
   margin: 0 auto;
   @media all and (min-width: 650px) {
     width: 85%;
@@ -31,4 +31,11 @@
 
 .join {
   background-color: $secondary-color;
+}
+
+.join-form {
+  font-weight: 300;
+  @media all and (min-width: 1440px) {
+    width: 40%;
+  }
 }

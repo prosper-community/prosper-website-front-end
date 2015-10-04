@@ -133,13 +133,13 @@
       </section>
 
       <section class="join content-section" id="join">
-        <form action="#">
+        <form action="#" class="join-form">
           <h2>Request an Invite</h2>
           <label for="your-name">your name</label>
           <input type="text" required id="your-name" name="your-name" placeholder="Joe Smith" autocomplete="name">
           <label for="your-email">your email</label>
           <input type="email" required id="your-email" name="your-email" placeholder="joesmith@address.com" autocomplete="email">
-          <label for="your-reason">why do you want to join?</label>
+          <label for="your-reason">why you want to join</label>
           <textarea name="your-reason" id="your-reason" placeholder="Please provide a short explanation of why you'd like to join the Refugee Community on Slack..."></textarea>
           <input type="submit" value="submit">
         </form>
@@ -194,6 +194,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

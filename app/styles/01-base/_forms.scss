@@ -8,6 +8,7 @@ label {
   display: block;
   @include smcps;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 input {
@@ -17,6 +18,7 @@ input {
   font-size: 1em;
   height: 2em;
   box-sizing: border-box;
+  border: none;
   &[type="submit"] {
     @extend .button;
     border: none;

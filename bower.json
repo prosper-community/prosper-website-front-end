@@ -2,7 +2,8 @@
   "name": "landing-page",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "jquery-smooth-scroll": "~1.5.6"
   },
   "devDependencies": {
     "chai": "~3.3.0",

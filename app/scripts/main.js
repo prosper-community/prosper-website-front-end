@@ -30,4 +30,11 @@
     });
   });
 
+
+  $('.home-nav--list a').smoothScroll();
+  $('.button').smoothScroll({
+    afterScroll: function() {
+      $('input[name="your-name"]').focus();
+    }
+  });
 }(jQuery));
