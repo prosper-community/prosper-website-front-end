@@ -1,9 +1,19 @@
 // Layout styles for the index page here
 .content-section {
-  padding: .8em .4em 3.2em .4em;
   border-bottom: 1px solid $secondary-color;
 }
-.l-welcome-text, .l-welcome-image {
+.l-welcome-text {
+  background: $secondary-color;
+  padding: $base-leading*4 $base-leading/2 $base-leading*6 $base-leading/2;
+  br {
+    display: none;
+    @media all and (min-width: 605px) {
+      display: inline;
+    }
+  }
+}
+
+.l-welcome-text, .l-welcome-slack-wrapper {
   text-align: center;
 }
 
@@ -11,6 +21,35 @@
   .button {
     margin: 0 auto;
   }
+}
+
+.l-welcome-slack-wrapper, .about, .situation, .l-help-heading-wrapper {
+  z-index: 1;
+  background: white;
+  margin-top: -2em;
+  transform: skewY(-8deg);
+  padding: $base-leading*2 $base-leading/2 $base-leading*4 $base-leading/2;
+}
+
+.l-help-heading-wrapper {
+  background: $primary-color;
+  padding: $base-leading $base-leading/4 $base-leading/2 $base-leading/4;
+  // margin: 0 auto;
+}
+
+.l-help-heading-content {
+  margin: 0 auto;
+}
+
+.l-welcome-slack-content,
+.l-about-content,
+.l-situation-content,
+.l-help-heading-content {
+  transform: skewY(8deg);
+}
+
+.about {
+  background: lighten($secondary-color, 5%);
 }
 
 .about, .join-form {
@@ -27,6 +66,10 @@
   @media all and (min-width: 1200px) {
     width: 45%;
   }
+}
+
+.about {
+  padding: $base-leading*2 $base-leading/2;
 }
 
 .join {

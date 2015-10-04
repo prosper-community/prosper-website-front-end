@@ -11,6 +11,7 @@ body {
 
 h1 {
   @include ms-respond(font-size, 5);
+  margin-top: 0;
 }
 
 h2 {
@@ -26,6 +27,18 @@ h3 {
 
 h4 {
   @include ms-respond(font-size, 2);
+}
+
+hgroup {
+  margin-bottom: 1em;
+  margin-top: 0;
+  h1 {
+    margin-bottom: 0;
+  }
+  h2.subheader {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
 }
 
 .subheader {
