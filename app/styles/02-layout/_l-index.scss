@@ -4,9 +4,11 @@
 .l-welcome-wrapper {
   background: $secondary-color;
   transform: skewY(8deg);
-  padding-top: $base-leading;
   z-index: -1;
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 700px) {
+    padding-top: $base-leading;
+  }
+  @media all and (min-width: 900px) {
     padding-top: $base-leading*4;
     margin-top: -$base-leading*3;
   }
@@ -97,7 +99,6 @@
 
 .l-help-heading-wrapper {
   background: $primary-color;
-  // padding: $base-leading*2 $base-leading/2;
   display: flex;
   justify-content: center;
   h3 {
@@ -106,7 +107,9 @@
 }
 
 .l-help-heading-content {
-  padding: $base-leading;
+  @media all and (min-width: 860px) {
+    padding: $base-leading;
+  }
   transform: skewY(8deg);
   h3{
     font-weight: 500;
@@ -115,7 +118,11 @@
 }
 
 .l-help-content {
-  padding: $base-leading $base-leading/2 $base-leading*3 $base-leading/2;
+  padding: 0 $base-leading/2 $base-leading*3 $base-leading/2;
+
+  @media all and (min-width: 860px) {
+    padding: $base-leading $base-leading/2 $base-leading*3 $base-leading/2;
+  }
 }
 
 // Liquid scalable content
