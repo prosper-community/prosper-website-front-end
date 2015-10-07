@@ -74,18 +74,17 @@ em {
 .button {
   display: block;
   background-color: $primary-color;
-  padding: .5em 1.25em;
+  padding: .4em 1.6em;
   @include smcps;
   text-decoration: none;
   text-align: center;
   color: white;
-  width: 100%;
+  width: max-content;
   box-sizing: border-box;
   &:hover {
     background-color: darken($primary-color, 15%);
   }
   @media all and (min-width: $homeNavBreak) {
-    width: max-content;
   }
 }
 

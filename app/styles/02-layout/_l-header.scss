@@ -1,6 +1,7 @@
 .site-header {
   z-index: 99;
   background-color: $header-font-color;
+  opacity: .85;
   padding: $base-leading 0;
   font-weight: 300;
   position: fixed;
@@ -36,13 +37,14 @@
       display: none;
     }
     .menu-text {
-      margin-right: 10px;
+      margin-right: .7em;
     }
     .menu-icon {
       @include burger(25px, 2px, 5px, white);
       border-radius: 3px;
       float: right;
-      margin-top: 10px;
+      margin-top: .7em;
+      margin-right: 1em;
       &:after {
         border-radius: 3px;
       }
@@ -71,10 +73,12 @@
   }
 
   ul.home-nav--list {
-    margin: 3.6em 0 0 0;
-    padding: 0;
+    background: $header-font-color;
+    margin: 0;
+    padding: 0 1em;
     list-style: none;
     clear: left;
+    z-index: 99;
     @media all and (min-width: $homeNavBreak) {
       float: right;
       margin-top: -.7em;
@@ -100,11 +104,11 @@
     }
     li {
       border-bottom: 1px solid $secondary-color;
-      margin-right: .8em;
       margin-bottom: .4em;
       text-align: center;
       @media all and (min-width: $homeNavBreak) {
         display: inline;
+        margin-right: .8em;
       }
       a {
         padding: .8em 0;

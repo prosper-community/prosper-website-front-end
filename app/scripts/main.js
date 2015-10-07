@@ -1,7 +1,5 @@
 (function($){
   'use strict';
-  console.log('\'Allo \'Allo!');
-
 
   // For mobile, hide menu on open
   function toggleMobileHomeNav(breakpoint) {
@@ -28,16 +26,6 @@
     $('.home-nav--list').slideToggle(function(){
       $('.menu-icon').toggleClass('is-open');
     });
-  });
-
-  // When user clicks a link in the home-nav bar, smoothScroll
-  $('.home-nav--list a').smoothScroll();
-
-  // When user clicks button (call to action), smoothScroll and focus input
-  $('.button').smoothScroll({
-    afterScroll: function() {
-      $('input[name="your-name"]').focus();
-    }
   });
 
   $('input[type="submit"]').click(function(e){
