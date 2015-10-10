@@ -2,9 +2,8 @@
 
 // Welcome
 .l-welcome-wrapper {
-  background: $secondary-color;
-  transform: skewY(8deg);
-  // Whitespace begins to appear becuase of skew at this width...
+  background-size: cover;
+  background: url('../images/refugee-community-welcome-bg.jpg');
   @media all and (min-width: 1024px) {
     margin-top: -2%;
   }
@@ -31,14 +30,12 @@
     padding-top: 13%;
   }
   @media all and (min-width: 1900px) {
-    padding-top: 11%;
+    padding-top: 12%;
   }
   @media all and (min-width: 2200px) {
     padding-top: 10%;
     padding-bottom: 5%;
   }
-  // padding: $base-leading*4 $base-leading/2 $base-leading*3 $base-leading/2;
-  transform: skewY(-8deg);
   br {
     display: none;
     @media all and (min-width: 605px) {
@@ -57,15 +54,31 @@
   }
 }
 
-// This gives the cool angled Y line bg effect
+.l-welcome-slack-bg {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: white;
+    transform: skewY(8deg);
+    transform-origin: 33%;
+    top: 0;
+  }
+}
+
 .l-welcome-slack-wrapper, .l-situation-wrapper, .l-join-wrapper {
-  z-index: 1;
   background: white;
   transform: skewY(-8deg);
   padding: 8% 2%;
   @media all and (min-width: 875px) {
     padding: 4% 2%;
   }
+}
+
+.l-welcome-slack-wrapper {
+  z-index: 0;
 }
 
 .l-welcome-slack-content {
