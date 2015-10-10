@@ -4,6 +4,7 @@
 .l-welcome-wrapper {
   background-size: cover;
   background: url('../images/refugee-community-welcome-bg.jpg');
+  background-position: 65% 50%;
   @media all and (min-width: 1024px) {
     margin-top: -2%;
   }
@@ -17,6 +18,9 @@
 
 .l-welcome-text {
   padding: 30% 5% 15% 5%;
+  h1, h2 {
+    color: white;
+  }
   @media all and (min-width: 700px) {
     padding: 20% 5% 15% 5%;
   }
