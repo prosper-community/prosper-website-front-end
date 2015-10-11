@@ -1,7 +1,9 @@
 .site-header {
   z-index: 99;
   background-color: $header-font-color;
-  opacity: .85;
+  @media all and (min-width: $homeNavBreak) {
+    opacity: .85;
+  }
   padding: $base-leading 0;
   font-weight: 300;
   position: fixed;
@@ -16,6 +18,7 @@
     float: left;
     margin-top: -.7em;
     padding-left: .8em;
+    @include global-transition;
     .site-title-text {
       display: none;
       font-weight: 100;
@@ -65,7 +68,6 @@
 
   nav.home-nav {
     width: 100%;
-    // height: auto;
     @media all and (min-width: $homeNavBreak) {
       width: auto;
       float: right;
@@ -79,15 +81,17 @@
     list-style: none;
     clear: left;
     z-index: 99;
+    opacity: 1;
     @media all and (min-width: $homeNavBreak) {
       float: right;
       margin-top: -.7em;
     }
     li:not(.has-button) {
+      transition: all 0.2s ease-in-out;
       @media all and (min-width: $homeNavBreak) {
         padding-bottom: .35em;
         &:hover {
-          border-bottom: darken($secondary-color, 10%);
+          border-bottom: 1px solid $white;
         }
       }
     }
@@ -100,15 +104,16 @@
     }
     li.login {
       @include smcps;
-      border-bottom: none;
     }
     li {
       border-bottom: 1px solid $secondary-color;
       margin-bottom: .4em;
       text-align: center;
+      @include global-transition;
       @media all and (min-width: $homeNavBreak) {
         display: inline;
         margin-right: .8em;
+        border-bottom: none;
       }
       a {
         padding: .8em 0;

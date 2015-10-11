@@ -5,10 +5,10 @@
   background-size: cover;
   background-image: url('../images/refugee-community-welcome-bg.jpg');
   @media all and (min-width: 900px) {
-    background-image: url('../images/refugee-community-welcome-bg-900x599.jpg');
+    background-image: url('refugee-community-welcome-bg-900x599.jpg');
   }
   @media all and (min-width: 1280px) {
-    background-image: url('../images/refugee-community-welcome-bg-1280x852.jpg');
+    background-image: url('refugee-community-welcome-bg-1280x528.jpg');
   }
   @media all and (min-width: 1900px) {
     background-image: url('../images/refugee-community-welcome-bg-1920x1278.jpg');
@@ -69,19 +69,7 @@
 // About
 .l-about-bg {
   transform: skewY(-8deg);
-  background-image: url('../images/syrian-refugee-camp-with-syria-oxfam.jpg');
-  @media all and (min-width: 800px) {
-    background-image: url('../images/syrian-refugee-camp-with-syria-oxfam-800x534.jpg');
-  }
-  @media all and (min-width: 1024px) {
-    background-image: url('../images/syrian-refugee-camp-with-syria-oxfam-1024x684.jpg');
-  }
-  @media all and (min-width: 1280px) {
-    background-image: url('../images/syrian-refugee-camp-with-syria-oxfam-1280x854.jpg');
-  }
-  @media all and (min-width: 1900px) {
-    background-image: url('../images/syrian-refugee-camp-with-syria-oxfam-1900x1282.jpg');
-  }
+  background: url('../images/syrian-refugee-camp-with-syria-oxfam-1900x1282.jpg');
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -105,21 +93,9 @@
 // Help
 // Help Heading
 .l-help-heading-bg {
-  background-image: url('../images/refugee-children-drawings.jpg');
+  background-image: url('../images/refugee-children-drawings-1920x985.jpg');
   background-size: cover;
   background-position: 50% 50%;
-  @media all and (min-width: 800px) {
-    background-image: url('../images/refugee-children-drawings-800x410.jpg');
-  }
-  @media all and (min-width: 1024px) {
-    background-image: url('../images/refugee-children-drawings-1024x525.jpg');
-  }
-  @media all and (min-width: 1280px) {
-    background-image: url('../images/refugee-children-drawings-1280x657.jpg');
-  }
-  @media all and (min-width: 1900px) {
-    background-image: url('../images/refugee-children-drawings-1920x985.jpg');
-  }
   transform: skewY(-8deg);
 }
 
@@ -127,7 +103,6 @@
   display: flex;
   @include liquid-column;
   @include callout-bg($primary-color);
-  margin: 0 auto;
 }
 
 // Help Heading Content
