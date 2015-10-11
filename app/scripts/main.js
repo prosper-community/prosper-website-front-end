@@ -1,6 +1,15 @@
 (function($){
   'use strict';
 
+  // For mobile, hide menu on open
+  function toggleMobileNav(windowWidth, breakpoint) {
+    if (windowWidth < breakpoint) {
+      $('.home-nav--list').hide();
+    } else {
+      $('.home-nav--list').show();
+    }
+  }
+
   (function mobileNavHandler() {
     var windowWidth = $(window).width();
     var homeNavBreak = 762;
@@ -10,7 +19,7 @@
 
     // Toggle mobile nav when window resizes
     $(window).resize(function() {
-      toggleMobileHomeNav(windowWidth, homeNavBreak);
+      toggleMobileNav(windowWidth, homeNavBreak);
     });
 
     // Toggle mobile nav menu when menu label is clicked
@@ -28,18 +37,9 @@
         $('.home-nav--list').slideToggle(function(){
           $('.menu-icon').toggleClass('is-open');
         });
-      })
+      });
     }
   }());
-
-  // For mobile, hide menu on open
-  function toggleMobileNav(windowWidth, breakpoint) {
-    if (windowWidth < breakpoint) {
-      $('.home-nav--list').hide();
-    } else {
-      $('.home-nav--list').show();
-    }
-  }
 
   $('input[type="submit"]').click(function(e){
     e.preventDefault();
@@ -50,22 +50,23 @@
     var $form = $('.l-join-form');
 
     $.ajax({
-      url: "//formspree.io/admin@refugee.community",
-      method: "POST",
+      url: '//formspree.io/admin@refugee.community',
+      method: 'POST',
       data: {
         sender: $sender,
         email: $email,
         message: $message
       },
-      dataType: "json",
-      success: function(data) {
+      dataType: 'json',
+      success: function() {
         $form.fadeOut();
         var $formHeader = $('.l-join-content h2');
         $formHeader.html('Request Submitted.').addClass('success');
       },
       error: function(data) {
-        alert("sorry! we've had a server error. please try again later." + data);
+        $form.append('<p>sorry! we\'ve had a server error. please try again later.');
+        console.log(data);
       }
-    })
+    });
   });
 }(jQuery));

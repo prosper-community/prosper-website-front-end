@@ -90,6 +90,7 @@
       transition: all 0.2s ease-in-out;
       border-bottom: 1px solid $white;
       @media all and (min-width: $homeNavBreak) {
+        border-bottom: none;
         padding-bottom: .35em;
         &:hover {
           border-bottom: 1px solid $white;
