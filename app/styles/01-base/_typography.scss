@@ -5,8 +5,15 @@ $ms-range:
   1.1 20em,
   $golden 175em;
 
+$sans-serif: 'freight-sans-pro', sans-serif;
+
 body {
   @include ms-respond(font-size, 1);
+  font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
 }
 
 h1 {
@@ -91,10 +98,11 @@ em {
 p.drop-cap:first-letter {
   color: $primary-color;
   float: left;
-  font-size: 5.2em;
+  font-size: 6.2em;
   line-height: .8;
-  padding-right: .15em;
-  margin-top: .06em;
+  padding-right: .1em;
+  margin-top: -.06em;
+  font-weight: 700;
 }
 
 .success {
