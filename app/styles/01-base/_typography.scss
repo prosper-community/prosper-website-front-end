@@ -5,7 +5,7 @@ $ms-range:
   1.1 20em,
   $golden 175em;
 
-$sans-serif: 'freight-sans-pro', sans-serif;
+$sans-serif: 'freight-sans-pro', Helvetica, Verdana, Geneva, sans-serif;
 
 body {
   @include ms-respond(font-size, 1);
@@ -57,7 +57,7 @@ body, p, li {
   line-height: 1.6;
 }
 
-ul {
+ul, ol {
   padding: 0;
 }
 

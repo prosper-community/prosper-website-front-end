@@ -141,7 +141,6 @@
 
 // Help Content
 .l-help-content {
-  margin: 0 auto;
   @include liquid-column;
 }
 
@@ -150,12 +149,10 @@
   background-color: $secondary-color;
   padding-bottom: 5%;
   transform: skewY($global-skew);
-
 }
 
 .l-join-content {
   @include liquid-column;
-  margin: 0 auto;
   transform: skewY(-$global-skew);
   h2 {
     // margin: 0;

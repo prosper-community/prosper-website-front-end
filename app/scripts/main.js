@@ -1,32 +1,45 @@
 (function($){
   'use strict';
 
-  // For mobile, hide menu on open
-  function toggleMobileHomeNav(breakpoint) {
-    var $windowWidth = $(window).width();
+  (function mobileNavHandler() {
+    var windowWidth = $(window).width();
+    var homeNavBreak = 762;
 
-    if ($windowWidth < breakpoint) {
+    // toggle mobile nav when document loads
+    toggleMobileNav(windowWidth, homeNavBreak);
+
+    // Toggle mobile nav when window resizes
+    $(window).resize(function() {
+      toggleMobileHomeNav(windowWidth, homeNavBreak);
+    });
+
+    // Toggle mobile nav menu when menu label is clicked
+    $('.menu-label').click(function(e){
+      e.preventDefault();
+      $('.home-nav--list').slideToggle(function(){
+        $('.menu-icon').toggleClass('is-open');
+      });
+    });
+
+    // Close home-nav--list when user clicks link on mobile
+    if (windowWidth < homeNavBreak) {
+      $('.home-nav--list a').click(function(e){
+        console.log(e);
+        $('.home-nav--list').slideToggle(function(){
+          $('.menu-icon').toggleClass('is-open');
+        });
+      })
+    }
+  }());
+
+  // For mobile, hide menu on open
+  function toggleMobileNav(windowWidth, breakpoint) {
+    if (windowWidth < breakpoint) {
       $('.home-nav--list').hide();
     } else {
       $('.home-nav--list').show();
     }
   }
-
-  // toggle mobile home nav when document loads
-  toggleMobileHomeNav(762);
-
-  $(window).resize(function() {
-    toggleMobileHomeNav(762);
-  });
-
-
-  // Toggle Menu
-  $('.menu-label').click(function(e){
-    e.preventDefault();
-    $('.home-nav--list').slideToggle(function(){
-      $('.menu-icon').toggleClass('is-open');
-    });
-  });
 
   $('input[type="submit"]').click(function(e){
     e.preventDefault();
@@ -47,7 +60,7 @@
       dataType: "json",
       success: function(data) {
         $form.fadeOut();
-        var $formHeader = $('.l-join-wrapper h2');
+        var $formHeader = $('.l-join-content h2');
         $formHeader.html('Request Submitted.').addClass('success');
       },
       error: function(data) {
