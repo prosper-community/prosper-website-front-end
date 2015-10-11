@@ -5,40 +5,22 @@
   background-size: cover;
   background: url('../images/refugee-community-welcome-bg-2.jpg');
   background-position: 65% 50%;
-  @media all and (min-width: 1024px) {
-    margin-top: -2%;
-  }
-  @media all and (min-width: 1500px) {
-    margin-top: -3%;
-  }
-  @media all and (min-width: 2040px) {
-    margin-top: -4%;
-  }
+  max-height: 90vh;
+  min-height: 400px;
+  min-height: 70vh;
+  display: table;
+  display: flex;
+  justify-content: center;
 }
 
 .l-welcome-text {
-  padding: 30% 5% 15% 5%;
+  padding: 20% 5%;
+  display: table-cell;
+  vertical-align: center;
+  align-self: center;
+  text-align: center;
   h1, h2 {
     color: white;
-  }
-  @media all and (min-width: 700px) {
-    padding: 20% 5% 15% 5%;
-  }
-  @media all and (min-width: 875px) {
-    padding: 18% 1% 8% 1%;
-  }
-  @media all and (min-width: 1280px) {
-    padding-top: 15%;
-  }
-  @media all and (min-width: 1600px) {
-    padding-top: 13%;
-  }
-  @media all and (min-width: 1900px) {
-    padding-top: 12%;
-  }
-  @media all and (min-width: 2200px) {
-    padding-top: 10%;
-    padding-bottom: 5%;
   }
   br {
     display: none;
@@ -46,20 +28,15 @@
       display: inline;
     }
   }
-}
-
-.l-welcome-text, .l-welcome-slack-wrapper {
-  text-align: center;
-}
-
-.l-welcome-text {
   .button {
     margin: 0 auto;
   }
 }
 
-.l-welcome-slack-bg {
+.l-welcome-slack-wrapper {
   position: relative;
+  background: $white;
+  transform: skewY(-8deg);
   &:before {
     content: "";
     position: absolute;
@@ -67,57 +44,20 @@
     height: 100%;
     overflow: hidden;
     background: white;
-    transform: skewY(8deg);
+    transform: skewY(16deg);
     top: 0;
   }
 }
 
-.l-welcome-slack-wrapper, .l-situation-wrapper, .l-join-wrapper {
-  background: white;
-  transform: skewY(-8deg);
-  padding: 8% 2%;
-  @media all and (min-width: 875px) {
-    padding: 4% 2%;
-  }
-}
-
-.l-welcome-slack-wrapper {
-  z-index: 0;
-}
-
 .l-welcome-slack-content {
-  margin-top: -8%;
-  @media all and (min-width: 1389px) {
-    margin-top: -6%;
-  }
-  @media all and (min-width: 1940px) {
-    margin-top: -4%;
-  }
-  padding-bottom: 8%;
-  figcaption {
-    width: 90%;
-    margin: 0 auto;
-    @media all and (min-width: 820px) {
-      width: 80%;
-    }
-    @media all and (min-width: 1020px) {
-      width: 60%;
-    }
-    @media all and (min-width: 1420px) {
-      width: 50%;
-    }
-    @media all and (min-width: 1820px) {
-      width: 40%;
-    }
-  }
-}
-
-// reverse transform to display straight text
-.l-welcome-slack-content,
-.l-about-content,
-.l-situation-content,
-.l-join-form {
+  text-align: center;
+  margin-top: -4%;
+  padding: 4% 0;
   transform: skewY(8deg);
+  figcaption {
+    margin: 0 auto;
+    @include liquid-column;
+  }
 }
 
 // About
@@ -129,146 +69,68 @@
 }
 
 .l-about-wrapper {
-  background: lighten($secondary-color, 5%);
+  margin: 0 auto;
+  @include liquid-column;
+  @include callout-bg($white)
 }
 
 .l-about-content {
-  @media all and (min-width: 800px) {
-    padding: 0 5.5%;
-    // padding: 0 $base-leading;
-  }
+  transform: skewY(8deg);
 }
 
 // Situation
-.l-situation-wrapper, .l-help-content {
+.l-situation-wrapper {
   margin: 0 auto;
-  @media all and (min-width: 650px) {
-    width: 90%;
-  }
-  @media all and (min-width: 800px) {
-    width: 70%;
-  }
-  @media all and (min-width: 950px) {
-    width: 60%;
-  }
-  @media all and (min-width: 1200px) {
-    width: 49%;
-  }
-  @media all and (min-width: 1900px) {
-    width: 45%;
-  }
-}
-
-.l-situation-content {
-  @media all and (min-width: 1900px) {
-    padding-bottom: 5%;
-  }
+  @include liquid-column;
 }
 
 // Help
-
+// Help Heading
 .l-help-heading-bg {
   background-image: url('../images/refugee-children-drawings-1920x985.jpg');
   background-size: cover;
   background-position: 50% 50%;
   transform: skewY(-8deg);
-  margin-bottom: 10%;
-  @media all and (min-width: 862px) {
-    margin-bottom: 6%;
-  }
-  @media all and (min-width: 980px) {
-    margin-bottom: 4%;
-  }
-  @media all and (min-width: 1280px) {
-    margin-bottom: 2%;
-  }
 }
 
 .l-help-heading-wrapper {
-  position: relative;
   display: flex;
-  padding: 0;
-  &:before {
-    position: absolute;
-    top: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: $primary-color;
-    // transform: skewX(-8deg);
-    opacity: .9;
-  }
-  h3 {
-    margin: 0 auto;
-    flex: 1 0 auto;
-  }
+  @include liquid-column;
+  @include callout-bg($primary-color);
+  margin: 0 auto;
 }
 
+// Help Heading Content
 .l-help-heading-content {
-
+  // justify-content: center;
+  margin: 0 auto;
   transform: skewY(8deg);
   h3 {
     color: white;
-    @media all and (min-width: 860px) {
-      padding-left: 8%;
-    }
   }
 }
 
+// Help Content
 .l-help-content {
-  padding: 0 2% 6% 2%;
-  @media all and (min-width: 860px) {
-    padding: 4% 2% 6% 2%;
-  }
-  @media all and (min-width: 2000px) {
-    width: 35%;
-  }
-}
-
-.l-help-content {
-  padding: 0 $base-leading/2 $base-leading*3 $base-leading/2;
-
-  @media all and (min-width: 860px) {
-    padding: $base-leading $base-leading/2 $base-leading*3 $base-leading/2;
-  }
-}
-
-
-// Liquid scalable content
-.l-about-wrapper, .l-help-heading-wrapper, .l-join-form {
   margin: 0 auto;
-  @media all and (min-width: 650px) {
-    width: 85%;
-  }
-  @media all and (min-width: 800px) {
-    width: 65%;
-  }
-  @media all and (min-width: 950px) {
-    width: 55%;
-  }
-  @media all and (min-width: 1200px) {
-    width: 45%;
-  }
+  @include liquid-column;
 }
 
-
-.l-about-wrapper, .l-help-heading-wrapper, .l-join-wrapper {
-  padding: 8% 2%;
-  @media all and (min-width: 1000px) {
-    padding: 6% 1.8%;
-  }
-  @media all and (min-width: 1900px) {
-    padding: 4% 1.5%;
-  }
-}
-
+// Join
 .l-join-wrapper {
   background-color: $secondary-color;
   padding-bottom: 5%;
+  transform: skewY($global-skew);
+
+}
+
+.l-join-content {
+  @include liquid-column;
+  margin: 0 auto;
+  transform: skewY(-$global-skew);
   h2 {
-    margin: 0;
+    // margin: 0;
     text-align: center;
-    transform: skewY(8deg);
     &.success {
       color: $primary-color;
     }
@@ -277,15 +139,4 @@
 
 .l-join-form {
   font-weight: 300;
-  padding-bottom: 10%;
-  @media all and (min-width: 1220px) {
-    padding-bottom: 8%;
-  }
-  @media all and (min-width: 1440px) {
-    width: 40%;
-    padding-bottom: 7%;
-  }
-  @media all and (min-width: 1800px) {
-    padding-bottom: 5%;
-  }
 }

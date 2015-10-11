@@ -72,22 +72,20 @@
           <a href="#join" class="button">join now</a>
         </section>
       </div>
-      <div class="l-welcome-slack-bg">
-        <section class="l-welcome-slack-wrapper">
-          <figure class="l-welcome-slack-content">
-            <img src="images/slack-logo.png" alt="slack gif on iphone">
-            <figcaption>
-              <em>Refugee.Community is a team on <a href="https://slack.com/">Slack</a>  &mdash;a free team communication app with a world-class user experience.</em>
-            </figcaption>
-          </figure>
-        </section>
-      </div>
+      <section class="l-welcome-slack-wrapper">
+        <figure class="l-welcome-slack-content">
+          <img srcset="images/slack-channel-on-mackbook-900x528.jpg, images/slack-channel-on-mackbook-900x528@2x.jpg 2x" src="images/slack-logo.png" alt="slack gif on iphone">
+          <figcaption>
+            <em>We're a global a team on <a href="https://slack.com/">Slack</a>&mdash;a free team communication app with a world-class user experience.</em>
+          </figcaption>
+        </figure>
+      </section>
       <div class="l-about-bg">
         <section class="l-about-wrapper" id="about">
           <div class="l-about-content">
             <h2>About</h2>
             <p class="drop-cap">
-              Refugee Community is a free online platform for people who want to take action and help refugees. Whether you are looking to create a startup, setup a charity, host a refugee in your home, or simply want to learn how to get involved&mdash;this is a community for people who have heard the cry of our fellow humans and have determined to come together and do whatever we can to help them.
+              Refugee Community is a free online forum for people who want to take action and help refugees. Whether you are looking to create a startup, setup a charity, host a refugee in your home, or simply want to learn how to get involved&mdash;this is a community for people who have heard the cry of our fellow humans and have determined to come together and do whatever we can to help them.
             </p>
           </div>
         </section>
@@ -146,16 +144,18 @@
       </section>
 
       <section class="l-join-wrapper" id="join">
-        <h2>Request an Invite</h2>
-        <form action="http://formspree.io/admin@refugee.community" method="POST" class="l-join-form">
-          <label for="your-name">your name</label>
-          <input type="text" required id="your-name" name="your-name" placeholder="Joe Smith" autocomplete="name">
-          <label for="your-email">your email</label>
-          <input type="email" required id="your-email" name="your-email" placeholder="joesmith@address.com" autocomplete="email">
-          <label for="your-reason">why you want to join</label>
-          <textarea name="your-reason" id="your-reason" placeholder="Please provide a short explanation of why you'd like to join the Refugee Community on Slack..."></textarea>
-          <input type="submit" value="sign up for free">
-        </form>
+        <div class="l-join-content">
+          <h2>Request an Invite</h2>
+          <form action="http://formspree.io/admin@refugee.community" method="POST" class="l-join-form">
+            <label for="your-name">your name</label>
+            <input type="text" required id="your-name" name="your-name" placeholder="Joe Smith" autocomplete="name">
+            <label for="your-email">your email</label>
+            <input type="email" required id="your-email" name="your-email" placeholder="joesmith@address.com" autocomplete="email">
+            <label for="your-reason">why you want to join</label>
+            <textarea name="your-reason" id="your-reason" placeholder="Please provide a short explanation of why you'd like to join the Refugee Community on Slack..."></textarea>
+            <input type="submit" value="sign up for free">
+          </form>
+        </div>
       </section>
 
     </article>
