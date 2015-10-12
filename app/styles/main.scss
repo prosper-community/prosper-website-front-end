@@ -22,9 +22,6 @@ html, body {
 // Modular Scale
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
 
-// Normalize — need to refactor to reduce bloat
-@import 'bower_components/modularized-normalize-scss/normalize';
-
 // 01 Base
 // Need to reduce normalized bloat
 @import '01-base/normalize',
