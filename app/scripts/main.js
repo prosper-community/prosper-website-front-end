@@ -64,7 +64,7 @@
         $formHeader.html('Request Submitted.').addClass('success');
       },
       error: function(data) {
-        $form.append('<p>sorry! we\'ve had a server error. please try again later.');
+        $form.append('<p class="error">sorry! we\'ve had a server error. please try again later.');
         console.log(data);
       }
     });
