@@ -51,7 +51,7 @@ gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 gulp.task('html', ['views', 'styles'], () => {
   const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src(['app/*.html', '.tmp/*.html'])
+  return gulp.src('.tmp/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
@@ -169,17 +169,17 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
-gulp.task('deploy', () => {
-  gulp.src('dist/**/*')
-    .pipe($.rsync({
-      user: 'je',
-      hostname: 'refugee.community',
-      destination: '/var/www/refugee-community/public',
-      port: '30303',
-      incremental: true,
-      progress: true
-    }));
-});
+// gulp.task('deploy', () => {
+//   gulp.src('dist/**/*')
+//     .pipe($.rsync({
+//       user: 'je',
+//       hostname: 'refugee.community',
+//       destination: '/var/www/refugee-community/public',
+//       port: '30303',
+//       incremental: true,
+//       progress: true
+//     }));
+// });
 
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
