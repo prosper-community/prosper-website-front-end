@@ -172,12 +172,12 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 gulp.task('deploy', () => {
   gulp.src('dist/**/*')
     .pipe($.rsync({
-      root: 'public',
       user: 'je',
       hostname: 'refugee.community',
-      destination: '/var/www/refugee-community',
+      destination: '/var/www/refugee-community/public',
       port: '30303',
-      update: true
+      incremental: true,
+      progress: true
     }));
 });
 
