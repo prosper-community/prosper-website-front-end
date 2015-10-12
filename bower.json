@@ -2,8 +2,7 @@
   "name": "landing-page",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.4",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.1.1"
+    "jquery": "~2.1.4"
   },
   "devDependencies": {
     "chai": "~3.3.0",

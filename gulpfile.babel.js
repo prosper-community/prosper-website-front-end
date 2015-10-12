@@ -169,6 +169,18 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
+gulp.task('deploy', () => {
+  gulp.src('dist/**/*')
+    .pipe($.rsync({
+      root: 'public',
+      user: 'je',
+      hostname: 'refugee.community',
+      destination: '/var/www/refugee-community',
+      port: '30303',
+      update: true
+    }));
+});
+
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
