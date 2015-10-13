@@ -3,6 +3,7 @@
 
   // For mobile, hide menu on open
   function toggleMobileNav(windowWidth, breakpoint) {
+
     if (windowWidth < breakpoint) {
       $('.home-nav--list').hide();
     } else {
@@ -33,7 +34,6 @@
     // Close home-nav--list when user clicks link on mobile
     if (windowWidth < homeNavBreak) {
       $('.home-nav--list a').click(function(e){
-        console.log(e);
         $('.home-nav--list').slideToggle(function(){
           $('.menu-icon').toggleClass('is-open');
         });
