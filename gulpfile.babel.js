@@ -3,13 +3,22 @@ import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
+import path from 'path';
 import {stream as wiredep} from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+gulp.task('data', () => {
+  return gulp.src('app/data/*.json')
+    .pipe(gulp.dest('dist/data'));
+});
+
 gulp.task('views', () => {
   return gulp.src('app/*.jade')
+  .pipe($.data( function(file) {
+    return require('app/data/' + path.basename(file.path) + '.json');
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}));

@@ -1,15 +1,17 @@
+block vars
+
 doctype html
 html(lang='')
   head
     meta(charset='utf-8')
-    |     
     meta(name='description', content='')
-    |     
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    |     
     title Refugee Community
-    |     
-    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    meta(property="og:url", content= page.url)
+    meta(property="og:title", content= page.title)
+    meta(property="og:description", content= page.description)
+    meta(property="og:image", content= page.image)
+    //- link(rel='apple-touch-icon', href='apple-touch-icon.png')
     // Place favicon.ico in the root directory
     // build:css styles/vendor.css
     // bower:css
@@ -27,7 +29,6 @@ html(lang='')
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
-  |   
   body
     //if lt IE 10
       p.browserupgrade
@@ -36,7 +37,6 @@ html(lang='')
         |  browser. Please 
         a(href='http://browsehappy.com/') upgrade your browser
         |  to improve your experience.
-    |     
     include ../includes/header
 
     block content
