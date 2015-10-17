@@ -13,7 +13,7 @@
 
   (function mobileNavHandler() {
     var windowWidth = $(window).width();
-    var homeNavBreak = 762;
+    var homeNavBreak = 620;
 
     // toggle mobile nav when document loads
     toggleMobileNav(windowWidth, homeNavBreak);
@@ -50,7 +50,7 @@
     var $form = $('.l-join-form');
 
     $.ajax({
-      url: '//formspree.io/admin@refugee.community',
+      url: '//formspree.io/admin@solvetherefugeecrisis.com',
       method: 'POST',
       data: {
         sender: $sender,
@@ -62,6 +62,7 @@
         $form.fadeOut();
         var $formHeader = $('.l-join-content h2');
         $formHeader.html('Request Submitted.').addClass('success');
+        $form.append('<p>You should expect to hear from a team member within 48 hours.');
       },
       error: function(data) {
         $form.append('<p class="error">sorry! we\'ve had a server error. please try again later.');

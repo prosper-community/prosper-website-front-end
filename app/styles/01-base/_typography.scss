@@ -1,9 +1,7 @@
 // Inspired by http://madebymike.com.au/writing/precise-control-responsive-typography/
 // Taken from https://github.com/modularscale/modularscale-sass#responsive-scales
 
-$ms-range:
-  1.1 20em,
-  $golden 175em;
+$ms-range: 1.1 26em, $golden 175em;
 
 $sans-serif: 'freight-sans-pro', Helvetica, Verdana, Geneva, sans-serif;
 
@@ -14,6 +12,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: 700;
+  margin-top: 0;
 }
 
 h1 {
