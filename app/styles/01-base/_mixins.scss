@@ -5,31 +5,12 @@
   letter-spacing: .08em;
 }
 
-@mixin liquid-column {
+@mixin single-column {
   width: 96%;
-  padding: 8% 2%;
+  padding: 4% 2%;
   overflow: hidden;
   margin: 0 auto;
-  @media all and (min-width: 650px) {
-    width: 90%;
-  }
-  @media all and (min-width: 800px) {
-    width: 70%;
-  }
-  @media all and (min-width: 950px) {
-    width: 60%;
-    padding: 6% 1.8%;
-  }
-  @media all and (min-width: 1200px) {
-    width: 49%;
-  }
-  @media all and (min-width: 1900px) {
-    width: 45%;
-    padding: 4% 1.5%;
-  }
-  @media all and (min-width: 2100px) {
-    width: 38%;
-  }
+  max-width: 650px;
 }
 
 @mixin callout-bg($color) {

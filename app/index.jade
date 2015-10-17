@@ -2,61 +2,32 @@ extends views/layouts/default
 
 block content
   article.main-content(role='main')
-    .l-welcome-wrapper
-      section.l-welcome-text
-        hgroup
-          h1 Refugee Community
-          h2.subheader
-            | Join people around the world taking action
-            br
-            | to help refugees.
-        a.button(href='#join') join now
-    section.l-welcome-slack-wrapper
-      figure.l-welcome-slack-content
-        img(srcset='images/slack-channel-on-mackbook-900x528.jpg, images/slack-channel-on-mackbook-900x528@2x.jpg 2x', src='images/slack-logo.png', alt='slack gif on iphone')
-        figcaption
-          em
-            | We&apos;re a global a team on
-            a(href='https://slack.com/') Slack
-            | &mdash;a free team communication app with a world-class user experience.
-    .l-about-bg
-      section#about.l-about-wrapper
-        .l-about-content
-          h2 About
-          p.drop-cap
-            | Refugee Community is a free online forum for people who want to take action and help refugees. Whether you are looking to create a startup, setup a charity or simply want to learn how to get involved&mdash;this is a place where you can ask questions, provide answers and learn from others who are currently helping refugees.
-    section#situation.l-situation-wrapper
-      .l-situation-content
-        h2 The Situation
-        p
-          | There are several different organizations like 
-          a(href='http://www.refugees-welcome.net/') Refugees Welcome
-          |  sprouting up 
-          a(href='http://www.refugees-welcome.org.uk/') across Europe
-          | . Many of them face similar difficulties: Communication is scattered, complexity is high and problems vary between countries.
-        p
-          | Refugee Community aims to centralize communication for the refugee crisis in Europe, making it easier to get involved and easier to stay connected no matter where you are.
-    section#help.l-help-wrapper
-      .l-help-heading-bg
-        .l-help-heading-wrapper
-          .l-help-heading-content
-            h3
-              | We cannot do this alone.
-              br
-              |                   We need to work together.
-      .l-help-content
-        h2 We Need Your Help.
-        p
-          | If three Dutch entrepreneurs could create an 
-          a(href='http://www.refugeehero.com/') Airbnb for refugees
-          |  in three days, what would happen if the brightest minds around the world worked together to solve the problems at hand? What kind of solutions would we see?
-        p
-          | How could we break this problem into smaller parts? How could we apply the best of technology and design to help solve the problems of the refugee crisis?
-        p
-          | If you want to help, request an invite to join our community and become part of the team. We are determined to face the complexity of this problem together and create innovative solutions that can save lives.
-        p
-          | If you&apos;d like to engage your local community&mdash;we&apos;d love your help in organizing Refugee Community meetups.
-        a.button(href='/#join') join now
+    hgroup.l-welcome-header
+        h1 Join The Global Team
+        h2.subheader We're an online community of people around the world taking
+          br
+          |  action to solve the refugee crisis.
+        
+    section#problem.l-problem-wrapper
+      .l-problem-content
+        h2 The Problem
+        ul
+          li 59.5 million displaced people worldwide
+          li 19.5 million refugees
+          li $27 million spent per day on relief and aid for displaced people
+          li Thousands of organizations are trying to solve this problem
+          li.l-problem-callout There is no central forum for people working to solve the crisis.
+    section#solution.l-solution-wrapper
+      .l-solution-content
+        h2 The Solution
+        img(src="images/slack-logo.png", alt="slack logo" width="150")
+        p We have created a team on 
+          a(href="https://slack.com") Slack
+          | , a real-time communication app with a world-class user expeirence, so that people solving the crisis can work together.
+        p Our team is currently invite-only. It is for people who are currently taking action to solve the refugee crisis. If you're interested in joining our team, provide us with your details below. 
+        p We like to speak with each person individually before adding them to our team to make sure that the platform serves its purpose: 
+          em To help solve the refugee crisis by creating a central online forum for communication.
+        
     section#join.l-join-wrapper
       .l-join-content
         h2 Request an Invite
@@ -66,5 +37,5 @@ block content
           label(for='your-email') your email
           input#your-email(type='email', required='', name='your-email', placeholder='janesmith@address.com', autocomplete='email')
           label(for='your-reason') why you want to join
-          textarea#your-reason(name='your-reason', placeholder="Please provide a short explanation of why you'd like to join the Refugee Community on Slack...")
+          textarea#your-reason(name='your-reason', placeholder="Please provide a short explanation of why you'd like to join the team...")
           input(type='submit', value='sign up for free')

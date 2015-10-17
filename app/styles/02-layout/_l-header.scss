@@ -1,9 +1,9 @@
 .site-header {
   z-index: 99;
-  background-color: $header-font-color;
-  @media all and (min-width: $homeNavBreak) {
-    opacity: .85;
-  }
+  background-color: $body-font-color;
+  // @media all and (min-width: $homeNavBreak) {
+  //   opacity: .85;
+  // }
   padding: $base-leading 0;
   font-weight: 300;
   position: fixed;
@@ -75,7 +75,7 @@
   }
 
   ul.home-nav--list {
-    background: $header-font-color;
+    background: $body-font-color;
     margin: 0;
     padding: 0 1em;
     list-style: none;
