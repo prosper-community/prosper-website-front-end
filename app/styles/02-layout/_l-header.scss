@@ -1,12 +1,9 @@
 .site-header {
   z-index: 99;
+  position: relative;
   background-color: $body-font-color;
-  // @media all and (min-width: $homeNavBreak) {
-  //   opacity: .85;
-  // }
   padding: $base-leading 0;
   font-weight: 300;
-  position: fixed;
   width: 100%;
   height: .3em;
   h1.site-title, h2.menu-label {
@@ -81,7 +78,6 @@
     list-style: none;
     clear: left;
     z-index: 99;
-    opacity: 1;
     @media all and (min-width: $homeNavBreak) {
       float: right;
       margin-top: -.7em;

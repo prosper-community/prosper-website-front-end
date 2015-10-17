@@ -7,10 +7,11 @@
 
 @mixin single-column {
   width: 96%;
-  padding: 4% 2%;
+  padding: 8vh 2vh;
   overflow: hidden;
   margin: 0 auto;
   max-width: 650px;
+  box-sizing: border-box;
 }
 
 @mixin callout-bg($color) {

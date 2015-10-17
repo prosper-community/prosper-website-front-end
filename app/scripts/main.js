@@ -33,7 +33,7 @@
 
     // Close home-nav--list when user clicks link on mobile
     if (windowWidth < homeNavBreak) {
-      $('.home-nav--list a').click(function(e){
+      $('.home-nav--list a').click(function(){
         $('.home-nav--list').slideToggle(function(){
           $('.menu-icon').toggleClass('is-open');
         });

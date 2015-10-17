@@ -1,12 +1,18 @@
 // Layout styles for the index page here
 
+.l-welcome-wrapper {
+  display: flex;
+  min-height: 40vh;
+}
+
 .l-welcome-header {
-  // background-size: cover;
-  // background-image: url('../images/refugee-children-drawings-1920x985.jpg');
   text-align: center;
-  padding: 8% 2%;
-  margin-top: 1.6em;
+  justify-content: center;
+  padding: 14vh 2vw;
   margin-bottom: 0;
+  @media all and (min-width: 920px) {
+    padding: 14vh 14vw;
+  }
   h2.subheader {
     margin-bottom: 0;
   }
@@ -35,6 +41,22 @@
   @include single-column;
   h2 {
     text-align: center;
+  }
+  h3 {
+    float: left;
+    margin-bottom: .5em;
+  }
+  img {
+    float: left;
+    margin-left: 1em;
+    margin-top: .8em;
+    // display: inline;
+    // float: right;
+    // margin: 0;
+    // padding: 0;
+  }
+  p {
+    clear: both;
   }
 }
 
