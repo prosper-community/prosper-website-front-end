@@ -70,12 +70,13 @@
       dataType: 'json',
       success: function() {
         $form.fadeOut();
-        var $formHeader = $('.l-join-content h2');
-        $formHeader.html('Request Submitted.').addClass('success');
-        $form.append('<p>You should expect to hear from a team member within 48 hours.');
+        var $joinContent = $('.l-join-content');
+        $joinContent.html('<h2>Request Submitted.</h2>');
+        $joinContent.find('h2').addClass('success');
+        $joinContent.append('<p>You should expect to hear from a team member within 48 hours.</p>');
       },
       error: function(data) {
-        $form.append('<p class="error">sorry! we\'ve had a server error. please try again later.');
+        $form.append('<p class="error">sorry! we\'ve had a server error. please email <a href="mailto:admin@solvetherefugeecrisis.com">admin@solvetherefugeecrisis.com</a>.</p>');
         console.log(data);
       }
     });
