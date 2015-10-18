@@ -44,9 +44,9 @@
   // GA Event when form is submitted
   $('.l-join-form').submit(function(){
     ga('send', {
-      'hitType' : 'event',
-      'eventCategory' : 'Invite',
-      'eventAction' : 'Submit'
+      'hitType': 'event',
+      'eventCategory': 'Invite',
+      'eventAction': 'Submit'
     });
   });
 
