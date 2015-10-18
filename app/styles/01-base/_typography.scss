@@ -56,8 +56,12 @@ body, p, li {
   line-height: 1.6;
 }
 
-p, li {
+p {
   margin-bottom: $base-leading;
+}
+
+li {
+  margin-bottom: $base-leading/2;
 }
 
 figure {
