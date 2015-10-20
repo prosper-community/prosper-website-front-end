@@ -41,14 +41,14 @@
     }
   }());
 
-  // GA Event when form is submitted
-  $('.l-join-form').submit(function(){
-    ga('send', {
-      'hitType': 'event',
-      'eventCategory': 'Invite',
-      'eventAction': 'Submit'
-    });
-  });
+  // // GA Event when form is submitted
+  // $('.l-join-form').submit(function(){
+  //   ga('send', {
+  //     'hitType': 'event',
+  //     'eventCategory': 'Invite',
+  //     'eventAction': 'Submit'
+  //   });
+  // });
 
   // Form Handler
   $('input[type="submit"]').click(function(e){
