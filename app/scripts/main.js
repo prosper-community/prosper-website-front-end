@@ -41,15 +41,6 @@
     }
   }());
 
-  // // GA Event when form is submitted
-  // $('.l-join-form').submit(function(){
-  //   ga('send', {
-  //     'hitType': 'event',
-  //     'eventCategory': 'Invite',
-  //     'eventAction': 'Submit'
-  //   });
-  // });
-
   // Form Handler
   $('input[type="submit"]').click(function(e){
     e.preventDefault();
@@ -73,7 +64,7 @@
         var $joinContent = $('.l-join-content');
         $joinContent.html('<h2>Request Submitted.</h2>');
         $joinContent.find('h2').addClass('success');
-        $joinContent.append('<p>You should expect to hear from a team member within 48 hours.</p>');
+        $joinContent.append('<p>A team member will email you within 48 hours to schedule an interview.</p>');
       },
       error: function(data) {
         $form.append('<p class="error">sorry! we\'ve had a server error. please email <a href="mailto:admin@solvetherefugeecrisis.com">admin@solvetherefugeecrisis.com</a>.</p>');
