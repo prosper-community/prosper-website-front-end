@@ -13,7 +13,7 @@
 
   (function mobileNavHandler() {
     var windowWidth = $(window).width();
-    var homeNavBreak = 620;
+    var homeNavBreak = 762;
 
     // toggle mobile nav when document loads
     toggleMobileNav(windowWidth, homeNavBreak);

@@ -18,26 +18,22 @@
   }
 }
 
-.l-problem-wrapper {
+.l-situation-wrapper, .l-ongoing-solutions-wrapper {
   background-color: $secondary-color;
 }
 
-.l-problem-content {
+.l-situation-content, .l-help-content, .l-ongoing-solutions-content {
   @include single-column;
   h2 {
     text-align: center;
   }
 }
 
-.l-problem-callout {
-  color: $primary-color;
+.l-problem-wrapper {
+  border-bottom: 1px solid $secondary-color;
 }
 
-.l-solution-wrapper {
-
-}
-
-.l-solution-content {
+.l-solution-content, .l-problem-content {
   @include single-column;
   h2 {
     text-align: center;
@@ -57,7 +53,6 @@
     clear: both;
   }
 }
-
 
 // Join
 .l-join-wrapper {
