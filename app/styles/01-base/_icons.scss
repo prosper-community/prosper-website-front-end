@@ -1,0 +1,26 @@
+%checkbox {
+  position: relative;
+  &:before {
+    position: absolute;
+    margin-left: .4em;
+    display: inline;
+    content: '';
+    bottom: .16em;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.i-checkbox-checked {
+  @extend %checkbox;
+  &:before {
+    background-image: url('../images/checkbox-checked.svg');
+  }
+}
+
+.i-checkbox-unchecked {
+  @extend %checkbox;
+  &:before {
+    background-image: url('../images/checkbox-unchecked.svg');
+  }
+}
