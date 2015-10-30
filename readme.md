@@ -2,13 +2,15 @@
 This is a public repository for the STRC landing page. The front-end of the website is made from the [Generator Gulp Webapp](https://github.com/yeoman/generator-gulp-webapp). If you want to learn more about the website's scaffold, read the Gulp Webapp documentation first.
 
 ## Getting Started
-In order to get this website running locally on your machine, you are going to need:
+### Requirements
 
 - Git (>2.2.2)
 - Node JS (>=0.12.0)
 - NPM (>=3.3.3)
 - Gulp (^3.9.0)
 - Terminal / iTerm (CLI)
+
+### Instructions
 
 1. First, open up your CLI and clone the repository to your local machine:
 
