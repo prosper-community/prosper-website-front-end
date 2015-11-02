@@ -67,7 +67,7 @@
         $joinContent.append('<p>A team member will email you within 48 hours to schedule an interview.</p>');
       },
       error: function(data) {
-        $form.append('<p class="error">sorry! we\'ve had a server error. please email <a href="mailto:admin@solvetherefugeecrisis.com">admin@solvetherefugeecrisis.com</a>.</p>');
+        $form.append('<p class="error">' + data.responseJSON.error + '</p>');
         console.log(data);
       }
     });
