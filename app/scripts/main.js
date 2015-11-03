@@ -51,12 +51,12 @@
     var $form = $('.l-join-form');
 
     $.ajax({
-      url: '//formspree.io/admin@solvetherefugeecrisis.com',
+      url: 'https://docs.google.com/forms/d/1w-8-OnbACv5M7c4KEHJtjXnDGwiPj_vnf7Lw9ereVow/formResponse',
       method: 'POST',
       data: {
-        sender: $sender,
-        email: $email,
-        message: $message
+        'entry.372718999': $sender,
+        'entry.56111174': $email,
+        'entry.1562080588': $message
       },
       dataType: 'json',
       success: function() {
