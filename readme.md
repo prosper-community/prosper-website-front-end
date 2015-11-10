@@ -46,9 +46,11 @@ At that point you should see the site running on your local machine.
 
 #### 2. Install [Node JS for Windows](nodejs.org). Restart the computer after installation.
 
-#### 3. Update Node.js to the latest version by running 'npm install npm -g'.
+#### 3. Update Node.js to the latest version:
+'npm install npm -g'
 
-#### 4. Install bower by running 'npm install -g bower'.
+#### 4. Install bower:
+'npm install -g bower'.
 
 #### 5. Change directories into 'solve-the-refugee-crisis' and follow steps 3-5 in the previous section.
 
