@@ -111,55 +111,17 @@ block content
           strong To create a global community of digital workers collaborating to solve the refugee crisis&mdash;one small problem at a time.
           
         form.l-join-form(action='https://docs.google.com/forms/d/1w-8-OnbACv5M7c4KEHJtjXnDGwiPj_vnf7Lw9ereVow/formResponse', method='POST')
-          label(for='your-name') name
+          label(for='name') name
             span.required *
-            input#your-name(type='text' name='entry.372718999', placeholder='Jane Smith', required)
-          label(for='your-email') email
+            input#name(type='text' name='entry.372718999', placeholder='Jane Smith', required)
+          label(for='email') email
             span.required *
-            input#your-email(type='email', name='entry.56111174', placeholder='name@address.com', required)
-          label(for='your-organization') organization
-            input#your-organization(type='text', name='entry.839901740', placeholder='Company Y')
-          label(for='your-role') role
-            input#your-role(type='text', name='entry.790371713', placeholder='UX Designer')
-          label(for='your-reason') why you want to join
+            input#email(type='email', name='entry.56111174', placeholder='name@address.com', required)
+          label(for='organization') organization
+            input#organization(type='text', name='entry.839901740', placeholder='Company Y')
+          label(for='role') role
+            input#role(type='text', name='entry.790371713', placeholder='UX Designer')
+          label(for='reason') why you want to join
             span.required *
-            textarea#your-reason(name='entry.1562080588', placeholder="Please explain why you would like to join our team and why you want to help solve the refugee crisis...", required)
+            textarea#reason(name='entry.1562080588', placeholder="Please explain why you would like to join our team and why you want to help solve the refugee crisis...", required)
           input(type='submit' value='submit' class="button")
-
-block page-script
-  script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js")
-  script.
-    (function($){
-      var $form = $('.l-join-form');
-
-      $form.validate({
-        rules: {
-          your-name: {
-            required: true,
-            minlength: 2,
-            maxlength: 25
-          },
-          your-email: {
-            required: true,
-            email: true
-          },
-          your-reason: {
-            required: true,
-            minlength: 2,
-            maxlength: 5000
-          }
-        },
-        messages: {
-          your-name: "What is your name?",
-          your-email: {
-            required: "What is your email?",
-            email: "Please enter a valid email address."
-          },
-          your-reason: {
-            required: "Please include a short message",
-            minlength: "If you would please include a short message, I will be able to get back to you with more information.",
-            maxlength: "Please write a message less than 5,000 characters."
-          }
-        }
-      })
-    })
