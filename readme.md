@@ -12,23 +12,25 @@ This is a public repository for the STRC landing page. The front-end of the webs
 
 ### Instructions
 
-#### 1. First, open up your CLI and clone the repository to your local machine:
+#### 1. Fork this repository
 
-`git clone git@github.com:johnellison/solve-the-refugee-crisis.git`
+#### 2. Clone your forked repository:
 
-#### 2. Change directories into 'solve-the-refugee-crisis':
+`git clone [add-your-forked-repository-SSH-url-here]`
+
+#### 3. Change directories into 'solve-the-refugee-crisis':
 
 `cd solve-the-refugee-crisis`
 
-#### 3. Then, install all the node modules (this may take a while):
+#### 4. Then, install all the node modules (this may take a while):
 
 `sudo npm install`
 
-#### 4. Install all the bower components (this may take a while):
+#### 5. Install all the bower components (this may take a while):
 
 `bower install`
 
-#### 5. Run the gulp 'serve' task:
+#### 6. Run the gulp 'serve' task:
 
 `gulp serve`
 
