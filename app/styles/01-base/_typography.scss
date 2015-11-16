@@ -29,6 +29,9 @@ h2 {
 
 h3 {
   @include ms-respond(font-size, 3);
+  @include smcps;
+  border-bottom: 1px solid $primary-color;
+  width: max-content;
 }
 
 h4 {
@@ -70,6 +73,7 @@ figure {
 
 img {
   max-width: 100%;
+  margin-bottom: $base-leading;
 }
 
 a {
@@ -106,13 +110,4 @@ p.drop-cap:first-letter {
   padding-right: .1em;
   margin-top: -.06em;
   font-weight: 700;
-}
-
-.success {
-  color: $primary-color;
-}
-
-.error {
-  font-weight: 700;
-  color: $error-color;
 }

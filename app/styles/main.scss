@@ -29,11 +29,11 @@ html, body {
         '01-base/mixins',
         '01-base/typography',
         '01-base/icons',
+        '01-base/global',
         '01-base/forms';
 
 // 02 Layout
-@import '02-layout/l-index',
-        '02-layout/l-legal-docs',
+@import '02-layout/l-default',
         '02-layout/l-header',
         '02-layout/l-footer';
 

@@ -5,15 +5,6 @@
   letter-spacing: .08em;
 }
 
-@mixin single-column {
-  width: 96%;
-  padding: 8vh 2vh;
-  overflow: hidden;
-  margin: 0 auto;
-  max-width: 36em;
-  box-sizing: border-box;
-}
-
 @mixin callout-bg($color) {
   position: relative;
   &:before {

@@ -1,4 +1,13 @@
-// Layout styles for the index page here
+// Styles for default layout
+
+%l-inner-column-content {
+  width: 96%;
+  padding: 8vh 2vh;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 36em;
+  box-sizing: border-box;
+}
 
 .l-welcome-wrapper {
   display: flex;
@@ -6,6 +15,7 @@
 }
 
 .l-welcome-header {
+  width: 100%;
   text-align: center;
   justify-content: center;
   padding: 14vh 2vw;
@@ -18,12 +28,13 @@
   }
 }
 
+// Index Page
 .l-situation-wrapper, .l-ongoing-solutions-wrapper {
   background-color: $secondary-color;
 }
 
 .l-situation-content, .l-help-content, .l-ongoing-solutions-content {
-  @include single-column;
+  @extend %l-inner-column-content;
   h2 {
     text-align: center;
   }
@@ -34,7 +45,7 @@
 }
 
 .l-solution-content, .l-problem-content {
-  @include single-column;
+  @extend %l-inner-column-content;
   h2 {
     text-align: center;
   }
@@ -54,14 +65,13 @@
   }
 }
 
-// Join
 .l-join-wrapper {
   background-color: $secondary-color;
   // padding-bottom: 5%;
 }
 
 .l-join-content {
-  @include single-column;
+  @extend %l-inner-column-content;
   h2 {
     margin: 0;
     &.success {
@@ -72,4 +82,13 @@
 
 .l-join-form {
   font-weight: 300;
+}
+
+// Playbook
+.l-playbook-wrapper {
+  background-color: $secondary-color;
+}
+
+.l-playbook-content {
+  @extend %l-inner-column-content;
 }
