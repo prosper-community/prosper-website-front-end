@@ -85,8 +85,14 @@
 }
 
 // Playbook
-.l-playbook-wrapper {
+
+.l-playbook-welcome-wrapper {
+  @extend .l-welcome-wrapper;
   background-color: $secondary-color;
+}
+
+.l-playbook-welcome-header {
+  @extend .l-welcome-header;
 }
 
 .l-playbook-content {

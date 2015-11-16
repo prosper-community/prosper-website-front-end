@@ -13,6 +13,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   margin-top: 0;
+  color: $header-font-color;
 }
 
 h1 {
@@ -53,6 +54,7 @@ hgroup {
 .subheader {
   font-style: italic;
   font-weight: 300;
+  color: $body-font-color;
 }
 
 body, p, li {

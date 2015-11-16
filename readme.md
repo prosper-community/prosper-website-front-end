@@ -10,7 +10,7 @@ This is a public repository for the STRC landing page. The front-end of the webs
 - Gulp (^3.9.0)
 - Terminal / iTerm (CLI)
 
-### Instructions
+### General Instructions
 
 #### 1. Fork this repository
 
@@ -36,15 +36,9 @@ This is a public repository for the STRC landing page. The front-end of the webs
 
 At that point you should see the site running on your local machine.
 
-### Installing on Windows
+### Windows-Specific Instructions
 
-### Requirements
-
-- Git for Windows
-
-### Instructions
-
-#### 1. First, open up Git Shell and clone the repository as shown above.
+#### 1. Open up Git Shell and clone the repository as shown above.
 
 #### 2. Install [Node JS for Windows](nodejs.org). Restart the computer after installation.
 
@@ -56,11 +50,13 @@ At that point you should see the site running on your local machine.
 
 #### 5. Change directories into 'solve-the-refugee-crisis' and follow steps 3-5 in the previous section.
 
-##### Reference: [Setting Up Bower and Gulp in Windows](https://ruleoftech.com/2015/setting-up-bower-and-gulp-in-windows)
+#### Reference: [Setting Up Bower and Gulp in Windows](https://ruleoftech.com/2015/setting-up-bower-and-gulp-in-windows)
 
-### Installing on Vagrant running on Windows
+### Vagrant-Specific Instructions
 
-On a Vagrant VM, the Linux procedure described above will not work. Instead, try following the steps described in this [blog post](http://www.sureshjoshi.com/development/installing-nodejs-vagrant-windows) or this [blog post](http://jmfeurprier.com/2015/10/02/how-to-install-node-js-with-ubuntu-and-vagrant-in-a-synced-folder).  
+On a Vagrant VM, the Linux procedure described above will not work. Instead, try following the steps described in this [blog post](http://www.sureshjoshi.com/development/installing-nodejs-vagrant-windows) or this [blog post](http://jmfeurprier.com/2015/10/02/how-to-install-node-js-with-ubuntu-and-vagrant-in-a-synced-folder).
+
+--- 
 
 ## Making Contributions
 Anyone who wants to make changes to the STRC website may fork this repository and open a pull request. Please provide detailed commit logs that describe the changes you propose, along with a concise description of your pull requests.
