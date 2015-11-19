@@ -10,7 +10,7 @@ footer.l-site-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    @media all and (min-width: $footerBreak1) {
+    @media all and (min-width: $footerBreak) {
       justify-content: space-around;
     }
   }
