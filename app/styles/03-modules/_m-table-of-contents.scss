@@ -1,0 +1,12 @@
+ul.m-table-of-contents {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+  li h6 {
+    margin: 0;
+  }
+  li a h6 {
+    color: $primary-color;
+  }
+}
