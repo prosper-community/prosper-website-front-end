@@ -2,7 +2,7 @@ footer.l-site-footer {
   z-index: 99;
   position: relative;
   min-height: 3.2em;
-  color: white;
+  color: $white;
   .l-footer-columns-wrapper {
     background: $header-font-color;
     margin: 0 auto;
@@ -21,6 +21,7 @@ footer.l-site-footer {
       margin-right: 0;
     }
     h4 {
+      color: $white;
       margin-top: 0;
     }
   }
