@@ -41,38 +41,4 @@
     }
   }());
 
-  // Form Validation
-  var $form = $('.l-join-form');
-
-  $form.validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2,
-        maxlength: 25
-      },
-      email: {
-        required: true,
-        email: true
-      },
-      reason: {
-        required: true,
-        minlength: 2,
-        maxlength: 5000
-      }
-    },
-    messages: {
-      name: 'What is your name?',
-      email: {
-        required: 'What is your email?',
-        email: 'Please enter a valid email address.'
-      },
-      reason: {
-        required: 'Please include a short message',
-        minlength: 'If you would please include a short message, I will be able to get back to you with more information.',
-        maxlength: 'Please write a message less than 5,000 characters.'
-      }
-    }
-  });
-
 }(jQuery));
