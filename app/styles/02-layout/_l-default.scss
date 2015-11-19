@@ -98,3 +98,8 @@
 .l-playbook-content, .l-playbook-header-content {
   @extend %l-inner-column-content;
 }
+
+// Legal Docs
+.l-legal-docs-content {
+  @extend %l-inner-column-content;
+}
