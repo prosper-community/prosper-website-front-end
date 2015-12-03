@@ -1,4 +1,5 @@
 {
+  "name": "prosper",
   "private": true,
   "engines": {
     "node": ">=0.12.0"
