@@ -128,31 +128,37 @@ block page-script
     (function($){
       // Form Validation
       var $form = $('.l-join-form');
-      
+
       $form.validate({
         rules: {
-          name: {
+          // Name field
+          'entry.372718999': {
             required: true,
             minlength: 2,
             maxlength: 25
           },
-          email: {
+          // Email field
+          'entry.56111174': {
             required: true,
             email: true
           },
-          reason: {
+          // Reason field
+          'entry.1562080588': {
             required: true,
             minlength: 2,
             maxlength: 5000
           }
         },
         messages: {
-          name: 'What is your name?',
-          email: {
+          // Name field
+          'entry.372718999': 'What is your name?',
+          // Email field
+          'entry.56111174': {
             required: 'What is your email?',
             email: 'Please enter a valid email address.'
           },
-          reason: {
+          // Reason field
+          'entry.1562080588': {
             required: 'Please include a short message',
             minlength: 'If you would please include a short message, I will be able to get back to you with more information.',
             maxlength: 'Please write a message less than 5,000 characters.'
