@@ -4,8 +4,6 @@ block vars
   - var page = { }
   - page.title = 'Home | ' + site.title
   - page.description = site.description
-  //- - page.url = site.domain
-  //- - page.image = site.domain + 'images/sophie-ellison-bg-medium.jpg'
 
 block content
   article.main-content(role='main')
@@ -39,8 +37,8 @@ block content
           a(href="https://slack.com") Slack
           |  to communicate in real-time and we are growing fast.
           
-        p If you're interested in starting an STRC meetup in your city, 
-          a(href="mailto:john@solvetherefugeecrisis.com?subject=STRC%20Meetup") send us a message.
+        p If you're interested in starting an Prosper meetup in your city, 
+          a(href="mailto:john@solvetherefugeecrisis.com?subject=Prosper%20Meetup") send us a message.
           
         h3 discover problems
           i.i-checkbox-checked
@@ -49,30 +47,27 @@ block content
           |  are facing amidst the crisis. We are interviewing founders and workers in organizations all over the world and discussing the problems we discover with our team on the Slack channel.
             
         h3 pick a first problem
-          i.i-checkbox-unchecked
-        p Once we are confident that we have documented a sufficient range of problems and have seen good opportunities to help, we'd like to sift through our research to choose a specific problem to solve that matches our criteria:
-        
-        ul
-          li 
-            strong Solvable 
-            | with design & technology
-          li Would allow prototyping & testing 
-            strong unobtrusive 
-            | to critical aid
-          li Solutions could be 
-            strong measurable
+          i.i-checkbox-checked
+        p We have chosen our first problem to solve:
+        p Projects doing meaningful work within the refugee crisis are scattered all across the web. This causes a major issue:
+        ul 
+          li This makes it difficult for refugees, volunteers, and funders to find exactly what they are looking for.
         
         h3 solve the problem
           i.i-checkbox-unchecked
-        p We are going to colocate with our parter organization and apply a collaborative human-centered design process to prototype a solution. With a working prototype, we will test and measure its effectiveness and iterate into production.
+        p We are currently working on a solution to this problem. We have a prototype up and running:
+          a(href="http://refugeeprojects.com/") RefugeeProjects.com
+          |  to seed an initial database of meaningful projects across the refugee crisis.
+        p If you're interested to see how the project is progressing, you can take a look at our Trello board:
+          a(href="https://trello.com/b/CfwoEGLi/prosper-refugeeprojects") Prosper RefugeeProjects
         
         h3 document process
           i.i-checkbox-unchecked
-        p As we solve the problem, we are going to document our process so that we can turn it into an open-source field guide for other teams who want to solve a specific problem of the refugee crisis.
+        p As we solve the problem, we are documenting our process so that we can empower other teams who want to solve a specific problem of the refugee crisis.
         
-        h3 empower teams
+        h3 launch apprenticeship
           i.i-checkbox-unchecked
-        p With a working solution, field guide and body of documented problems&mdash;we want to empower other self-forming teams to replicate our process and solve another problem of the refugee crisis.
+        p In February we plan to launch the first digital apprenticeship for refugees.
         
         p Our growing community of expert mentors can support the teams and the team members. We can provide teams with the relationships they need to succeed and ultimately work towards a better future&mdash;together... 
 
@@ -86,11 +81,11 @@ block content
           li
             a(href="http://lale.help/") Lale — Complete task management system for volunteer communities
           li
-            a(href="http://myrefuge.world/") MyRefuge — Airbnb for refuge seekers and providers
-          li
             a(href="http://www.wefugee.org/k") Wefugee — Q&A For refugees
           li
             a(href="http://refugeemaps.org/") RefugeeMaps - Mapping grassroot refugee aid across the world
+          li
+            a(href="http://refugeesmap.com/") Refugee Crisis Map
              
     section#help.l-help-wrapper
       .l-help-content
@@ -109,10 +104,9 @@ block content
     section#join.l-join-wrapper
       .l-join-content
         h2 Request an Invite
-        p If you are a skilled profession interested in working to help the solve some of the problems of refugee crisis, please provide us with your details below. 
-        p Upon receiving your request, we will email you to schedule an interview. Interviewing each potential team member ensures that we continue toward our purpose: 
-        p
-          strong To create a global community of digital workers collaborating to help solve the refugee crisis&mdash;one small problem at a time.
+        p If you are interested in collaborating with our community to help refugees prosper in Europe, please provide us with your details below. 
+        
+        p Upon receiving your request, we will email you to schedule an interview. Interviewing each potential team member ensures that we continue toward our purpose.
           
         form.l-join-form(action='https://docs.google.com/forms/d/1w-8-OnbACv5M7c4KEHJtjXnDGwiPj_vnf7Lw9ereVow/formResponse', method='POST')
           label(for='name') name
@@ -158,17 +152,17 @@ block page-script
         },
         messages: {
           // Name field
-          'entry.372718999': 'What is your name?',
+          'entry.372718999': 'what is your name?',
           // Email field
           'entry.56111174': {
-            required: 'What is your email?',
-            email: 'Please enter a valid email address.'
+            required: 'what is your email?',
+            email: 'please enter a valid email address.'
           },
           // Reason field
           'entry.1562080588': {
-            required: 'Please include a short message',
-            minlength: 'If you would please include a short message, I will be able to get back to you with more information.',
-            maxlength: 'Please write a message less than 5,000 characters.'
+            required: 'please include a short message',
+            minlength: 'if you would please include a short message, I will be able to get back to you with more information.',
+            maxlength: 'please write a message less than 5,000 characters.'
           }
         }
       });

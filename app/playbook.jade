@@ -1,11 +1,16 @@
 extends views/layouts/default
+
+block vars
+  - var page = { }
+  - page.title = 'Playbook | ' + site.title
+  - page.description = 'A living document written by the Prosper community'
   
 block content
   article.main-content(role='main')
     .l-playbook-welcome-wrapper
       hgroup.l-playbook-welcome-header
         h1 Playbook
-        h2.subheader A living document written by the STRC team
+        h2.subheader= page.description
 
   header.l-playbook-header-content
     h2 Table of Contents
@@ -18,16 +23,16 @@ block content
       h2#introduction Introduction
       p This playbook details how we do what we do and 
         strong why 
-        | . From volunteer recruiting to new member onboarding, and from decision making to conflict resolution&mdash;this Playbook expresses our core values, and declares our critical assumptions. It is a central hub for STRC as individuals, the organization as a whole, and the community we aim to serve.
+        | . From volunteer recruiting to new member onboarding, and from decision making to conflict resolution&mdash;this Playbook expresses our core values, and declares our critical assumptions. It is a central hub for Prosper as individuals, the organization as a whole, and the community we aim to serve.
       
       h2#values Values
       
       h3 purpose
-      p At STRC, purpose is at the heart of everything we do. It is constantly evolving and reflects each individual as well as the organization as a whole. We express our purpose through our actions, in our writing, and in our lives. Here is STRC's current expressed purpose: 
+      p At Prosper, purpose is at the heart of everything we do. It is constantly evolving and reflects each individual as well as the organization as a whole. We express our purpose through our actions, in our writing, and in our lives. Here is Prosper's current expressed purpose: 
         strong To create a community of digital workers collaborating to help solve the refugee crisis&mdash;one small problem at a time.
         
       h3 people
-      p We are a people-first organization. STRC is a community of individuals working towards a shared vision, supported by a shared purpose, and motivated by shared values. When making decisions at STRC&mdash;no matter how big or small&mdash;people are the top priority: 
+      p We are a people-first organization. Prosper is a community of individuals working towards a shared vision, supported by a shared purpose, and motivated by shared values. When making decisions at Prosper&mdash;no matter how big or small&mdash;people are the top priority: 
         ul
           li What are the needs of the people we aim to serve?
           li How are we equipped to help serve their needs?
@@ -47,20 +52,20 @@ block content
       p We invest a lot of money and attention into how decisions are made and how conflict is resolved. That investment thrives in the trust we place in one another.
       
       h3 learning
-      p At STRC, we believe that everyone has something to teach and something to share. Alone we can do nothing, but together, nothing is impossible. 
+      p At Prosper, we believe that everyone has something to teach and something to share. Alone we can do nothing, but together, nothing is impossible. 
       
-      p Fostering a healthy and constructive learning environment is crucial to our work in the refugee crisis. The problems we face are complex and immense. These problems require radical collaboration where the intelligence of the whole organization takes hold. Learning new skills, new communication methods, and new tools is an ongoing process at STRC.
+      p Fostering a healthy and constructive learning environment is crucial to our work in the refugee crisis. The problems we face are complex and immense. These problems require radical collaboration where the intelligence of the whole organization takes hold. Learning new skills, new communication methods, and new tools is an ongoing process at Prosper.
       
       p We want each member of our team to learn something new every single day and to share that learning with the rest of the team and with the community.
       
       h2#new-team-members New Team Members
-      p Whether you're joining as a volunteer, paid staff member, an advisor or an investor&mdash;we focus a lot of our attention in how we attract and welcome new people to the team. For some, the principles, processes and structures of STRC are unfamiliar and can even be uncomfortable. We acknowledge this reality and want to do our best to help you become a confident contributing member of our community&mdash;no matter what roles you play or what skills you offer. 
+      p Whether you're joining as a volunteer, paid staff member, an advisor or an investor&mdash;we focus a lot of our attention in how we attract and welcome new people to the team. For some, the principles, processes and structures of Prosper are unfamiliar and can even be uncomfortable. We acknowledge this reality and want to do our best to help you become a confident contributing member of our community&mdash;no matter what roles you play or what skills you offer. 
       
       p If anything seems confusing, doesn't feel right, or could be improved&mdash;please voice your concerns however you feel comfortable. We are constantly looking to improve. Communication is the calibrating force of all our efforts.
       
       p We have a New Member 
         strong task force
-        | dedicated to helping new team members join STRC. It is comprised of three roles:
+        | dedicated to helping new team members join Prosper. It is comprised of three roles:
         
       ul
         li Recruit
@@ -68,11 +73,11 @@ block content
         li Onboard
         
       p If you are looking to contribute to the New Member task force, check out the Trello board 
-        a(href="https://trello.com/b/iQgwzyvb/strc-taskforce-new-team-members") STRC Taskforce: New Members
+        a(href="https://trello.com/b/iQgwzyvb/Prosper-taskforce-new-team-members") Prosper Taskforce: New Members
         | .
       
       h3 recruit
-      p The recruiting task force is responsible for creating shared understanding about STRC's purpose, vision and values. This is all about creating and maintaining relationships with passionate professionals who share our purpose. If anyone is attracted by our collective journey they are welcome to contact an STRC member or request an invite from 
+      p The recruiting task force is responsible for creating shared understanding about Prosper's purpose, vision and values. This is all about creating and maintaining relationships with passionate professionals who share our purpose. If anyone is attracted by our collective journey they are welcome to contact an Prosper member or request an invite from 
         a(href="/") our website.
       
       h3 assess
@@ -80,51 +85,51 @@ block content
       ul
         li Does this person's individual purpose fit with our organizational purpose?
         li What is their story?
-        li Why do they want to join STRC?
+        li Why do they want to join Prosper?
         li Do they exhibit humility and a desire to learn?
         li What kind of weekly time commitment can they offer?
       
       p The assessment process tends to look something like this:
       
-      img(src="images/new-team-member-assessment-process.jpg", alt="the typical process of assessing a new STRC team member")
+      img(src="images/new-team-member-assessment-process.jpg", alt="the typical process of assessing a new Prosper team member")
       
       h3 onboard
-      p When a new person decides to join STRC, it is important that we provide them with the information, tools and mindsets necessary to become a contributing member to the team. One of the roles of our  
+      p When a new person decides to join Prosper, it is important that we provide them with the information, tools and mindsets necessary to become a contributing member to the team. One of the roles of our  
         a(href="/playbook.html") Playbook 
-        | is to centralize all the information necessary for a new team member to get up to speed with contributing at STRC. 
-      p The role of onboarding is to add new team members to our tools and provide support with becoming a contributing member to STRC. Onboarding tends to look something like this:
+        | is to centralize all the information necessary for a new team member to get up to speed with contributing at Prosper. 
+      p The role of onboarding is to add new team members to our tools and provide support with becoming a contributing member to Prosper. Onboarding tends to look something like this:
         
-      img(src="images/new-team-member-onboarding-process.jpg", alt="the typical process of onboarding a new STRC team member")
+      img(src="images/new-team-member-onboarding-process.jpg", alt="the typical process of onboarding a new Prosper team member")
       
       h4 Add New Member to Tools
-      p Here is a typical process for adding new team members to the tools we use at STRC:
+      p Here is a typical process for adding new team members to the tools we use at Prosper:
       ul
         li Invite to join our 
           a(href="https://solvetherefugeecrisis.slack.com/messages/general/") Slack Team
         li Add to 
-          a(href="https://trello.com/strcteam/members") STRC Team on Trello
+          a(href="https://trello.com/Prosperteam/members") Prosper Team on Trello
         li Share the 
-          a(href="https://drive.google.com/open?id=0B4IfPBq2PFbCUGs0ZkNXRzJPSXM") STRC Docs
+          a(href="https://drive.google.com/open?id=0B4IfPBq2PFbCUGs0ZkNXRzJPSXM") Prosper Docs
           |  folder on Google Drive
         li Invite to join the 
-          a(href="https://github.com/organizations/solve-the-refugee-crisis/invite") STRC organization on Github
+          a(href="https://github.com/organizations/solve-the-refugee-crisis/invite") Prosper organization on Github
       
       h4 Email Links & Offer Help
       p We provide a simple 
-        a(href="https://drive.google.com/open?id=13x4RUSB9FsO45hkHfgHrBgwLupXXPYVK5NHDPJ6FNxo") STRC Onboarding Email Template
+        a(href="https://drive.google.com/open?id=13x4RUSB9FsO45hkHfgHrBgwLupXXPYVK5NHDPJ6FNxo") Prosper Onboarding Email Template
         |  to make onboarding new team members easier and more consistent.
       
       h3 contributing
-      p Once a team member has been onboarded onto STRC and is up and running with all the tools necessary to contribute, they're asked to introduce themselves to the team on Slack and offer their services to any of the existing 
+      p Once a team member has been onboarded onto Prosper and is up and running with all the tools necessary to contribute, they're asked to introduce themselves to the team on Slack and offer their services to any of the existing 
         strong projects 
         | and/or 
         strong task forces
         | .
-      p STRC team members work in pairs to accomplish any given project task. Working in pairs facilitates learning and maintains transparency and accountability. Given most STRC team members are volunteers who have full-time jobs, it also ensures that the task will be completed in a timely manner.
+      p Prosper team members work in pairs to accomplish any given project task. Working in pairs facilitates learning and maintains transparency and accountability. Given most Prosper team members are volunteers who have full-time jobs, it also ensures that the task will be completed in a timely manner.
       p Whenever a task is assigned to a pair, we also set reasonable task deadlines. We want people to maintain a healthy work-life balance and also to complete tasks efficiently.
       
       h2#time Time
-      p Volunteers make a specific time commitment to STRC in regards to:
+      p Volunteers make a specific time commitment to Prosper in regards to:
       ul
         li how much 
           strong time per week 
@@ -139,12 +144,12 @@ block content
       
       p Knowing how many 
         strong months 
-        | a team member is with us helps set expectations with project teams and task forces. It also allows for a clear and solid resolution to each person's involvement with STRC. 
+        | a team member is with us helps set expectations with project teams and task forces. It also allows for a clear and solid resolution to each person's involvement with Prosper. 
       
       p At the end of each volunteer's commitment, we ask them whether they'd like to commit to another chapter with us or if we can celebrate their involvement and help them move onto their next destination.
       
       h3 80/20 principle
-      p We encourage STRC team members to invest their time as follows:
+      p We encourage Prosper team members to invest their time as follows:
       ul
         li 80% on 
           strong projects
@@ -154,7 +159,7 @@ block content
       img(src="images/80-20-principle.jpg", alt="the 80/20 principle at solve the refugee crisis")
       
       h2#communication Communication
-      p At STRC we place a lot of attention on communication. Because of the complexities that we face as an organization, our ability to communicate is integral to our success. We like to define several explicit communication protocols when it comes to 
+      p At Prosper we place a lot of attention on communication. Because of the complexities that we face as an organization, our ability to communicate is integral to our success. We like to define several explicit communication protocols when it comes to 
         strong decision making 
         | and 
         strong conflict resolution
@@ -167,7 +172,7 @@ block content
         
       p The advice process is simple: Any employee can make any decision within the organization provided they consult the advice of all potentially affected parties. This includes other employees, vendors, stakeholders, shareholders, the community and the environment.
       
-      p Failing to adhere to the advice process is one of the only behaviors that warrants dismissal from STRC. We trust our employees with great responsibility and we expect the advice process to be followed at all times. The advice process applies to everyone within the organization: volunteers, paid staff, founders, etc.
+      p Failing to adhere to the advice process is one of the only behaviors that warrants dismissal from Prosper. We trust our employees with great responsibility and we expect the advice process to be followed at all times. The advice process applies to everyone within the organization: volunteers, paid staff, founders, etc.
       
       h3 conflict resolution
       p Unlike other organizations who avoid conflict and have no formal processes for resolving conflict, we adhere to a strict conflict resolution procedure. Whatever the topic, the process starts with one person asking another to gain agreement:
@@ -175,15 +180,15 @@ block content
         li As a first step, the two people in conflict meet to try and resolve the situation privately. The initiator makes a clear request for a solution (not a judgement or a demand). The other person responds clearly to the request with either a "yes" or proposes another solution.
         li If the two people can't find a solution, they choose a colleague to help mediate the conflict.
         li If the mediation fails, a relevant group of colleagues is gathered to listen and help form agreement between the two conflicting parties.
-        li As a final effort, one of the founding members of STRC can be brought into the conversation to provide additional moral weight.
+        li As a final effort, one of the founding members of Prosper can be brought into the conversation to provide additional moral weight.
       
       h2#tools Tools
             
       h3 slack
       p We use Slack, a world-class team communication app, to speak to each other in real-time from across the globe. Slack is a very useful and versatile tool that allows us to group conversations into relevant channels and teams. It also provides a central place to share files. We connect Trello and Github to the 
-        a(href="https://solvetherefugeecrisis.slack.com/messages/general/") STRC Team on Slack
+        a(href="https://solvetherefugeecrisis.slack.com/messages/general/") Prosper Team on Slack
         | . For team members who have never used Slack before and want some guidance, watch 
-        a(href="http://quick.as/ral8hgryp") Getting Started with Slack on STRC.
+        a(href="http://quick.as/ral8hgryp") Getting Started with Slack on Prosper.
         
       h3 trello
       p We use Trello to manage projects. It is a simple tool that is built upon a few basic models:
@@ -193,16 +198,16 @@ block content
         li lists
         li cards
       
-      p We have a Trello board for each project at STRC. We use lists to structure our tasks under the 
+      p We have a Trello board for each project at Prosper. We use lists to structure our tasks under the 
         a(href="http://kanbanblog.com/explained/") Kanban 
         | management technique. We create one card for each task, and assign relevant team members to each card so we know who is responsible for each task in progress.
         
       p Each new team member should be added to the relevant 
-        a(href="https://trello.com/strcteam") STRC Trello boards.
+        a(href="https://trello.com/Prosperteam") Prosper Trello boards.
         |  If you've never used 
         a(href="https://trello.com/") Trello
         |  and want some guidance, watch 
-        a(href="http://quick.as/ljlksly1q") Getting Started with Trello on STRC.
+        a(href="http://quick.as/ljlksly1q") Getting Started with Trello on Prosper.
         
       h3 github
       p We use Github to collaborate on all of our code-centered projects. Our website and playbook are available as open-source projects on github: 
@@ -210,22 +215,22 @@ block content
         | . If you're looking to contribute, you'll want to get comfortable using Git and Github.
       
       h3 you can book me
-      p STRC has an account at 
+      p Prosper has an account at 
         a(href="https://youcanbook.me/") youcanbook.me 
         | that allows team members to easily schedule and reschedule meetings with internal and external parties. This is especially useful for scheduling interviews with potential team members.
         
       h3 lastpass
-      p STRC uses 
+      p Prosper uses 
         a(href="https://lastpass.com/") Lastpass
         |  to manage secure credentials like usernames and passwords.
       
       h2#community Community
-      p STRC is built on the power of human community. We operate in global (digital) and local (physical)  communities&mdash;this combination is integral to our organizational identity. The problems we propose to solve rely on strong local communities supporting people in need. These local communities are then supported by distributed digital communities across the globe.
+      p Prosper is built on the power of human community. We operate in global (digital) and local (physical)  communities&mdash;this combination is integral to our organizational identity. The problems we propose to solve rely on strong local communities supporting people in need. These local communities are then supported by distributed digital communities across the globe.
       p We believe that digital relationshiops should 
         strong enhance 
         | the power of in-person relationships&mdash;not replace them.
       h3 digital communities
-      p Here are a list of the digital communities that help support STRC:
+      p Here are a list of the digital communities that help support Prosper:
       ul
         li
           a(href="http://www.thefirehoseproject.com/") The Firehose Project
@@ -242,20 +247,20 @@ block content
         a(href="mailto:john@solvetherefugeecrisis.com?subject=Digital%20Community") send us a message.
       
       h3 local communities
-      p Here are a list of the local communities that help support STRC:
+      p Here are a list of the local communities that help support Prosper:
       ul
         li
-          a(href="http://www.meetup.com/Solve-The-Refugee-Crisis-Brighton/") STRC Brighton
-        li STRC Montbéliard (Coming Soon...)
-      p If you would like to organize an STRC Meetup in your local community, please see the 'Organizing a Local Meetup' section below. Please feel free to  
+          a(href="http://www.meetup.com/Solve-The-Refugee-Crisis-Brighton/") Prosper Brighton
+        li Prosper Montbéliard (Coming Soon...)
+      p If you would like to organize an Prosper Meetup in your local community, please see the 'Organizing a Local Meetup' section below. Please feel free to  
         a(href="mailto:john@solvetherefugeecrisis.com?subject=Local%20Community") contact us 
         | if you need support. Once you have a meetup group, we would be happy to add it to the list.
       
       h4 Organizing a Local Meetup
-      p These are meant to act as useful guidelines for organizing and facilitating a successful STRC meetup.
+      p These are meant to act as useful guidelines for organizing and facilitating a successful Prosper meetup.
       
       h5 purpose
-      p We carefully consider the purpose of each STRC meetup event. We have found that the best meetups occur when diverse groups of people come together under the umbrella of a shared purpose. How we articulate that purpose is crucial. It should be the seed from which all else grows.
+      p We carefully consider the purpose of each Prosper meetup event. We have found that the best meetups occur when diverse groups of people come together under the umbrella of a shared purpose. How we articulate that purpose is crucial. It should be the seed from which all else grows.
       
       h5 audience
       p Having a meetup that represents a diverse range of audiences tends to facilitate the most healthy conversations. Consider creating a list of target audiences. This could include:
@@ -295,7 +300,7 @@ block content
           a(href="http://scrumandkanban.co.uk/lean-coffee/") Lean Coffee Format
               
       h2#inspiration Inspiration
-      p STRC Playbook was inspired by 
+      p Prosper Playbook was inspired by 
         a(href="http://playbook.thoughtbot.com/") Thoughtbot's Playbook.
 
 block page-script
