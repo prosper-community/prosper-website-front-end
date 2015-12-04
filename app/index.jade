@@ -1,11 +1,18 @@
 extends views/layouts/default
 
+block vars
+  - var page = { }
+  - page.title = 'Home | ' + site.title
+  - page.description = site.description
+  //- - page.url = site.domain
+  //- - page.image = site.domain + 'images/sophie-ellison-bg-medium.jpg'
+
 block content
   article.main-content(role='main')
     .l-welcome-wrapper
       hgroup.l-welcome-header
           h1 Join The Team
-          h2.subheader We're a community of digital workers collaborating to help solve the refugee crisis&mdash;one small problem at a time...
+          h2.subheader= page.description
         
     section#situation.l-situation-wrapper
       .l-situation-content

@@ -1,8 +1,9 @@
 {
   "site": {
-    "title": "Refugee Community",
-    "description": "Refugee Community is a free online forum for people who want to take action and help refugees.",
-    "domain": "http://refugee.community/",
+    "title": "Prosper",
+    "description": "Prosper is a community of digital workers collaborating to help refugees prosper in Europe.",
+    "domain": "http://prosper.community/",
+    "slackUrl": "https://prosper-community.slack.com",
     "locale": "en_UK"
   }
 }

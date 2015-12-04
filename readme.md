@@ -1,5 +1,5 @@
-# STRC Landing Page
-This is a public repository for the STRC landing page. The front-end of the website is made from the [Generator Gulp Webapp](https://github.com/yeoman/generator-gulp-webapp). If you want to learn more about the website's scaffold, read the Gulp Webapp documentation first.
+# Prosper Landing Page
+This is a public repository for the prosper landing page. The front-end of the website is made from the [Generator Gulp Webapp](https://github.com/yeoman/generator-gulp-webapp). If you want to learn more about the website's scaffold, read the Gulp Webapp documentation first.
 
 ## Getting Started
 ### Requirements
@@ -56,10 +56,10 @@ At that point you should see the site running on your local machine.
 
 On a Vagrant VM, the Linux procedure described above will not work. Instead, try following the steps described in this [blog post](http://www.sureshjoshi.com/development/installing-nodejs-vagrant-windows) or this [blog post](http://jmfeurprier.com/2015/10/02/how-to-install-node-js-with-ubuntu-and-vagrant-in-a-synced-folder).
 
---- 
+---
 
 ## Making Contributions
-Anyone who wants to make changes to the STRC website may fork this repository and open a pull request. Please provide detailed commit logs that describe the changes you propose, along with a concise description of your pull requests.
+Anyone who wants to make changes to the prosper website may fork this repository and open a pull request. Please provide detailed commit logs that describe the changes you propose, along with a concise description of your pull requests.
 
  Pull requests are merged based upon the following criteria:
 
@@ -85,4 +85,4 @@ You should see a simple interface which demonstrations your passed and failed as
 ## Trello Board
 I've created a public trello board if anyone wants to help move this project forward they can assign themselves to a specific task and join the Refugee.Community Design & Development Team.
 
-[STRC — Website Trello Board](https://trello.com/b/yDgQXvDZ/strc-website)
+[prosper — Website Trello Board](https://trello.com/b/yDgQXvDZ/prosper-website)

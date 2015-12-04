@@ -10,6 +10,9 @@ const reload = browserSync.reload;
 
 gulp.task('views', () => {
   return gulp.src('app/*.jade')
+    .pipe($.data( () => {
+      return require('./app/data/site.json');
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}));
