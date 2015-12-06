@@ -8,6 +8,7 @@
   height: .3em;
   font-family: $sans-serif;
   h1.site-title, h2.menu-label {
+    font-weight: 700;
     @include ms-respond(font-size, 1);
     margin: -0.7em 0 0 0;
   }
@@ -18,7 +19,6 @@
     margin-left: .8em;
     .site-title-text {
       display: none;
-      font-weight: 100;
       @media all and (min-width: $homeNavBreak) {
         display: inline;
       }
@@ -27,7 +27,6 @@
       @media all and (min-width: $homeNavBreak) {
         display: none;
       }
-      font-weight: 300;
     }
   }
 
