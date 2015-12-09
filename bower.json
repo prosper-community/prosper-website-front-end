@@ -1,14 +1,26 @@
 {
-  "name": "landing-page",
-  "private": true,
+  "name": "foundation-ssg",
+  "version": "1.0.0",
+  "authors": [
+    "ZURB <foundation@zurb.com>"
+  ],
+  "description": "Static site generator for Foundation for Sites.",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "foundation-sites": "~6.0.0",
+    "motion-ui": "~1.1.0"
   },
+  "private": true,
   "devDependencies": {
-    "chai": "~3.3.0",
-    "mocha": "~2.3.2",
     "modular-scale": "~2.1.1",
-    "sass-burger": "~1.2.1",
-    "modularized-normalize-scss": "~3.0.3"
+    "jquery-validation": "jquery-validate#~1.14.0"
   }
 }

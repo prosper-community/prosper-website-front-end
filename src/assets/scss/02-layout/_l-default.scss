@@ -1,0 +1,105 @@
+// Styles for default layout
+
+%l-inner-column-content {
+  width: 96%;
+  padding: 8vh 2vh;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 36em;
+  box-sizing: border-box;
+}
+
+.l-welcome-wrapper {
+  display: flex;
+  min-height: 40vh;
+}
+
+.l-welcome-header {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 14vh 2vw;
+  margin-bottom: 0;
+  @media all and (min-width: 920px) {
+    padding: 14vh 14vw;
+  }
+  h2.subheader {
+    margin-bottom: 0;
+  }
+}
+
+// Index Page
+.l-situation-wrapper, .l-ongoing-solutions-wrapper {
+  background-color: $light-gray;
+}
+
+.l-situation-content, .l-help-content, .l-ongoing-solutions-content {
+  @extend %l-inner-column-content;
+  h2 {
+    text-align: center;
+  }
+}
+
+.l-problem-wrapper {
+  border-bottom: 1px solid $light-gray;
+}
+
+.l-solution-content, .l-problem-content {
+  @extend %l-inner-column-content;
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin-bottom: .4em;
+  }
+  img {
+    float: left;
+    margin: .8em .6em 0em .6em;
+  }
+  p {
+    clear: both;
+  }
+}
+
+.l-join-wrapper {
+  background-color: $light-gray;
+}
+
+.l-join-content {
+  @extend %l-inner-column-content;
+  h2 {
+    margin: 0;
+    &.success {
+      color: $primary-color;
+    }
+  }
+}
+
+.l-join-form {
+  font-weight: 300;
+}
+
+// Playbook
+
+.l-playbook-welcome-wrapper {
+  @extend .l-welcome-wrapper;
+  background-color: $light-gray;
+}
+
+.l-playbook-welcome-header {
+  @extend .l-welcome-header;
+}
+
+.l-playbook-content, .l-playbook-header-content {
+  @extend %l-inner-column-content;
+}
+
+.l-table-of-contents li a h6 {
+  margin: 0;
+  color: $primary-color;
+}
+
+// Legal Docs
+.l-legal-docs-content {
+  @extend %l-inner-column-content;
+}

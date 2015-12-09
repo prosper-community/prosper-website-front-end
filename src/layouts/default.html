@@ -1,0 +1,150 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Prosper is a community of digital creatives collaborating to help refugees prosper in Europe">
+    <meta name=google-site-verification content=cFLGbcupvfgjthmkBwDcVx_qEmPNHjvLv4oQdOZ0A3s>
+    <title>Prosper — A Digital Community Helping Refugees Prosper</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <!-- Google Analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-68984382-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Typekit -->
+    <script>
+      (function(d) {
+        var config = {
+            kitId: 'spa2sxo',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+  </head>
+  <body>
+
+    {{> header }}
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    {{> footer }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.5.5/jquery.validate.min.js"></script>
+    <!-- <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script> -->
+    <script src="{{root}}assets/js/app.js"></script>
+
+    {{#ifpage 'index'}}
+      <script>
+        (function($){
+          // Form Validation
+          var $form = $('.l-join-form');
+
+          $form.validate({
+            rules: {
+              // Name field
+              'entry.372718999': {
+                required: true,
+                minlength: 2,
+                maxlength: 25
+              },
+              // Email field
+              'entry.56111174': {
+                required: true,
+                email: true
+              },
+              // Reason field
+              'entry.1562080588': {
+                required: true,
+                minlength: 2,
+                maxlength: 5000
+              }
+            },
+            messages: {
+              // Name field
+              'entry.372718999': 'what is your name?',
+              // Email field
+              'entry.56111174': {
+                required: 'what is your email?',
+                email: 'please enter a valid email address.'
+              },
+              // Reason field
+              'entry.1562080588': {
+                required: 'please include a short message',
+                minlength: 'if you would please include a short message, I will be able to get back to you with more information.',
+                maxlength: 'please write a message less than 5,000 characters.'
+              }
+            }
+          });
+        }(jQuery));
+      </script>
+    {{/ifpage}}
+
+    {{#ifpage 'playbook'}}
+      <script>
+        (function($){
+          //- All h2 id's must come in the format of subject-heading-words
+          //- For it to work as a link in the table of contents
+          var $playbookH2s = $('.l-playbook-content h2');
+
+
+          //- Create list items for each h2 in array
+          for (var i = 0; i < $playbookH2s.length; i++) {
+            var h2Text = $($playbookH2s[i]).text();
+
+            //- Takes any text and removes spaces, capitals
+            function convertToInPageLink(text) {
+              return text.replace(/\s+/g, '-').toLowerCase();
+            }
+
+            //- Adds to the table of contents a link to each h2 in playbook
+            $('.l-table-of-contents').append(
+              $('<li>').append(
+                $('<a>').attr('href', '#' + convertToInPageLink(h2Text)).append('<h6>' + h2Text + '</h6>')
+            ));
+          }
+
+        }(jQuery));
+      </script>
+    {{/ifpage}}
+  </body>
+</html>
