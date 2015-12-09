@@ -1,5 +1,25 @@
 // Styles for default layout
 
+.l-content__section--bg {
+  background-color: $light-gray;
+}
+
+.l-content__section--wrapper {
+  @include grid-row;
+}
+
+.l-content__section {
+  padding: $base-leading*3 0;
+  @include grid-col(12);
+  // @media #{$medium-up} {
+  //   @include grid-col(7);
+  // }
+}
+
+.l-content__section--header {
+  text-align: center;
+}
+
 %l-inner-column-content {
   width: 96%;
   padding: 8vh 2vh;
@@ -86,7 +106,7 @@
 }
 
 .l-join-wrapper {
-  background-color: $light-gray;
+  // background-color: $light-gray;
 }
 
 .l-join-content {
