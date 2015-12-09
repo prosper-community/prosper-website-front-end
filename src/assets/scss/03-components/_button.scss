@@ -2,4 +2,12 @@
   font-weight: 700;
   font-size: 1.4rem;
   @include smcps;
+  &.secondary {
+    border: 1px solid $primary-color;
+    background: $white;
+    color: $body-font-color;
+    &:hover {
+      background: $primary-color;
+    }
+  }
 }

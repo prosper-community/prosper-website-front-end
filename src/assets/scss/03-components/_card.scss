@@ -1,0 +1,12 @@
+.card {
+  @include callout-base;
+  &> :first-child {
+    margin: 0 auto $base-leading/2 auto;
+  }
+  h3 {
+    text-align: center;
+  }
+  a.button {
+    float: right;
+  }
+}

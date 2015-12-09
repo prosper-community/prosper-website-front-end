@@ -29,6 +29,30 @@
 }
 
 // Index Page
+.l-academy-bg {
+  background-color: $light-gray;
+}
+
+.l-academy-wrapper {
+  @include grid-row;
+}
+
+.l-academy-content {
+  padding: 4em 0;
+}
+
+.l-academy-header {
+  text-align: center;
+}
+
+.l-projects-content {
+  padding:4em 0;
+}
+
+.l-projects-header {
+  text-align: center;
+}
+
 .l-situation-wrapper, .l-ongoing-solutions-wrapper {
   background-color: $light-gray;
 }

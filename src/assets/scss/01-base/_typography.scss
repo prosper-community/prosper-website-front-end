@@ -89,6 +89,14 @@ p {
   margin-bottom: $base-leading;
 }
 
+ul {
+  margin: 0 0 $base-leading $base-leading;
+}
+
+dd {
+  margin-bottom: $base-leading;
+}
+
 li {
   margin-bottom: $base-leading/2;
   font-family: $serif;

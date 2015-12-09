@@ -47,11 +47,11 @@
 $global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #56B68B;
-$secondary-color: #2199e8;
+$primary-color: #51BF95;
+$secondary-color: #41C0DA;
 $success-color: #3adb76;
 $warning-color: #ffae00;
-$alert-color: #ec5840;
+$alert-color: #C87C7A;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -224,7 +224,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.4em 1em .6em 1em;
 $button-margin: 0 $global-margin $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
