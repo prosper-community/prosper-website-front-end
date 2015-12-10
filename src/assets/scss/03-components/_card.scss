@@ -1,11 +1,16 @@
 .card {
   @include callout-base;
+  background: $white;
   &> :first-child {
     margin: 0 auto $base-leading/2 auto;
   }
   h3 {
     text-align: center;
   }
+}
+
+.card--right {
+  @extend .card;
   a.button {
     float: right;
   }
