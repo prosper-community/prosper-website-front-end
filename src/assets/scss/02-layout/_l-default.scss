@@ -1,22 +1,29 @@
 // Styles for default layout
 
-.l-content__section--bg {
+.l-content-section__bg {
   background-color: $light-gray;
 }
 
-.l-content__section--wrapper {
+.l-content-section__wrapper {
   @include grid-row;
 }
 
-.l-content__section {
+.l-content-section {
   padding: $base-leading*3 0;
-  @include grid-col(12);
-  // @media #{$medium-up} {
-  //   @include grid-col(7);
-  // }
+  @include grid-col;
+  @include breakpoint(medium) {
+    @include grid-col(10);
+    @include grid-col-off(1);
+    // need to figure out how to center this
+    // margin: 0 auto;
+  }
+  @include breakpoint(large) {
+    @include grid-col(8);
+    @include grid-col-off(2);
+  }
 }
 
-.l-content__section--header {
+.l-content-section__header {
   text-align: center;
 }
 
@@ -32,6 +39,8 @@
 .l-welcome-wrapper {
   display: flex;
   min-height: 40vh;
+  background-image: url('/assets/img/prosper-community-bg-1928x1280.jpg');
+  background-size: cover;
 }
 
 .l-welcome-header {
@@ -40,21 +49,23 @@
   justify-content: center;
   padding: 14vh 2vw;
   margin-bottom: 0;
+  position: relative;
   @media all and (min-width: 920px) {
     padding: 14vh 14vw;
   }
+  h1 {
+    color: $white;
+  }
   h2.subheader {
     margin-bottom: 0;
+    color: $white;
   }
 }
 
 // Index Page
-.l-academy-bg {
-  background-color: $light-gray;
-}
 
 .l-academy-wrapper {
-  @include grid-row;
+  // @include grid-row;
 }
 
 .l-academy-content {

@@ -1,17 +1,26 @@
 ul.people__list {
-  display: flex;
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  margin: 0;
 }
 
 li.people__list--item {
-  margin: 0;
-  &:not(:last-child) {
-    margin: 0 $base-leading*2 0 0;
+  width: 11rem;
+  &:first-child {
+    margin-left: $base-leading*2;
+  }
+  margin: 0 $base-leading*2 $base-leading*2 0;
+  flex-shrink: 0;
+  &:last-child {
+    margin-right: 0;
   }
   img {
-    border: 1px solid $primary-color;
+    border: 2px solid $primary-color;
     margin: 0;
     border-radius: 100%;
   }
