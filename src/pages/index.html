@@ -41,13 +41,13 @@
   </section>
 
   <aside class="explore-next">
-    <a href="/academy.html/#design-track" class="explore-next__item" id="design">
+    <a href="#join" class="explore-next__item" id="design">
       <section class="explore-next__page">
         <h4>Design Track</h4>
         <p>Work with expert human-centered designers to solve real problems amidst the refugee crisis...</p>
       </section>
     </a>
-    <a href="/academy.html/#development-track" class="explore-next__item" id="development">
+    <a href="#join" class="explore-next__item" id="development">
       <section class="explore-next__page">
         <h4>Development Track</h4>
         <p>Collaborate with experienced developers to execute designs on refugee crisis projects...</p>
@@ -70,8 +70,22 @@
              <dd>We're creating a free open-source platform so refugees, volunteers and funders can find the best projects of the refugee crisis.</dd>
              <dt>Start Date:</dt>
              <dd>8<sup>th</sup> December 2015</dd>
+             <dt>Resources:</dt>
+             <dd>
+               <ul>
+                 <li>
+                   <a href="https://docs.google.com/document/d/1HI4tN2zUqSEuFFMmoEuTkout49VioOnjyyzoxJdPTs0/edit?usp=sharing">
+                     Project Brief
+                   </a>
+                 </li>
+                 <li>
+                   <a href="https://trello.com/b/CfwoEGLi/prosper-refugeeprojects">      Project Management Board
+                   </a>
+                 </li>
+                 <li><a href="https://prosper-community.slack.com/messages/proj_refugee-projects/">Project Channel on Slack</a></li>
+               </ul>
+             </dd>
            </dl>
-          <a href="/projects.html" class="button secondary">learn more</a>
           <div class="clearfix"></div>
         </div>
 
@@ -86,6 +100,8 @@
           <h4 class="subheader">
             Meet the people who are working together to help refugees prosper in Europe
           </h4>
+        </hgroup>
+
           <br>
           <ul class="people__list">
             <li class="people__list--item">
@@ -98,7 +114,7 @@
             </li>
             <li class="people__list--item">
               <img src="http://placehold.it/128x128" alt="" />
-              <h6>Natasha Freidus</h6>
+              <h6>Ralf Schroeder<h6>
             </li>
             <li class="people__list--item">
               <img src="http://placehold.it/128x128" alt="" />
@@ -122,10 +138,10 @@
             </li>
             <li class="people__list--item">
               <img src="http://placehold.it/128x128" alt="" />
-              <h6>Christine Ellis<h6>
+              <h6>Dean Hayden<h6>
             </li>
           </ul>
-        </hgroup>
+          <a href="javascript:void()" class="button secondary">load more</a>
       </div>
     </section>
   </div>
@@ -133,23 +149,33 @@
   <section id="join" class="l-join-wrapper">
     <div class="l-join-content">
       <h2>Request an Invite</h2>
-      <p>If you are interested in collaborating with our community to help refugees prosper in Europe, please provide us with your details below. </p>
+      <p>If you are interested in learning more about working with our community to help refugees prosper in Europe, please provide us with your details below. </p>
       <p>Upon receiving your request, we will email you to schedule an interview. Interviewing each potential team member ensures that we continue toward our purpose.</p>
       <form action="https://docs.google.com/forms/d/1w-8-OnbACv5M7c4KEHJtjXnDGwiPj_vnf7Lw9ereVow/formResponse" method="POST" class="l-join-form">
-        <label for="name">name<span class="required">*</span>
-          <input id="name" type="text" name="entry.372718999" placeholder="Jane Smith" required>
+        <label for="name">my name is<span class="required">*</span>
+          <input id="name" type="text" name="entry.372718999" placeholder="jane smith" required>
         </label>
-        <label for="email">email<span class="required">*</span>
+        <label for="email">my email is<span class="required">*</span>
           <input id="email" type="email" name="entry.56111174" placeholder="name@address.com" required>
         </label>
-        <label for="organization">organization
-          <input id="organization" type="text" name="entry.839901740" placeholder="Company Y">
+        <label for="organization">i work with
+          <input id="organization" type="text" name="entry.839901740" placeholder="company y">
         </label>
-        <label for="role">role
-          <input id="role" type="text" name="entry.790371713" placeholder="UX Designer">
+        <label for="role">my role / discipline
+          <input id="role" type="text" name="entry.790371713" placeholder="ux designer">
         </label>
-        <label for="reason">why you want to join<span class="required">*</span>
-          <textarea id="reason" name="entry.1562080588" placeholder="Please explain why you would like to join our team and why you want to help solve the refugee crisis..." required></textarea>
+        <label for="interest">i am interested in
+          <select name="select" id="interest">
+            <option selected></option>
+            <option value="academy">prosper academy</option>
+            <option value="mentoring">mentoring</option>
+            <option value="partnership">partnership</option>
+            <option value="volunteering">volunteering</option>
+            <option value="other">other</option>
+          </select>
+        </label>
+        <label for="reason">why i want to join<span class="required">*</span>
+          <textarea id="reason" name="entry.1562080588" placeholder="please explain why you would like to join our team and why you would like to help refugees prosper." required></textarea>
         </label>
         <input type="submit" value="submit" class="button">
       </form>

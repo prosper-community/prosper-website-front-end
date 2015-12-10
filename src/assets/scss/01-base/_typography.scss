@@ -132,3 +132,40 @@ p.drop-cap:first-letter {
 strong {
   font-weight: 700;
 }
+
+// Form Styles
+form {
+  text-align: left;
+  padding: 0;
+}
+
+label {
+  display: block;
+  @include smcps;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+input {
+  margin-bottom: .8em;
+  width: 100%;
+  padding: .25em .65em;
+  font-size: 1.6em;
+  height: 2em;
+  box-sizing: border-box;
+  border: none;
+  &[type="submit"] {
+    @extend .button;
+    border: none;
+    border-radius: 0;
+    padding: .5em 1.25em;
+    line-height: 1;
+  }
+}
+
+textarea {
+  @extend input;
+  min-height: 8em;
+  font-size: 1em;
+}
