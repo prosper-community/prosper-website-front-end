@@ -34,7 +34,7 @@
 // @include foundation-sticky;
 // @include foundation-reveal;
 // @include foundation-switch;
-// @include foundation-table;
+@include foundation-table;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
@@ -67,6 +67,7 @@
         '03-components/button',
         '03-components/card',
         '03-components/people-list',
+        '03-components/pricing-table',
         '03-components/explore-next';
 
 // Debug

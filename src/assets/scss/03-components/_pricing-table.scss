@@ -1,0 +1,11 @@
+table.pricing-table {
+  width: 100%;
+  th {
+    background-color: $header-font-color;
+    color: $white;
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}

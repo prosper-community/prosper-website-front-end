@@ -8,19 +8,27 @@
   </div>
 
   <section class="l-content-section__wrapper" >
-    <div class="l-content-section" id="#academy">
+    <div class="l-content-section" id="academy">
       <hgroup class="l-content-section__header">
         <h2>Prosper Academy</h2>
-        <h4 class="subheader">An online apprenticeship for bootcamp graudates</h4>
+        <h4 class="subheader">An online apprenticeship with a bursary for refugees</h4>
       </hgroup>
       <!-- <h3>the situation</h3> -->
       <p>
         Coding bootcamps like <a href="http://thefirehoseproject.com">The Firehose Project</a> and <a href="http://refugeesonrails.org">Refugees on Rails</a> are great at teaching people how to code, but that often isn't enough to land a dream job in the industry. A portion of bootcamp graduates have the skills to contribute to a project but lack the experience to launch a meaningful career.
       </p>
 
+      <p>
+        Design bootcamps like <a href="https://generalassemb.ly/education/user-experience-design-bootcamp">General Assembly</a> and <a href="http://trydesignlab.com/">DesignLab</a> are great at teaching fundamentals, but lack the meaningful projects that reveal the true power of human-centered design. Most designers end up working on  initiatives with no real purpose or passion.
+      </p>
+
+      <p>
+        At Prosper, we believe that people learn best by doing <strong>meaningful work</strong> with a <strong>passion</strong>.
+      </p>
+
       <h3>our solution</h3>
       <p>
-        We've designed a pay-as-you-go apprenticeship where bootcamp graduates (citizens and asylum seekers alike):
+        We've designed a pay-as-you-go program where apprentices (citizens and refugees):
       </p>
       <ul>
         <li>
@@ -37,8 +45,7 @@
       </ul>
       <h4>Two Tracks</h4>
       <p>
-        Because the digital sector is becoming increasingly dependant on collaboration, we've decided to run two simultaneous tracks within our apprenticeship: design and development.
-        We currently accepting applications for <strong>two tracks</strong>:
+        Because the strength of a digital worker is becoming increasingly dependant on collaboration, we've decided to run two simultaneous tracks that work together within our apprenticeship:
       </p>
     </div>
   </section>
@@ -58,72 +65,141 @@
     </a>
   </aside>
 
-  <section class="l-content-section__wrapper" id="projects">
-    <div class="l-content-section">
-      <hgroup class="l-projects-header">
-        <h2>Current Projects</h2>
-        <h4 class="subheader">Human-centered design meets open-source technology</h4>
-      </hgroup>
-        <br>
+  <section class="l-content-section__wrapper" >
+    <div class="l-content-section" id="academy-continued">
+      <h3>now accepting applications</h3>
+      <p>
+        We are currently accepting applications for the Prosper Academy. If you're interested, please submit your details below. We will follow-up with an interview request so that we can begin to understand you and your needs.
+      </p>
+      <p>
+        We understand that the needs of each apprentice is different, and that's why we don't prescribe a single curriculum but rather allow real projects to form the basis of experiential learning.
+      </p>
+      <p>
+        We also provide specialized training for our mentors who work with apprentices that come from challenging circumstances so that we can focus on building holistic well-being, self-confidence and employability.
+      </p>
 
-        <div class="card--right">
-          <h3>refugeeprojects.com</h3>
-           <dl>
-             <dt>Description:</dt>
-             <dd>We're creating a free open-source platform so refugees, volunteers and funders can find the best projects of the refugee crisis.</dd>
-             <dt>Start Date:</dt>
-             <dd>8<sup>th</sup> December 2015</dd>
-             <dt>Resources:</dt>
-             <dd>
-               <ul>
-                 <li>
-                   <a href="https://docs.google.com/document/d/1HI4tN2zUqSEuFFMmoEuTkout49VioOnjyyzoxJdPTs0/edit?usp=sharing">
-                     Project Brief
-                   </a>
-                 </li>
-                 <li>
-                   <a href="https://trello.com/b/CfwoEGLi/prosper-refugeeprojects">      Project Management Board
-                   </a>
-                 </li>
-                 <li><a href="https://prosper-community.slack.com/messages/proj_refugee-projects/">Project Channel on Slack</a></li>
-               </ul>
-             </dd>
-           </dl>
-          <div class="clearfix"></div>
-        </div>
-
+      <h3>pricing</h3>
+      <p>
+        After talking to prospective apprentices within the Prosper Community,  we've developed a flexible pricing and service structure to accommodate for a wide range of needs and life circumstances.
+      </p>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Monthly</th>
+            <th>Three Months</th>
+            <th>Six Months</th>
+            <th>Refugee</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>$1250</td>
+              <td>$3000</td>
+              <td>$5400</td>
+              <td>Scholarships Available</td>
+            </tr>
+          </tbody>
+      </table>
     </div>
   </section>
 
-  <div class="l-content-section__bg" id="team">
-    <section class="l-content-section__wrapper">
-      <div class="l-team-content">
-        <hgroup class="l-content-section__header">
-          <h2>Prosper Team</h2>
-          <h4 class="subheader">
-            Meet the people who are working together to help refugees prosper in Europe
-          </h4>
+  <div class="l-content-section__bg">
+    <section class="l-content-section__wrapper" id="projects">
+      <div class="l-content-section">
+        <hgroup class="l-projects-header">
+          <h2>Current Projects</h2>
+          <h4 class="subheader">Human-centered design meets open-source technology</h4>
         </hgroup>
-
           <br>
-          <ul class="people__list">
-            {{#each team}}
-              <li class="people__list--item">
-                {{#personImage this}}
-                {{/personImage}}
-                <h6>{{ this }}</h6>
-              </li>
-            {{/each}}
-          </ul>
+
+          <div class="card--right">
+            <h3>refugeeprojects.com</h3>
+             <dl>
+               <dt>Description:</dt>
+               <dd>We're creating a free open-source platform so refugees, volunteers and funders can find the best projects of the refugee crisis.</dd>
+               <dt>Start Date:</dt>
+               <dd>8<sup>th</sup> December 2015</dd>
+               <dt>Resources:</dt>
+               <dd>
+                 <ul>
+                   <li>
+                     <a href="https://docs.google.com/document/d/1HI4tN2zUqSEuFFMmoEuTkout49VioOnjyyzoxJdPTs0/edit?usp=sharing">
+                       Project Brief
+                     </a>
+                   </li>
+                   <li>
+                     <a href="https://trello.com/b/CfwoEGLi/prosper-refugeeprojects">      Project Management Board
+                     </a>
+                   </li>
+                   <li><a href="https://prosper-community.slack.com/messages/proj_refugee-projects/">Project Channel on Slack</a></li>
+                 </ul>
+               </dd>
+             </dl>
+          </div>
       </div>
     </section>
   </div>
+
+  <section class="l-content-section__wrapper" id="volunteer">
+    <div class="l-content-section">
+      <hgroup class="l-content-section__header">
+        <h2>Volunteer</h2>
+        <h4 class="subheader">
+          You can make a difference in the lives of refugees by offering your skills to a meaningful project
+        </h4>
+      </hgroup>
+      <p>
+        Whether you're able to offer an hour a week or ten&mdash;we make it easy for skilled digital workers to help refugees prosper. As a volunteer you can:
+      </p>
+      <ul>
+        <li><strong>Contribute</strong> to one of our projects and/or</li>
+        <li><strong>Mentor</strong> an apprentice</li>
+      </ul>
+      <p>
+        We have immediate need in the following disciplines:
+      </p>
+      <ul>
+        <li>Ethnography &amp; User Research</li>
+        <li>Agile Project Management</li>
+        <li>Human-Centered Design</li>
+        <li>Web Development &amp; Architecture</li>
+        <li>Social Media &amp; Digital Marketing</li>
+        <li><strong>Others<sup>*</sup></strong></li>
+      </ul>
+      <p>
+        <sup>*</sup>If your skillset isn't listed above and you'd like to get involved, please contact us. The need for passionate professionals with relevant skills is immense. We enjoy matching skilled workers with meaningful projects that make a significant impact on helping the refugee crisis.
+      </p>
+    </div>
+  </section>
+
+    <div class="l-content-section__bg">
+      <section class="l-content-section__wrapper" id="team">
+        <div class="l-team-content">
+          <hgroup class="l-content-section__header">
+            <h2>Prosper Team</h2>
+            <h4 class="subheader">
+              Meet the people who are working together to help refugees prosper in Europe
+            </h4>
+          </hgroup>
+
+            <ul class="people__list">
+              {{#each team}}
+                <li class="people__list--item">
+                  {{#personImage this}}
+                  {{/personImage}}
+                  <h6>{{ this }}</h6>
+                </li>
+              {{/each}}
+            </ul>
+        </div>
+      </section>
+    </div>
 
   <section id="join" class="l-join-wrapper">
     <div class="l-join-content">
       <h2>Request an Invite</h2>
       <p>If you are interested in learning more about working with our community to help refugees prosper in Europe, please provide us with your details below. </p>
-      <p>Upon receiving your request, we will email you to schedule an interview. Interviewing each potential team member ensures that we continue toward our purpose.</p>
+      <p>Upon receiving your request, we will email you to setup a time to chat. Speaking with each person who wants to join the team ensures that we stay focused on helping refugees prosper in Europe.</p>
       <form action="https://docs.google.com/forms/d/1w-8-OnbACv5M7c4KEHJtjXnDGwiPj_vnf7Lw9ereVow/formResponse" method="POST" class="l-join-form">
         <label for="name">my name is<span class="required">*</span>
           <input id="name" type="text" name="entry.372718999" placeholder="jane smith" required>
@@ -131,20 +207,14 @@
         <label for="email">my email is<span class="required">*</span>
           <input id="email" type="email" name="entry.56111174" placeholder="name@address.com" required>
         </label>
-        <label for="organization">i work with
-          <input id="organization" type="text" name="entry.839901740" placeholder="company y">
-        </label>
-        <label for="role">my role / discipline
-          <input id="role" type="text" name="entry.790371713" placeholder="ux designer">
-        </label>
-        <label for="interest">i am interested in
-          <select name="select" id="interest">
+        <label for="interest">i am interested in<span class="required">*</span>
+          <select name="select" id="interest" required>
             <option selected></option>
             <option value="academy">prosper academy</option>
             <option value="mentoring">mentoring</option>
             <option value="partnership">partnership</option>
             <option value="volunteering">volunteering</option>
-            <option value="other">other</option>
+            <option value="other">something else</option>
           </select>
         </label>
         <label for="reason">why i want to join<span class="required">*</span>

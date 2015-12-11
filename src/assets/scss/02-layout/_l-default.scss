@@ -1,5 +1,6 @@
 // Styles for default layout
 
+// Content Section
 .l-content-section__bg {
   background-color: $light-gray;
 }
@@ -20,6 +21,12 @@
   @include breakpoint(large) {
     @include grid-col(8);
     @include grid-col-off(2);
+  }
+  &#academy {
+    padding-bottom: 0;
+  }
+  &#academy-continued {
+    padding-top: $base-leading;
   }
 }
 

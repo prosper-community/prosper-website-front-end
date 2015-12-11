@@ -111,6 +111,7 @@
     }
     li.has-button {
       padding-bottom: .3em;
+      opacity: 1;
       @media all and (min-width: $homeNavBreak) {
         margin-bottom: 0;
         padding-bottom: 0;
