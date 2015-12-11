@@ -133,6 +133,23 @@ strong {
   font-weight: 700;
 }
 
+.button {
+  display: block;
+  background-color: $primary-color;
+  padding: .4em 1.6em;
+  @include smcps;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: max-content;
+  box-sizing: border-box;
+  &:hover {
+    background-color: darken($primary-color, 15%);
+  }
+  @media all and (min-width: $homeNavBreak) {
+  }
+}
+
 // Form Styles
 form {
   text-align: left;

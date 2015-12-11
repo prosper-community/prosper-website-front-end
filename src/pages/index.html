@@ -7,8 +7,8 @@
     </hgroup>
   </div>
 
-  <section class="l-content-section__wrapper" id="#academy">
-    <div class="l-content-section">
+  <section class="l-content-section__wrapper" >
+    <div class="l-content-section" id="#academy">
       <hgroup class="l-content-section__header">
         <h2>Prosper Academy</h2>
         <h4 class="subheader">An online apprenticeship for bootcamp graudates</h4>
@@ -35,8 +35,11 @@
         </li>
         <li>Gain relevant experience and contacts to <strong>land a dream job</strong> within their discipline.</li>
       </ul>
+      <h4>Two Tracks</h4>
       <p>
+        Because the digital sector is becoming increasingly dependant on collaboration, we've decided to run two simultaneous tracks within our apprenticeship: design and development.
         We currently accepting applications for <strong>two tracks</strong>:
+      </p>
     </div>
   </section>
 
@@ -104,44 +107,14 @@
 
           <br>
           <ul class="people__list">
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>John Ellison</h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Judah Armani</h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Ralf Schroeder<h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Jools Stone</h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Nick Hoh<h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>David Lee<h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>James Foster<h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Brian Reich<h6>
-            </li>
-            <li class="people__list--item">
-              <img src="http://placehold.it/128x128" alt="" />
-              <h6>Dean Hayden<h6>
-            </li>
+            {{#each team}}
+              <li class="people__list--item">
+                {{#personImage this}}
+                {{/personImage}}
+                <h6>{{ this }}</h6>
+              </li>
+            {{/each}}
           </ul>
-          <a href="javascript:void()" class="button secondary">load more</a>
       </div>
     </section>
   </div>

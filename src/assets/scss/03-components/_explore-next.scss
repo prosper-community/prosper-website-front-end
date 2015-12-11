@@ -1,17 +1,23 @@
 .explore-next {
   width: 100%;
   display: flex;
+  margin-top: -$base-leading*2;
   align-items: stretch;
+  flex-flow: row wrap;
 }
 
 .explore-next__item {
   @extend .card;
   display: flex;
-  flex-grow: 1;
   position: relative;
-  min-width: 50%;
   text-align: center;
-  padding: 10rem 4rem 8rem 4rem;
+  width: 100%;
+  margin-bottom: $base-leading;
+  @include breakpoint(large) {
+    margin: 0;
+    width: 50%;
+    padding: 5rem 1rem;
+  }
   border: none;
   transition: all 0.2s ease;
   color: $white;
@@ -56,13 +62,13 @@
 
 .explore-next__page {
   position: relative;
-  width: 80%;
+  width: 85%;
   max-width: 710px;
   word-wrap: break-word;
-  // margin: 4rem auto;
   &:after {
     content: "learn more";
     @extend .button;
     @extend .secondary;
+    margin: 0 auto;
   }
 }

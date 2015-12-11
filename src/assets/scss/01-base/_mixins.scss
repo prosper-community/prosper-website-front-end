@@ -4,3 +4,13 @@
   font-variant: small-caps;
   letter-spacing: .08em;
 }
+
+@mixin global-transition {
+  @media all and (min-width: $homeNavBreak) {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

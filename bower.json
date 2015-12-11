@@ -21,6 +21,7 @@
   "private": true,
   "devDependencies": {
     "modular-scale": "~2.1.1",
-    "jquery-validation": "jquery-validate#~1.14.0"
+    "jquery-validation": "jquery-validate#~1.14.0",
+    "sass-burger": "~1.2.1"
   }
 }
