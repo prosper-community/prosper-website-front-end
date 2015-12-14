@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
+// @import 'motion-ui';
 
 // Foundation Components
 @include foundation-global-styles;
@@ -10,12 +10,12 @@
 @include foundation-typography;
 // @include foundation-button;
 @include foundation-forms;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
+// @include foundation-visibility-classes;
+// @include foundation-float-classes;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
 // @include foundation-button-group;
 @include foundation-callout;
 // @include foundation-close-button;
@@ -34,7 +34,7 @@
 // @include foundation-sticky;
 // @include foundation-reveal;
 // @include foundation-switch;
-@include foundation-table;
+// @include foundation-table;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
@@ -42,8 +42,8 @@
 // @include foundation-top-bar;
 
 // Foundation Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
 
 // Bower Components
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
@@ -67,7 +67,7 @@
         '03-components/button',
         '03-components/card',
         '03-components/people-list',
-        '03-components/pricing-table',
+        // '03-components/pricing-table',
         '03-components/explore-next';
 
 // Debug
