@@ -26,6 +26,9 @@
   h4 {
     color: white;
   }
+  p {
+    margin-bottom: 0;
+  }
   &:hover {
     color: $white;
     .explore-next__page:before {
@@ -64,10 +67,10 @@
   width: 85%;
   max-width: 710px;
   word-wrap: break-word;
-  &:after {
-    content: "learn more";
-    @extend .button;
-    @extend .secondary;
-    margin: 0 auto;
-  }
+  // &:after {
+  //   content: "learn more";
+  //   @extend .button;
+  //   @extend .secondary;
+  //   margin: 0 auto;
+  // }
 }
