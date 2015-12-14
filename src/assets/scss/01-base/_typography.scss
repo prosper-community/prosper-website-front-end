@@ -7,9 +7,9 @@ $base-leading: 1.6em;
 
 $ms-range: 1.1 26em, $fifth 175em;
 
-$sans-serif: 'freight-sans-pro', Helvetica, Verdana, Geneva, sans-serif;
+$sans-serif: 'museo-sans-rounded', Helvetica, Verdana, Geneva, sans-serif;
 
-$serif: 'freight-text-pro', Georgia, Cambria, "Times New Roman", Times, serif;
+$serif: 'freight-text-pro', Georgia, Cambria, 'Times New Roman', Times, serif;
 
 body {
   @include ms-respond(font-size, 1);
