@@ -20,7 +20,7 @@
     @include smcps;
     letter-spacing: .02em;
     float: left;
-    margin-top: -.67em;
+    margin-top: -.75em;
     margin-left: .8em;
     .site-title-text {
       line-height: 1.55;
@@ -153,12 +153,5 @@ ul.home-nav__list, ul.site-nav__list {
         }
       }
     }
-  }
-}
-
-// This fixes a weird visual alignment issue when .home-nav__list contains a button
-ul.site-nav__list {
-  @media all and (min-width: $homeNavBreak) {
-    margin-top: -.5em;
   }
 }
