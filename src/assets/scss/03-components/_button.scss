@@ -1,14 +1,28 @@
 .button {
+  display: block;
   font-weight: 700;
   font-size: 1.4rem;
   @include smcps;
+  background-color: $primary-color;
+  padding: .2em 1.6em;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  width: max-content;
+  box-sizing: border-box;
+  border-radius: $global-radius;
+  transition: .2s all;
   &.secondary {
     border: 1px solid $primary-color;
-    background: $white;
+    background: rgba(255,255,255,0.0);
     color: $body-font-color;
     &:hover {
       color: $white;
-      background: $primary-color;
+      background-color: darken($primary-color, 15%);
     }
+  }
+  &.transparent {
+    @extend .secondary;
+    color: $white;
   }
 }

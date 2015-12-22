@@ -1,4 +1,5 @@
 .card {
+  // border-radius: $global-radius;
   @include callout-base;
   background: $white;
   &> :first-child {

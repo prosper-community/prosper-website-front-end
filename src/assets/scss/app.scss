@@ -52,7 +52,8 @@
 // Custom styles are structured by the SMACSS convention
 
 // 01-Base
-@import '01-base/variables',
+@import '01-base/config',
+        '01-base/variables',
         '01-base/mixins',
         '01-base/typography',
         '01-base/forms';

@@ -7,7 +7,7 @@
   padding: $base-leading 0 $base-leading+.35em 0;
   font-weight: 300;
   width: 100%;
-  height: .3em;
+  height: .25em;
   font-family: $sans-serif;
   h1.site-title, h2.menu-label {
     font-weight: 700;
@@ -16,8 +16,11 @@
   }
 
   h1.site-title {
+    font-size: 1.25em;
+    @include smcps;
+    letter-spacing: .02em;
     float: left;
-    margin-top: -.8em;
+    margin-top: -.67em;
     margin-left: .8em;
     .site-title-text {
       line-height: 1.55;
@@ -27,6 +30,7 @@
       }
     }
     .site-logo {
+      @include smcps;
       @media all and (min-width: $homeNavBreak) {
         display: none;
       }
@@ -86,66 +90,75 @@
       float: right;
     }
   }
+}
 
-  ul.home-nav--list, ul.site-nav--list {
-    background: $header-font-color;
-    margin: 0;
-    padding: 0 1em;
-    list-style: none;
-    clear: left;
-    z-index: 99;
+ul.home-nav__list, ul.site-nav__list {
+  background: $header-font-color;
+  margin: 0;
+  padding: 0 1em;
+  list-style: none;
+  clear: left;
+  z-index: 99;
+  @media all and (min-width: $homeNavBreak) {
+    float: right;
+    margin-top: -.7em;
+  }
+  li:not(.has-button) {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid $white;
     @media all and (min-width: $homeNavBreak) {
-      float: right;
-      margin-top: -.7em;
-    }
-    li:not(.has-button) {
-      transition: all 0.2s ease-in-out;
-      border-bottom: 1px solid $white;
-      @media all and (min-width: $homeNavBreak) {
-        border-bottom: none;
-        padding-bottom: .35em;
-        &:hover {
-          border-bottom: 1px solid $white;
-        }
+      border-bottom: none;
+      padding-bottom: .35em;
+      &:hover {
+        border-bottom: 1px solid $white;
       }
     }
-    li.has-button {
-      padding-bottom: .3em;
-      opacity: 1;
-      @media all and (min-width: $homeNavBreak) {
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
+  }
+  li.has-button {
+    padding-bottom: .2em;
+    opacity: 1;
+    @media all and (min-width: $homeNavBreak) {
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
-    li.login {
-      @include smcps;
+  }
+  li.login {
+    @include smcps;
+    border-bottom: none;
+  }
+  li {
+    margin-bottom: 0;
+    padding: .5em 0 .2em 0;
+    text-align: center;
+    @include global-transition;
+    @media all and (min-width: $homeNavBreak) {
+      display: inline;
+      margin-right: .8em;
       border-bottom: none;
     }
-    li {
-      margin-bottom: 0;
-      padding: .5em 0 .2em 0;
-      text-align: center;
-      @include global-transition;
+    a {
+      padding: .8em 0;
+      margin-bottom: .4em;
+      display: inline-block;
+      width: 100%;
       @media all and (min-width: $homeNavBreak) {
         display: inline;
-        margin-right: .8em;
-        border-bottom: none;
       }
-      a {
-        padding: .8em 0;
-        margin-bottom: .4em;
-        display: inline-block;
-        width: 100%;
+      &.button {
+        margin-top: .4em;
+        margin-bottom: 0;
         @media all and (min-width: $homeNavBreak) {
-          display: inline;
-        }
-        &.button {
-          margin-top: .4em;
-          @media all and (min-width: $homeNavBreak) {
-            padding: .3em .8em .4em .8em;
-          }
+          margin-top: 0;
+          padding: .3em .8em .4em .8em;
         }
       }
     }
+  }
+}
+
+// This fixes a weird visual alignment issue when .home-nav__list contains a button
+ul.site-nav__list {
+  @media all and (min-width: $homeNavBreak) {
+    margin-top: -.5em;
   }
 }
