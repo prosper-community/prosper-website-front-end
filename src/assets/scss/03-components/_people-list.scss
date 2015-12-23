@@ -26,6 +26,9 @@ li.people__list--item {
   }
 }
 
+// The comment below ensures uncss doesn't strip out the declarations below
+// as a result of the corresponding markup being inserted by a Panini function
+// which is declared in src/helpers/personImage.js
 /* uncss:ignore */
 img.people__list--image {
   width: 128px;
