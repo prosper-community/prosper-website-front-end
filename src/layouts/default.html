@@ -72,52 +72,6 @@
     <!-- <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script> -->
     <script src="{{root}}assets/js/app.js"></script>
 
-    <!-- {{#ifpage 'index'}}
-      <script>
-        (function($){
-          // Form Validation
-          var $form = $('.l-join-form');
-
-          $form.validate({
-            rules: {
-              // Name field
-              'entry.372718999': {
-                required: true,
-                minlength: 2,
-                maxlength: 25
-              },
-              // Email field
-              'entry.56111174': {
-                required: true,
-                email: true
-              },
-              // Reason field
-              'entry.1562080588': {
-                required: true,
-                minlength: 2,
-                maxlength: 5000
-              }
-            },
-            messages: {
-              // Name field
-              'entry.372718999': 'what is your name?',
-              // Email field
-              'entry.56111174': {
-                required: 'what is your email?',
-                email: 'please enter a valid email address.'
-              },
-              // Reason field
-              'entry.1562080588': {
-                required: 'please include a short message',
-                minlength: 'if you would please include a short message, I will be able to get back to you with more information.',
-                maxlength: 'please write a message less than 5,000 characters.'
-              }
-            }
-          });
-        }(jQuery));
-      </script>
-    {{/ifpage}} -->
-
     {{#ifpage 'playbook'}}
       <script>
         (function($){
@@ -145,5 +99,30 @@
         }(jQuery));
       </script>
     {{/ifpage}}
+
+    <!-- Script to make academy form submit via ajax, not working yet -->
+    <!-- {{#ifpage 'academy'}}
+    <script>
+      $('.academy-form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+          method: "POST",
+          url: "https://docs.google.com/forms/d/1YZ0zdAHB07W2kuCIqTfwxadY7qjSfnoSWdbAjBb0lcY/formResponse",
+          data: {
+            'entry.473719223': $('input[name="entry.473719223"]').val(),
+            'entry.1406085141': $('input[name="entry.1406085141"]').val(),
+            'entry.630867410': $('input[name="entry.630867410"]').val(),
+            'entry.173315658': window.location.href
+          },
+          success: function(data) {
+            console.log(data);
+          },
+          error: function(data) {
+            console.log(data);
+          }
+        });
+      });
+    </script>
+    {{/ifpage}} -->
   </body>
 </html>

@@ -13,19 +13,19 @@
   text-align: center;
   width: 100%;
   margin-bottom: $base-leading;
-  @include breakpoint(large) {
-    margin: 0;
-    width: 50%;
-    padding: 5rem 1rem;
-  }
   border: none;
   transition: all 0.2s ease;
   color: $white;
   background: $dark-gray no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  @include breakpoint(large) {
+    margin: 0;
+    width: 50%;
+    padding: 5rem 1rem;
+  }
   h4 {
-    color: white;
+    color: $white;
   }
   p {
     margin-bottom: 0;
@@ -54,11 +54,11 @@
     transition: all 0.5s ease;
   }
   &#design {
-    background-image: url('/assets/img/design-track-bg.jpg');
+    background-image: url('/assets/img/ux-design-track-bg.jpg');
     background-position: 50% 50%;
   }
   &#development {
-    background-image: url('/assets/img/development-track-bg.jpg');
+    background-image: url('/assets/img/web-development-track-bg.jpg');
     background-position: 50% 50%;
   }
 }
@@ -68,10 +68,10 @@
   width: 85%;
   max-width: 710px;
   word-wrap: break-word;
-  // &:after {
-  //   content: "learn more";
-  //   @extend .button;
-  //   @extend .secondary;
-  //   margin: 0 auto;
-  // }
+  &:after {
+    content: "learn more";
+    @extend .button;
+    @extend .transparent;
+    margin: 1.6rem auto 0 auto;
+  }
 }

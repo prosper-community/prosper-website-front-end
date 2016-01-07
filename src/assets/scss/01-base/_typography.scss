@@ -40,7 +40,7 @@ h2 {
 h3 {
   @include ms-respond(font-size, 3);
   @include smcps;
-  border-bottom: 1px solid $primary-color;
+  // border-bottom: 1px solid $primary-color;
   width: max-content;
 }
 
@@ -51,7 +51,7 @@ h4 {
 h5 {
   @include ms-respond(font-size, 2);
   @include smcps;
-  border-bottom: 1px solid $primary-color;
+  // border-bottom: 1px solid $primary-color;
   width: max-content;
 }
 

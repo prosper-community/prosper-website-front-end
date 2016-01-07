@@ -49,7 +49,20 @@
 
 // Marquee is the large banner that oftens contains h1 and h2 subheader
 .l-marquee__bg {
+  position: relative;
+  width: 100%;
   background: $header-font-color;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+  }
   &#index {
     background-image: url('/assets/img/sunrays-morning-grass-1080x608.jpg');
     background-size: cover;
@@ -81,6 +94,16 @@
     background-size: cover;
     background-position: 50% 50%;
   }
+  &#uxd-track {
+    background-image: url('/assets/img/ux-design-track-bg-1280x720.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &#dev-track {
+    background-image: url('/assets/img/web-development-track-bg-1280x720.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 }
 
 .l-marquee__wrapper {
@@ -90,6 +113,7 @@
 }
 
 .l-marquee__header {
+  position: relative;
   width: 100%;
   margin-top: 2rem;
   padding-top: 12vh;
@@ -110,15 +134,16 @@
   @include breakpoint(xxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
-    // padding-top: 14vh;
-    // padding-bottom: 12vh;
   }
   h1, h2, h3, h4, h5, h6 {
     color: $white;
   }
-  h2.subheader {
+  .subheader {
     margin-bottom: 0;
     color: $white;
+  }
+  .supraheader {
+    @extend .subheader;
   }
 }
 
