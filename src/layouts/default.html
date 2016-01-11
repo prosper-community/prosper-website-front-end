@@ -100,6 +100,82 @@
       </script>
     {{/ifpage}}
 
+    <!-- this should be able to accept multiple pages as an argument, but since it isn't I've had to duplicate the codeblock below...  -->
+    {{#ifpage 'volunteer'}}
+      <script>
+        (function($){
+          $('input[id="name"]').change(function(){
+             $('.madlib-signature-name').text($(this).val());
+          });
+
+          $('input[id="email"]').change(function(){
+            $('.madlib-signature-email').text($(this).val());
+          })
+        }(jQuery));
+
+      </script>
+    {{/ifpage}}
+
+    {{#ifpage 'academy'}}
+      <script>
+        (function($){
+          $('input[id="name"]').change(function(){
+             $('.madlib-signature-name').text($(this).val());
+          });
+
+          $('input[id="email"]').change(function(){
+            $('.madlib-signature-email').text($(this).val());
+          })
+        }(jQuery));
+
+      </script>
+    {{/ifpage}}
+
+    {{#ifpage 'user-experience-design'}}
+      <script>
+        (function($){
+          $('input[id="name"]').change(function(){
+             $('.madlib-signature-name').text($(this).val());
+          });
+
+          $('input[id="email"]').change(function(){
+            $('.madlib-signature-email').text($(this).val());
+          })
+        }(jQuery));
+
+      </script>
+    {{/ifpage}}
+
+    {{#ifpage 'web-development'}}
+      <script>
+        (function($){
+          $('input[id="name"]').change(function(){
+             $('.madlib-signature-name').text($(this).val());
+          });
+
+          $('input[id="email"]').change(function(){
+            $('.madlib-signature-email').text($(this).val());
+          })
+        }(jQuery));
+
+      </script>
+    {{/ifpage}}
+
+    {{#ifpage 'bursary-program'}}
+      <script>
+        (function($){
+          $('input[id="name"]').change(function(){
+             $('.madlib-signature-name').text($(this).val());
+          });
+
+          $('input[id="email"]').change(function(){
+            $('.madlib-signature-email').text($(this).val());
+          })
+        }(jQuery));
+
+      </script>
+    {{/ifpage}}
+
     <!-- Script to make academy form submit via ajax, not working yet -->
     <!-- {{#ifpage 'academy'}}
     <script>
@@ -124,5 +200,6 @@
       });
     </script>
     {{/ifpage}} -->
+
   </body>
 </html>

@@ -1,44 +1,61 @@
 // Form Styles
-form {
-  text-align: left;
+form.madlib {
   padding: 0;
-}
-
-label {
-  display: block;
-  @include smcps;
-  margin-bottom: 0;
-  font-weight: 700;
-}
-
-input, textarea {
-  font-variant: normal;
-  @extend p;
+  margin: 0;
+  text-align: left;
   font-family: $sans-serif;
-  font-size: 1rem;
-  color: $body-font-color;
-}
-
-input {
-  margin-bottom: .8em;
-  width: 100%;
-  padding: $base-leading/4 $base-leading/2 $base-leading/4 $base-leading;
-  font-size: 1em;
-  height: 2em;
-  box-sizing: border-box;
-  border: none;
-  &[type="submit"] {
-    @extend .button;
+  blockquote {
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 3.2;
+  }
+  fieldset {
+    display: inline-block;
+    padding: 0;
     border: none;
-    border-radius: 0;
-    padding: .5em 1.25em;
-    line-height: 1;
+    @include ms-respond(font-size, 2);
+  }
+  label {
+    display: inline-block;
+    // @include ms-respond(font-size, 2);
+    font-weight: normal;
+  }
+  input, textarea {
+    display: inline-block;
+  }
+
+  input {
+    &[type="submit"] {
+      @extend .button;
+      border: none;
+      border-radius: 0;
+      padding: .5em 1.25em;
+      line-height: 1;
+      margin-top: $base-leading;
+    }
+    &[type="text"], &[type="email"] {
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom: 3px dashed lighten($body-font-color, 50%);
+      width: auto;
+    }
+    &[type="number"] {
+      @extend input[type="text"];
+      width: 3.5rem;
+    }
+  }
+  textarea {
+    @extend input[type="text"];
+    width: 98%;
+    // height: $base-leading;
   }
 }
 
-textarea {
-  @extend input;
-  min-height: 8em;
-  font-size: .9rem;
-  padding-top: $base-leading/2;
+.madlib-signature-name, .madlib-signature-email {
+  line-height: 1.6;
+  font-weight: 900;
+  display: block;
 }
