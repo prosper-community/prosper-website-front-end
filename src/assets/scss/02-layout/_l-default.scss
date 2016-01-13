@@ -4,7 +4,7 @@
 .l-content-section__bg {
   background-color: $light-gray;
   &#academy {
-    background-image: url('/assets/img/prosper-community-bg-1280x720.jpg');
+    background-image: url('/assets/img/prosper-academy-bg-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: $white;
@@ -33,10 +33,6 @@
     @include grid-col(10);
     @include grid-col-off(1);
   }
-}
-
-.l-content-section__header {
-  // text-align: center;
 }
 
 .l-team-content {
@@ -85,7 +81,7 @@
     background-position: 50% 50%;
   }
   &#academy {
-    background-image: url('/assets/img/prosper-community-bg-1280x720.jpg');
+    background-image: url('/assets/img/prosper-academy-bg-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
   }
