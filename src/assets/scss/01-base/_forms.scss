@@ -26,14 +26,6 @@ form.madlib {
   }
 
   input {
-    &[type="submit"] {
-      @extend .button;
-      border: none;
-      border-radius: 0;
-      padding: .5em 1.25em;
-      line-height: 1;
-      margin-top: $base-leading;
-    }
     &[type="text"], &[type="email"] {
       display: inline-block;
       background-color: transparent;
@@ -58,4 +50,22 @@ form.madlib {
   line-height: 1.6;
   font-weight: 900;
   display: block;
+}
+
+form.normal {
+  input[type="submit"] {
+    @extend .button;
+    border: none;
+    border-radius: 0;
+    padding: .5em 1.25em;
+    line-height: 1;
+    margin-top: $base-leading;
+  }
+  label {
+    margin-bottom: $base-leading;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+  }
 }
