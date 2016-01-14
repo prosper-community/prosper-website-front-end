@@ -16,48 +16,6 @@ image: sunrays-morning-grass-1280x720.jpg
     </div>
   </div>
 
-  <div class="l-content-section__wrapper" id="journey">
-    <section class="l-content-section">
-      <h2>Our Journey</h2>
-      <p>
-        Prosper emerged out of one designer's response to the human suffering of the refugee crisis in Europe. Since launching in October 2015, a global community of skilled digital workers has centralized around a single mission:
-      </p>
-      <p>
-        <strong>To transform the refugee crisis into an opportunity to foster an integrated society where every person is cherished and prosperity abounds.</strong>
-      </p>
-      <a href="/journey.html" class="button secondary">read more</a>
-    </section>
-  </div>
-
-  <div class="l-content-section__bg">
-    <div class="l-content-section__wrapper" id="projects">
-      <section class="l-content-section">
-        <h2>Projects</h2>
-        <p>
-          Our projects are a combination of human-centered design and open source technology. They are the focal point of our community. Each project must fulfill several requirements before being taken on by our team:
-        </p>
-        <ul>
-          <li>Solve a <strong>real human problem</strong> of the <strong>refugee crisis</strong></li>
-          <li>Be <strong>sustainable</strong>, <strong>scalable</strong> and <strong>significant</strong></li>
-          <li>Solutions must be <strong>measurable</strong></li>
-        </ul>
-        {{#each projects}}
-          <div class="card--right">
-            <h3><a href="{{this.url}}">{{this.name}}</a></h3>
-             <dl>
-               <dt>Description:</dt>
-               <dd>{{this.description}}</dd>
-               <dt>Start Date:</dt>
-               <dd>{{this.startDate}}</dd>
-             </dl>
-             <a href="/projects/{{this.page}}" class="button secondary">learn more</a>
-             <div class="clearfix"></div>
-          </div>
-        {{/each}}
-      </section>
-    </div>
-  </div>
-
   <!-- Team -->
   <section class="l-content-section__wrapper" id="team">
     <div class="l-team-content">
@@ -79,6 +37,48 @@ image: sunrays-morning-grass-1280x720.jpg
         </ul>
     </div>
   </section>
+
+  <div class="l-content-section__bg">
+    <div class="l-content-section__wrapper" id="journey">
+      <section class="l-content-section">
+        <h2>Our Journey</h2>
+        <p>
+          Prosper emerged out of one designer's response to the human suffering of the refugee crisis in Europe. Since launching in October 2015, a global community of skilled digital workers has centralized around a single mission:
+        </p>
+        <p>
+          <strong>To transform the refugee crisis into an opportunity to foster a new Europe&mdash;a society where every person is cherished and prosperity abounds.</strong>
+        </p>
+        <a href="/journey.html" class="button secondary">read more</a>
+      </section>
+    </div>
+  </div>
+
+  <div class="l-content-section__wrapper" id="projects">
+    <section class="l-content-section">
+      <h2>Open-Source Projects</h2>
+      <p>
+        Prosper Projects are a focal point of our community. They are a combination of human-centered design and open source technology and are built and maintained by online volunteers from all over the world. Each Prosper Project is designed to fulfill a few criteria:
+      </p>
+      <ul>
+        <li>Solve a <strong>real human problem</strong> of the <strong>refugee crisis</strong></li>
+        <li>Be <strong>sustainable</strong>, <strong>scalable</strong> and <strong>significant</strong></li>
+        <li>Solutions must be <strong>measurable</strong></li>
+      </ul>
+      {{#each projects}}
+        <div class="card--right">
+          <h3><a href="{{this.url}}">{{this.name}}</a></h3>
+           <dl>
+             <dt>Description:</dt>
+             <dd>{{this.description}}</dd>
+             <dt>Start Date:</dt>
+             <dd>{{this.startDate}}</dd>
+           </dl>
+           <a href="/projects/{{this.page}}" class="button secondary">learn more</a>
+           <div class="clearfix"></div>
+        </div>
+      {{/each}}
+    </section>
+  </div>
 
   <!-- Volunteer -->
 
@@ -103,34 +103,19 @@ image: sunrays-morning-grass-1280x720.jpg
   </div>
 
   <!-- Academy -->
-  <div class="l-content-section__bg" id="academy">
+  <!-- <div class="l-content-section__bg"> -->
     <section class="l-content-section__wrapper">
       <div class="l-content-section">
         <hgroup class="l-content-section__header">
           <h2>Introducing Prosper Academy:</h2>
-          <h4 class="subheader">An online apprenticeship for designers and developers to grow their skills through contributing to refugee crisis projects.</h4>
+          <h4 class="subheader">A program for refugees who want to land full-time jobs as digital workers in Europe.</h4>
         </hgroup>
         <p>
-           After launching Prosper, we learned that there's a global community of designers and developers that have enough skills to contribute to a project but lack the experience to launch a meaningful career. Some of the members of this community are <strong>citizens</strong>, and some are <strong>refugees</strong>.
+          In a sector that has more jobs than people to fill them, we've designed a solution for refugees to participate in world-class job training while transitioning to a new life in Europe. Rather than settle for stacking shelves, our apprentices are learning the craft that drives leading businesses around the world: Creating user-centered applications on the web.
         </p>
-
-        <p>
-          Prosper Academy is our response to this community's needs.
-        </p>
-        <a href="/academy.html" class="button transparent">learn more</a>
+        <a href="/academy.html" class="button">learn more</a>
       </div>
     </section>
-  </div>
-
-<div class="l-content-section__bg">
-  <section id="join" class="l-content-section__wrapper">
-    <div class="l-content-section">
-      <h2>Join Now</h2>
-      <p>If you are interested in working with our community to help refugees prosper in Europe, please provide us with your details below. </p>
-      <p>Upon receiving your request, we will email you to setup a time to chat. Speaking with each person who wants to join the team ensures that we stay focused on helping refugees prosper in Europe.</p>
-      <a href="/volunteer.htlm#form" class="button">join now</a>
-    </div>
-  </section>
-</div>
+  <!-- </div> -->
 
 </article>
