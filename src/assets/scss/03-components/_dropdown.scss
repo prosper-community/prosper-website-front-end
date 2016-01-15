@@ -1,0 +1,5 @@
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+  margin-top: .5rem;
+  border-color: $teal transparent transparent transparent;
+  border-top-style: solid;
+}

@@ -1,6 +1,8 @@
 // Form Styles
 form.madlib {
-  padding: 0;
+  background-color: $white;
+  border-radius: $global-radius;
+  padding: $base-leading/4 $base-leading/2;
   margin: 0;
   text-align: left;
   font-family: $sans-serif;
@@ -14,11 +16,10 @@ form.madlib {
     display: inline-block;
     padding: 0;
     border: none;
-    @include ms-respond(font-size, 2);
+    @include ms-respond(font-size, 0);
   }
   label {
     display: inline-block;
-    // @include ms-respond(font-size, 2);
     font-weight: normal;
   }
   input, textarea {
@@ -26,7 +27,7 @@ form.madlib {
   }
 
   input {
-    &[type="text"], &[type="email"] {
+    &[type="text"], &[type="email"], &[type="url"] {
       display: inline-block;
       background-color: transparent;
       border: none;
@@ -34,9 +35,15 @@ form.madlib {
       border-bottom: 3px dashed lighten($body-font-color, 50%);
       width: auto;
     }
+    &[type="url"] {
+      width: 60%;
+    }
     &[type="number"] {
       @extend input[type="text"];
       width: 3.5rem;
+    }
+    &[type="submit"] {
+      margin: $base-leading 0;
     }
   }
   textarea {

@@ -2,6 +2,7 @@
   // border-radius: $global-radius;
   @include callout-base;
   background: $white;
+  margin: $base-leading 0;
   &> :first-child {
     margin: 0 auto $base-leading/2 auto;
   }

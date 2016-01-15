@@ -7,27 +7,23 @@
   padding: .2em 1.6em;
   text-decoration: none;
   text-align: center;
-  color: $white;
+  color: $warm-grey;
   width: max-content;
   box-sizing: border-box;
   border-radius: $global-radius;
   transition: .2s all;
+  border: none;
   &:hover {
     color: $white;
     background-color: darken($primary-color, 15%);
   }
   &.secondary {
-    border: 1px solid $primary-color;
-    background: rgba(255,255,255,0.0);
-    color: $body-font-color;
+    background: $medium-grey;
+    color: $warm-grey;
     &:hover {
       color: $white;
       background-color: darken($primary-color, 15%);
       border-color: darken($primary-color, 15%);
     }
-  }
-  &.transparent {
-    @extend .secondary;
-    color: $white;
   }
 }

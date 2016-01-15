@@ -1,22 +1,39 @@
-<header class="site-header">
-      <h1 class="site-title"><a href="/"><span class="site-logo">prosper</span><span class="site-title-text">prosper</span></a></h1>
-      <h2 class="menu-label"><a href="javascript:void(0)"><span class="menu-text">Menu</span><span class="menu-icon"><span></span></span></a></h2>
-      <section class="nav">
-        <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li><a href="/playbook.html">Playbook</a></li>
-            <li><a href="https://blog.prosper.community">Blog</a></li>
-          </ul>
-        </nav>
-        <nav class="home-nav">
-          <ul class="home-nav__list">
-            <li><a href="/journey.html">Journey</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#team">Team</a></li>
-            <li><a href="/volunteer.html">Volunteer</a></li>
-            <li><a href="/academy.html">Academy</a></li>
-            <li class="has-button"><a href="/volunteer.html#form" class="button">join now</a></li>
-          </ul>
-        </nav>
+<!-- <div class="title-bar" data-responsive-toggle="site-nav" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div> -->
+
+<header class="site-header" >
+  <nav class="top-bar" id="site-nav">
+    <section class="top-bar-left">
+      <ul class="vertical medium-horizontal menu">
+        <li><a href="/" class="logo">prosper</a></li>
+        <li><a href="https://blog.prosper.community">blog</a></li>
+        <li><a href="/playbook.html">playbook</a></li>
+      </ul>
+    </section>
+      <section class="top-bar-right">
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+          <li class="has-submenu">
+            <a href="/#about">about</a>
+            <ul class="vertical submenu menu" data-submenu id="m2" >
+              <li><a href="/#who-we-are">who we are</a></li>
+              <li><a href="/journey.html">our journey</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="/#initiatives">initiatives</a>
+            <ul class="vertical submenu menu" data-submenu>
+              <li><a href="/#projects">prosper projects</a></li>
+              <li><a href="/academy.html">prosper academy</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="/contact.html">contact</a></li> -->
+          <li><a href="/volunteer.html#form" class="button">join now</a></li>
+          <!-- keeps contact visible on mobile -->
+          <li><a href=""></a></li>
+        </ul>
       </section>
-    </header>
+    </ul>
+  </nav>
+</header>

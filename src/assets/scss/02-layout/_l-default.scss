@@ -2,16 +2,9 @@
 
 // Content Section
 .l-content-section__bg {
+  position: relative;
   background-color: $light-gray;
-  &#academy {
-    background-image: url('/assets/img/prosper-academy-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    color: $white;
-    h2, h4 {
-      color: $white;
-    }
-  }
+  @include overlay-bg(.65, $teal, $yellow);
 }
 
 .l-content-section__wrapper {
@@ -19,9 +12,11 @@
 }
 
 .l-content-section {
-  padding: $base-leading*3 0;
+  position: relative;
+  padding: $base-leading*2 0;
   @include grid-col;
   @include breakpoint(medium) {
+    padding: $base-leading*3 0;
     @include grid-col(10);
     @include grid-col-off(1);
   }
@@ -32,6 +27,7 @@
   @include breakpoint(xxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
+    padding: $base-leading*6 0;
   }
 }
 
@@ -48,27 +44,12 @@
   position: relative;
   width: 100%;
   background: $header-font-color;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    transition: all 0.5s ease;
-  }
+  margin: 0;
+  @include overlay-bg(.65, $teal, $yellow);
   &#index {
-    background-image: url('/assets/img/sunrays-morning-grass-1080x608.jpg');
+    background-image: url('/assets/img/sunrays-morning-grass-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
-    @include breakpoint(large) {
-      background-image: url('/assets/img/sunrays-morning-grass-1280x720.jpg');
-    }
-    @include breakpoint(xxlarge) {
-      background-image: url('/assets/img/sunrays-morning-grass-1980x1114.jpg');
-    }
   }
   &#journey {
     background-image: url('/assets/img/our-journey-bg-1280x667.jpg');
@@ -81,7 +62,7 @@
     background-position: 50% 50%;
   }
   &#academy {
-    background-image: url('/assets/img/prosper-academy-bg-1280x720.jpg');
+    background-image: url('/assets/img/bursary-program-bg-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -109,6 +90,7 @@
     background-image: url('/assets/img/volunteer-bg-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
+    @include overlay-bg(.85, $teal, $yellow);
   }
   &#getting-started {
     background-image: url('/assets/img/getting-started-bg-1280x720.jpg');
@@ -144,22 +126,17 @@
   @include breakpoint(xlarge) {
     @include grid-col(8);
     @include grid-col-off(2);
-    padding-top: 18vh;
-    padding-bottom: 16vh;
+    padding-top: 16vh;
+    padding-bottom: 14vh;
   }
   @include breakpoint(xxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
+    padding-top: 18vh;
+    padding-bottom: 16vh;
   }
   .subheader {
     margin-bottom: 0;
-    color: $white;
-  }
-  .supraheader {
-    @extend .subheader;
   }
 }
 

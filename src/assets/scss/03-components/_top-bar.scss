@@ -1,11 +1,9 @@
-.top-bar {
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-}
+.top-bar-right {
+  @include breakpoint(medium) {
+    margin-top: 1rem;
+    .button {
+      margin-left: .6rem;  
+    }
+  }
 
-.top-bar .menu-text {
-  font-family: $sans-serif;
-  font-weight: 700;
-  color: $white;
 }

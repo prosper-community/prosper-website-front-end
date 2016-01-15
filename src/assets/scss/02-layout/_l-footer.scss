@@ -3,8 +3,11 @@ footer.l-site-footer {
   position: relative;
   min-height: 3.2em;
   color: $white;
+  a {
+    color: $warm-grey;
+  }
   .l-footer-columns-wrapper {
-    background: $header-font-color;
+    background: $dark-teal;
     margin: 0 auto;
     padding: 1.6em .8em;
     display: flex;
@@ -15,13 +18,13 @@ footer.l-site-footer {
     }
   }
   .l-footer-column {
-    background: $header-font-color;
+    background: $dark-teal;
     margin-right: .8em;
     &:last-child {
       margin-right: 0;
     }
     h4 {
-      color: $white;
+      color: $teal;
       margin-top: 0;
     }
   }
@@ -29,7 +32,9 @@ footer.l-site-footer {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: $sans-serif;
+    li {
+      font-family: $sans-serif;
+    }
   }
   .l-social-icon-list {
     margin: 0;

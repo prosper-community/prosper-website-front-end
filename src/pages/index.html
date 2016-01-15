@@ -17,15 +17,15 @@ image: sunrays-morning-grass-1280x720.jpg
   </div>
 
   <!-- Team -->
-  <section class="l-content-section__wrapper" id="team">
+  <section class="l-content-section__wrapper" id="about">
     <div class="l-team-content">
       <hgroup class="l-content-section__header">
-        <h2>Prosper Team</h2>
+        <h2 id="who-we-are">Who We Are</h2>
         <h4 class="subheader">
-          Meet the people who are working together to help refugees prosper in Europe
+          We are designers, developers, project managers, data scientists and other digital professionals&mdash;all driven by a shared belief that <strong><q>when refugees prosper, we all prosper</q></strong>.
         </h4>
       </hgroup>
-
+      <br>
         <ul class="people__list">
           {{#each team}}
             <li class="people__list--item">
@@ -38,14 +38,14 @@ image: sunrays-morning-grass-1280x720.jpg
     </div>
   </section>
 
-  <div class="l-content-section__bg">
-    <div class="l-content-section__wrapper" id="journey">
+  <div class="l-content-section__bg" id="journey">
+    <div class="l-content-section__wrapper">
       <section class="l-content-section">
         <h2>Our Journey</h2>
-        <p>
+        <p class="lead">
           Prosper emerged out of one designer's response to the human suffering of the refugee crisis in Europe. Since launching in October 2015, a global community of skilled digital workers has centralized around a single mission:
         </p>
-        <p>
+        <p class="lead">
           <strong>To transform the refugee crisis into an opportunity to foster a new Europe&mdash;a society where every person is cherished and prosperity abounds.</strong>
         </p>
         <a href="/journey.html" class="button secondary">read more</a>
@@ -53,17 +53,19 @@ image: sunrays-morning-grass-1280x720.jpg
     </div>
   </div>
 
-  <div class="l-content-section__wrapper" id="projects">
-    <section class="l-content-section">
-      <h2>Open-Source Projects</h2>
-      <p>
-        Prosper Projects are a focal point of our community. They are a combination of human-centered design and open source technology and are built and maintained by online volunteers from all over the world. Each Prosper Project is designed to fulfill a few criteria:
+  <div class="l-content-section__wrapper" id="initiatives">
+    <section class="l-content-section" id="projects">
+      <h2>Prosper Projects</h2>
+      <p class="lead">
+        Prosper Projects are a focal point of our community. They are a combination of human-centered design and open source technology and are built and maintained by online volunteers from all over the world.
       </p>
-      <ul>
-        <li>Solve a <strong>real human problem</strong> of the <strong>refugee crisis</strong></li>
-        <li>Be <strong>sustainable</strong>, <strong>scalable</strong> and <strong>significant</strong></li>
-        <li>Solutions must be <strong>measurable</strong></li>
-      </ul>
+      <p class="lead">
+        Each project must fulfill explicit criteria before being taken on by the prosper community:
+      <p class="lead">Solve a <strong>real human problem</strong> of the <strong>refugee crisis</strong></p>
+      <p class="lead">Be <strong>sustainable</strong>, <strong>scalable</strong> and <strong>significant</strong></p>
+      <p class="lead">Solutions must be <strong>measurable</strong></p>
+
+
       {{#each projects}}
         <div class="card--right">
           <h3><a href="{{this.url}}">{{this.name}}</a></h3>
@@ -80,42 +82,35 @@ image: sunrays-morning-grass-1280x720.jpg
     </section>
   </div>
 
-  <!-- Volunteer -->
-
+  <!-- Academy -->
   <div class="l-content-section__bg">
-    <section class="l-content-section__wrapper" id="volunteer">
+    <section class="l-content-section__wrapper">
       <div class="l-content-section">
         <hgroup class="l-content-section__header">
-          <h2>Volunteer</h2>
-          <h4 class="subheader">
-            As a skilled digital worker, there are problems of the refugee crisis that only you can solve...
-          </h4>
+          <h2>Prosper Academy</h2>
+          <h4 class="subheader">An intensive training program for refugees who want to land full-time jobs as digital workers in Europe.</h4>
         </hgroup>
-        <p>
-          The power of design and technology has placed digital workers in a unique position for humanitarian crises&mdash;the refugee crisis in particular. If you have skills, passion and experience you can make a massive impact and have fun alongside a diverse community of passionate professionals.
+        <p class="lead">
+          In a sector that has more jobs than people to fill them, we've designed a solution for refugees to participate in world-class job training while transitioning to a new life in Europe. Rather than settle for stacking shelves, our apprentices are learning the craft that drives leading businesses around the world: Creating user-centered applications on the web.
         </p>
-        <p>
-          We've worked hard to make sure that our volunteers can easily contribute to refugee crisis projects no matter where your are in the world. As a result, we've build a vibrant community of skilled digital workers all over the world who are working together to help refugees prosper in Europe.
-        </p>
-        <a href="/volunteer.html" class="button secondary">learn more</a>
+        <a href="/academy.html" class="button secondary">learn more</a>
       </div>
     </section>
   </div>
 
-  <!-- Academy -->
-  <!-- <div class="l-content-section__bg"> -->
-    <section class="l-content-section__wrapper">
-      <div class="l-content-section">
-        <hgroup class="l-content-section__header">
-          <h2>Introducing Prosper Academy:</h2>
-          <h4 class="subheader">A program for refugees who want to land full-time jobs as digital workers in Europe.</h4>
-        </hgroup>
-        <p>
-          In a sector that has more jobs than people to fill them, we've designed a solution for refugees to participate in world-class job training while transitioning to a new life in Europe. Rather than settle for stacking shelves, our apprentices are learning the craft that drives leading businesses around the world: Creating user-centered applications on the web.
-        </p>
-        <a href="/academy.html" class="button">learn more</a>
-      </div>
-    </section>
-  <!-- </div> -->
-
+  <!-- Volunteer -->
+  <section class="l-content-section__wrapper" id="volunteer">
+    <div class="l-content-section">
+      <hgroup class="l-content-section__header">
+        <h2>Volunteer Online</h2>
+        <h4 class="subheader">
+          As a skilled digital worker, there are problems of the refugee crisis that only you can solve...
+        </h4>
+      </hgroup>
+      <p class="lead">
+        If you have skills, passion and experience you can make a massive impact in the lives of refugees in Europe. We've worked hard to make sure that our volunteers can easily contribute to refugee crisis projects no matter where your are in the world. As a result, we've build a vibrant community of skilled digital workers all over the world who are working together to help refugees prosper in Europe.
+      </p>
+      <a href="/volunteer.html" class="button secondary">learn more</a>
+    </div>
+  </section>
 </article>

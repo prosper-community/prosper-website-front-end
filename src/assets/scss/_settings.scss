@@ -44,11 +44,18 @@
 // 1. Global
 // ---------
 
+// PROSPER brand colors
+$dark-teal: #006875;
+$teal: #17AF95;
+$warm-grey: #EEEBEA;
+$medium-grey: #5f5f5f;
+$yellow: #F7EE80;
+
 $global-width: rem-calc(1100);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #51BF95;
-$secondary-color: #41C0DA;
+$primary-color: $teal;
+$secondary-color: $medium-grey;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #C87C7A;
@@ -59,7 +66,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'freight-text-pro', Georgia, Cambria, "Times New Roman", Times, serif;
+$body-font-family: 'rooney-web', Georgia, Cambria, "Times New Roman", Times, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -277,13 +284,13 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-background: $white;
+$drilldown-background: $dark-teal;
 
 // 16. Dropdown
 // ------------
 
 $dropdown-padding: 1rem;
-$dropdown-border: 1px solid $medium-gray;
+$dropdown-border: none;
 $dropdown-font-size: 16rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
@@ -298,7 +305,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: true;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: $white;
+$dropdownmenu-background: $dark-teal;
 $dropdownmenu-border: 1px solid $medium-gray;
 
 // 18. Flex Video
@@ -538,6 +545,6 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: #333;
-$topbar-link-color: #fff;
+$topbar-background: $dark-teal;
+$topbar-link-color: $warm-grey;
 $topbar-input-width: 200px;

@@ -68,10 +68,10 @@
   width: 85%;
   max-width: 710px;
   word-wrap: break-word;
-  &:after {
-    content: "learn more";
-    @extend .button;
-    @extend .transparent;
-    margin: 1.6rem auto 0 auto;
-  }
+  // &:after {
+  //   content: "learn more";
+  //   @extend .button;
+  //   @extend .transparent;
+  //   margin: 1.6rem auto 0 auto;
+  // }
 }

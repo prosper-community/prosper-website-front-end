@@ -15,13 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "~6.0.0",
+    "foundation-sites": "~6.1.1",
     "motion-ui": "~1.1.0"
   },
   "private": true,
   "devDependencies": {
-    "modular-scale": "~2.1.1",
-    "jquery-validation": "jquery-validate#~1.14.0",
-    "sass-burger": "~1.2.1"
+    "modular-scale": "~2.1.1"
   }
 }

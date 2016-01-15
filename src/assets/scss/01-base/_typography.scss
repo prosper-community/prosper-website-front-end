@@ -1,15 +1,15 @@
 // Inspired by http://madebymike.com.au/writing/precise-control-responsive-typography/
 // Taken from https://github.com/modularscale/modularscale-sass#responsive-scales
 
-$header-font-color: #333;
-$body-font-color: #444;
+$header-font-color: $dark-teal;
+$body-font-color: #0a0a0a;
 $base-leading: 1.6em;
 
 $ms-range: 1.1 26em, $fifth 175em;
 
 $sans-serif: 'museo-sans-rounded', Helvetica, Verdana, Geneva, sans-serif;
 
-$serif: 'freight-text-pro', Georgia, Cambria, 'Times New Roman', Times, serif;
+$serif: 'rooney-web', Georgia, Cambria, 'Times New Roman', Times, serif;
 
 body {
   @include ms-respond(font-size, 1);
@@ -18,11 +18,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: $header-font-color;
   a {
     color: $header-font-color;
   }
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -74,10 +78,15 @@ hgroup {
 }
 
 .subheader {
-  font-family: $serif;
-  font-style: italic;
+  text-transform: none;
   font-weight: 300;
   color: $body-font-color;
+}
+
+.supraheader {
+  @extend .subheader;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 body, p, li {
@@ -87,6 +96,17 @@ body, p, li {
 p {
   font-family: $serif;
   margin-bottom: $base-leading;
+  &.lead {
+    font-family: $sans-serif;
+    @include ms-respond(font-size, 0);
+    font-weight: 300;
+    ul li {
+      font-family: $sans-serif !important;
+    }
+  }
+  ul li {
+    font-family: $serif ;
+  }
 }
 
 ul {
@@ -95,7 +115,7 @@ ul {
 
 dd {
   margin-bottom: $base-leading;
-  font-family: $serif;
+  font-weight: 300;
 }
 
 li {
@@ -131,7 +151,7 @@ p.drop-cap:first-letter {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 blockquote {

@@ -1,3 +1,14 @@
 .clearfix {
   clear: both;
 }
+
+body {
+  background-color: $warm-grey;
+}
+
+:target:before {
+  content:"";
+  // display:block;
+  height:150px;
+  margin:-150px 0 0;
+}
