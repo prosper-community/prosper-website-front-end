@@ -9,6 +9,7 @@
 
 .l-content-section__wrapper {
   @include grid-row;
+  overflow: hidden;
 }
 
 .l-content-section {
@@ -113,15 +114,14 @@
 .l-marquee__header {
   position: relative;
   width: 100%;
-  margin-top: 2rem;
-  padding-top: 12vh;
-  padding-bottom: 10vh;
+  padding: 12vh 1rem 10vh 1rem;
   margin-bottom: 0;
   @include breakpoint(large) {
     @include grid-col(10);
     @include grid-col-off(1);
     padding-top: 14vh;
     padding-bottom: 12vh;
+    margin-top: 2rem;
   }
   @include breakpoint(xlarge) {
     @include grid-col(8);

@@ -12,11 +12,15 @@ ul.people__list {
 }
 
 li.people__list--item {
-  width: 11rem;
-  &:first-child {
-    margin-left: $base-leading*2;
+  width: 8rem;
+  margin-right: $base-leading;
+  @include breakpoint(medium) {
+    width: 11rem;
+    &:first-child {
+      margin-left: $base-leading*2;
+    }
+    margin: 0 $base-leading*2 $base-leading*2 0;
   }
-  margin: 0 $base-leading*2 $base-leading*2 0;
   flex-shrink: 0;
   &:last-child {
     margin-right: 0;

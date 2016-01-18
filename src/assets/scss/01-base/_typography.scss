@@ -20,6 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans-serif;
   font-weight: 900;
   color: $header-font-color;
+  hyphens: auto;
+  word-wrap: break-word;
   a {
     color: $header-font-color;
   }
@@ -81,12 +83,14 @@ hgroup {
   text-transform: none;
   font-weight: 300;
   color: $body-font-color;
+  hyphens: auto;
 }
 
 .supraheader {
   @extend .subheader;
   font-weight: 700;
   text-transform: uppercase;
+  hyphens: auto;
 }
 
 body, p, li {

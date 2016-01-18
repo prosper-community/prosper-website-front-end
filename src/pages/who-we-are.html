@@ -1,0 +1,29 @@
+---
+title: Who We Are
+description: "We are designers, developers, project managers, data scientists and other digital professionals, all driven by a shared belief that 'When refugees prosper, we all prosper.'"
+url: who-we-are.html
+image:
+---
+<article role="main" class="main-content">
+  <div class="l-marquee__bg">
+    <div class="l-marquee__wrapper">
+      <hgroup class="l-marquee__header" >
+        <h1>{{ title }}</h1>
+        <h4 class="subheader">{{ description }}</h4>
+      </hgroup>
+    </div>
+  </div>
+  <section class="l-content-section__wrapper">
+    <div class="l-content-section">
+      <ul class="people__list">
+        {{#each team}}
+          <li class="people__list--item">
+            {{#personImage this}}
+            {{/personImage}}
+            <h6>{{ this }}</h6>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+</article>
