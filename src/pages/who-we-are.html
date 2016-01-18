@@ -5,16 +5,16 @@ url: who-we-are.html
 image:
 ---
 <article role="main" class="main-content">
-  <div class="l-marquee__bg">
+  <div class="l-marquee__bg" id="who-we-are">
     <div class="l-marquee__wrapper">
-      <hgroup class="l-marquee__header" >
+      <hgroup class="l-marquee__header">
         <h1>{{ title }}</h1>
         <h4 class="subheader">{{ description }}</h4>
       </hgroup>
     </div>
   </div>
   <section class="l-content-section__wrapper">
-    <div class="l-content-section">
+    <div class="l-content-section--full">
       <ul class="people__list">
         {{#each team}}
           <li class="people__list--item">

@@ -32,6 +32,12 @@
   }
 }
 
+.l-content-section--full {
+  position: relative;
+  padding: $base-leading*2 0;
+  @include grid-col;
+}
+
 .l-team-content {
   padding: $base-leading*3 0;
   text-align: center;
@@ -44,7 +50,6 @@
 .l-marquee__bg {
   position: relative;
   width: 100%;
-  background: $header-font-color;
   margin: 0;
   @include overlay-bg(.65, $teal, $yellow);
   &#index {
@@ -102,6 +107,9 @@
     background-image: url('/assets/img/feedback-bg-1280x720.jpg');
     background-size: cover;
     background-position: 50% 50%;
+  }
+  &#who-we-are {
+    @include overlay-bg(.65, $teal, $yellow);
   }
 }
 
