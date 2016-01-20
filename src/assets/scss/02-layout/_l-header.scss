@@ -13,13 +13,16 @@
       background-image: url('/assets/img/no-bg_Prosper.svg');
       background-repeat: no-repeat;
       background-position: center;
-      width: 170px;
+      width: 200px;
       height: 0px;
-      padding: 5rem 0 0 0;
-      margin: 0;
+      padding: 2rem 0 0 0;
       overflow: hidden;
       display: block;
       box-sizing: border-box;
+      margin: .25rem 0;
+      @include breakpoint(medium) {
+        margin: .25rem 0 .25rem 1rem;
+      }
     }
   }
 }
@@ -27,4 +30,20 @@
 .menu > li:not(.menu-text) > a.button {
   // display: none;
   padding: .7rem 1rem !important;
+}
+
+.top-bar-right {
+  @include breakpoint(medium) {
+    margin-top: 3px;
+    .button {
+      margin-left: .6rem;
+      margin-bottom: .1rem;
+    }
+  }
+}
+
+.top-bar-left {
+  @include breakpoint(medium) {
+    margin-top: 4px;
+  }
 }

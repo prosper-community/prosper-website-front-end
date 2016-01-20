@@ -17,7 +17,6 @@
   padding: $base-leading*2 0;
   @include grid-col;
   @include breakpoint(medium) {
-    padding: $base-leading*3 0;
     @include grid-col(10);
     @include grid-col-off(1);
   }
@@ -28,7 +27,7 @@
   @include breakpoint(xxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
-    padding: $base-leading*6 0;
+    padding: $base-leading*4 0;
   }
 }
 

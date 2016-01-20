@@ -104,22 +104,17 @@ p {
     font-family: $sans-serif;
     @include ms-respond(font-size, 0);
     font-weight: 300;
-    ul li {
-      font-family: $sans-serif !important;
-    }
-  }
-  ul li {
-    font-family: $serif ;
   }
 }
 
-ul {
-  margin: 0 0 $base-leading $base-leading;
-}
 
 dd {
   margin-bottom: $base-leading;
   font-weight: 300;
+}
+
+ul {
+  margin: 0 0 $base-leading $base-leading;
 }
 
 li {
