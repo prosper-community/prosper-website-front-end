@@ -62,7 +62,7 @@ h5 {
 }
 
 h6 {
-  @include ms-respond(font-size, 1);
+  @include ms-respond(font-size, 0);
   margin-top: 1.6em;
   margin-bottom: 0;
 }
