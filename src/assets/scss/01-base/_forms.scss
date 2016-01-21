@@ -45,6 +45,9 @@ form.madlib {
     &[type="submit"] {
       margin: $base-leading 0;
     }
+    &[name="entry.1686698865"] {
+      width: 80%;
+    }
   }
   textarea {
     @extend input[type="text"];
