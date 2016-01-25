@@ -1,12 +1,18 @@
+.title-bar {
+  width: 100%;
+  z-index: 99;
+}
+
+.title-bar-title {
+  text-transform: uppercase;
+}
+
 .site-header {
   z-index: 99;
   width: 100%;
   background-color: $dark-teal;
   font-weight: 500;
   text-transform: uppercase;
-  @include breakpoint(medium) {
-    position: fixed;
-  }
   .menu a {
     color: $warm-grey;
     &.logo {
@@ -20,7 +26,7 @@
       display: block;
       box-sizing: border-box;
       margin: .25rem 0;
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         margin: .25rem 0 .25rem 1rem;
       }
     }
@@ -36,8 +42,8 @@
   .button {
     margin-left: 1rem;
   }
-  @include breakpoint(medium) {
-    margin-top: 3px;
+  @include breakpoint(large) {
+    margin-top: 2px;
     .button {
       margin-left: .6rem;
       margin-bottom: .1rem;
@@ -46,7 +52,7 @@
 }
 
 .top-bar-left {
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     margin-top: 4px;
   }
 }

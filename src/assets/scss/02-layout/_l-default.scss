@@ -121,26 +121,23 @@
 .l-marquee__header {
   position: relative;
   width: 100%;
-  padding: 12vh 1rem 10vh 1rem;
+  padding: 4rem 1rem;
+  padding: 12vh 1rem;
   margin-bottom: 0;
+  min-height: 200px;
   @include breakpoint(large) {
     @include grid-col(10);
     @include grid-col-off(1);
-    padding-top: 14vh;
-    padding-bottom: 12vh;
     margin-top: 2rem;
+    min-height: 300px;
   }
   @include breakpoint(xlarge) {
     @include grid-col(8);
     @include grid-col-off(2);
-    padding-top: 16vh;
-    padding-bottom: 14vh;
   }
   @include breakpoint(xxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
-    padding-top: 18vh;
-    padding-bottom: 16vh;
   }
   .subheader {
     margin-bottom: 0;
