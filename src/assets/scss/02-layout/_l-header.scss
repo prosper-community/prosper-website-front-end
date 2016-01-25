@@ -33,6 +33,9 @@
 }
 
 .top-bar-right {
+  .button {
+    margin-left: 1rem;
+  }
   @include breakpoint(medium) {
     margin-top: 3px;
     .button {
