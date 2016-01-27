@@ -10,11 +10,14 @@
 .l-content-section__wrapper {
   @include grid-row;
   overflow: hidden;
+  padding: $base-leading*2 0;
+  @include breakpoint(xxxlarge) {
+    padding: $base-leading*4 0;
+  }
 }
 
 .l-content-section {
   position: relative;
-  padding: $base-leading*2 0;
   @include grid-col;
   @include breakpoint(medium) {
     @include grid-col(10);
@@ -24,25 +27,15 @@
     @include grid-col(8);
     @include grid-col-off(2);
   }
-  @include breakpoint(xxlarge) {
+  @include breakpoint(xxxlarge) {
     @include grid-col(10);
     @include grid-col-off(1);
-    padding: $base-leading*4 0;
   }
 }
 
 .l-content-section--full {
   position: relative;
-  padding: $base-leading*2 0;
   @include grid-col;
-}
-
-.l-team-content {
-  padding: $base-leading*3 0;
-  text-align: center;
-  a.button {
-    margin: 0 auto;
-  }
 }
 
 // Marquee is the large banner that oftens contains h1 and h2 subheader
@@ -121,14 +114,12 @@
 .l-marquee__header {
   position: relative;
   width: 100%;
-  padding: 4rem 1rem;
-  padding: 12vh 1rem;
+  padding: 8rem 1rem;
   margin-bottom: 0;
   min-height: 200px;
   @include breakpoint(large) {
     @include grid-col(10);
     @include grid-col-off(1);
-    margin-top: 2rem;
     min-height: 300px;
   }
   @include breakpoint(xlarge) {

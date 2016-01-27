@@ -15,11 +15,10 @@ li.people__list--item {
   width: 8rem;
   margin-right: $base-leading;
   @include breakpoint(medium) {
-    width: 11rem;
     &:first-child {
-      margin-left: $base-leading*2;
+      margin-left: $base-leading;
     }
-    margin: 0 $base-leading*2 $base-leading*2 0;
+    margin: 0 $base-leading $base-leading 0;
   }
   flex-shrink: 0;
   &:last-child {
