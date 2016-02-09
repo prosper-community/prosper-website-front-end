@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $header-font-color;
   hyphens: auto;
   word-wrap: break-word;
+  max-width: 100%;
   a {
     color: $header-font-color;
   }
@@ -47,7 +48,6 @@ h3 {
   @include ms-respond(font-size, 3);
   @include smcps;
   // border-bottom: 1px solid $primary-color;
-  width: max-content;
 }
 
 h4 {
@@ -58,7 +58,6 @@ h5 {
   @include ms-respond(font-size, 2);
   @include smcps;
   // border-bottom: 1px solid $primary-color;
-  width: max-content;
 }
 
 h6 {
