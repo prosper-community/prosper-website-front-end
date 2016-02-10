@@ -46,8 +46,6 @@ h2 {
 
 h3 {
   @include ms-respond(font-size, 3);
-  @include smcps;
-  // border-bottom: 1px solid $primary-color;
 }
 
 h4 {
@@ -72,7 +70,7 @@ hgroup {
   h1 {
     margin-bottom: 0;
   }
-  h2.subheader {
+  .subheader {
     margin-top: 0;
     margin-bottom: 2em;
   }
