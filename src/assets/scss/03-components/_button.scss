@@ -1,7 +1,7 @@
 .button {
   display: block;
   font-weight: 700;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   @include smcps;
   background-color: $primary-color;
   padding: .2em 1.6em;

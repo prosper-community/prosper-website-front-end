@@ -11,15 +11,19 @@
   z-index: 99;
   width: 100%;
   background-color: $dark-teal;
-  font-weight: 500;
+  font-weight: 300;
   text-transform: uppercase;
   .menu a {
-    color: $warm-grey;
+    color: darken($warm-grey, 5%);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: lighten($warm-grey, 5%);
+    }
     &.logo {
       background-image: url('/assets/img/no-bg_Prosper.svg');
       background-repeat: no-repeat;
       background-position: center;
-      width: 200px;
+      width: 150px;
       height: 0px;
       padding: 2rem 0 0 0;
       overflow: hidden;
@@ -27,7 +31,7 @@
       box-sizing: border-box;
       margin: .25rem 0;
       @include breakpoint(large) {
-        margin: .25rem 0 .25rem 1rem;
+        margin: .25rem 1rem;
       }
     }
   }
