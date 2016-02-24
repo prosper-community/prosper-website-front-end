@@ -14,16 +14,16 @@
   transition: .2s all;
   border: none;
   &:hover {
-    color: $white;
-    background-color: darken($primary-color, 15%);
+    color: $white !important;
+    background-color: darken($primary-color, 10%);
   }
   &.secondary {
     background: $medium-grey;
     color: $warm-grey;
     &:hover {
       color: $white;
-      background-color: darken($primary-color, 15%);
-      border-color: darken($primary-color, 15%);
+      background-color: darken($medium-grey, 10%);
+      border-color: darken($medium-grey, 10%);
     }
   }
   &.centered {

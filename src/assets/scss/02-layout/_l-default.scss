@@ -149,26 +149,7 @@
   font-weight: 300;
 }
 
-// Playbook
-.l-playbook-welcome-wrapper {
-  @extend .l-welcome-wrapper;
-  background-color: $light-gray;
-}
-
-.l-playbook-welcome-header {
-  @extend .l-welcome-header;
-}
-
-.l-playbook-content, .l-playbook-header-content {
-  @extend %l-inner-column-content;
-}
-
 .l-table-of-contents li a h6 {
   margin: 0;
   color: $primary-color;
-}
-
-// Legal Docs
-.l-legal-docs-content {
-  @extend %l-inner-column-content;
 }
