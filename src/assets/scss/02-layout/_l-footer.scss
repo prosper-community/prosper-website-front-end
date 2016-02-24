@@ -3,8 +3,13 @@ footer.l-site-footer {
   position: relative;
   min-height: 3.2em;
   color: $white;
+  font-weight: 300;
   a {
     color: $warm-grey;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $yellow;
+    }
   }
   .l-footer-columns-wrapper {
     background: $dark-teal;

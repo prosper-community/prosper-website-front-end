@@ -22,3 +22,8 @@
     height: 0;
   }
 }
+
+.card--inactive {
+  @extend .card;
+  opacity: .6;
+}

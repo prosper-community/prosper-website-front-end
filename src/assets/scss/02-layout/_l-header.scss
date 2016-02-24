@@ -14,10 +14,10 @@
   font-weight: 300;
   text-transform: uppercase;
   .menu a {
-    color: darken($warm-grey, 5%);
+    color: $warm-grey;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: lighten($warm-grey, 5%);
+      color: $yellow;
     }
     &.logo {
       background-image: url('/assets/img/no-bg_Prosper.svg');
