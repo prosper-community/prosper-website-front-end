@@ -2,4 +2,32 @@ ul.action-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  li {
+    &:nth-child(2) a {
+      color: $cyan;
+    }
+    &:nth-child(3) a {
+      color: $blue;
+    }
+    a {
+      position: relative;
+      display: block;
+      @include ms-respond(font-size, 7);
+      text-transform: none;
+      line-height: 1;
+      font-weight: 600;
+      padding: .5rem 0;
+      font-family: $sans-serif;
+      &:after {
+        content: "";
+        width: 5rem;
+        position: absolute;
+        left: 0;
+        height: 10px;
+        border-top: 1px solid #a49183;
+        opacity: .5;
+        top: 0;
+      }
+    }
+  }
 }

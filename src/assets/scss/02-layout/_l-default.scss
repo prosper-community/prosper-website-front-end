@@ -1,6 +1,10 @@
 // Styles for default layout
 .welcome {
-  padding: $base-leading*2 0;
+  padding-top: $base-leading*2;
+}
+
+.actions {
+  padding-bottom: $base-leading*4;
 }
 
 // Content Section
