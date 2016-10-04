@@ -5,9 +5,17 @@ ul.action-list {
   li {
     &:nth-child(2) a {
       color: $cyan;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: darken($cyan, 10%);
+      }
     }
     &:nth-child(3) a {
       color: $blue;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: darken($blue, 10%);
+      }
     }
     a {
       position: relative;
