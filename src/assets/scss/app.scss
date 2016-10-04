@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import '01-base/variables';
+
 @import 'settings';
 @import 'foundation';
 // @import 'motion-ui';
@@ -52,7 +54,6 @@
 
 // 01-Base
 @import '01-base/config',
-        '01-base/variables',
         '01-base/mixins',
         '01-base/typography',
         '01-base/forms';
@@ -68,7 +69,8 @@
         '03-components/card',
         '03-components/people-list',
         '03-components/explore-next',
-        '03-components/dropdown';
+        '03-components/dropdown',
+        '03-components/social-icon-list';
 
 // Debug
 // @include 'debug';

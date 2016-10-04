@@ -2,10 +2,6 @@
   clear: both;
 }
 
-body {
-  background-color: $warm-grey;
-}
-
 :target:before {
   content:"";
   // display:block;

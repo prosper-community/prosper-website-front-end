@@ -12,12 +12,38 @@
   width: 100%;
   background-color: $dark-teal;
   font-weight: 300;
-  text-transform: uppercase;
   .menu a {
     color: $warm-grey;
     transition: all 0.2s ease-in-out;
-    &:hover {
-      color: $yellow;
+    &:not(.logo) {
+      opacity: .75;
+      &:hover {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+      }
+    }
+    &.social-icon {
+      margin-top: .75rem;
+    }
+    &#facebook {
+      background-image: url('/assets/img/facebook.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &#twitter {
+      background-image: url('/assets/img/twitter.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &#github {
+      background-image: url('/assets/img/github.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &#linkedin {
+      background-image: url('/assets/img/linkedin.svg');
+      background-repeat: no-repeat;
+      background-position: center;
     }
     &.logo {
       background-image: url('/assets/img/no-bg_Prosper.svg');
@@ -37,9 +63,12 @@
   }
 }
 
-.menu > li:not(.menu-text) > a.button {
-  // display: none;
-  padding: .7rem 1rem !important;
+.menu > li:not(.menu-text) {
+  padding: .7rem 1rem;
+  a.button {
+    // display: none;
+    padding: .7rem 1rem !important;
+  }
 }
 
 .top-bar-right {

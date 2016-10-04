@@ -44,13 +44,6 @@
 // 1. Global
 // ---------
 
-// PROSPER brand colors
-$dark-teal: #006875;
-$teal: #17AF95;
-$warm-grey: #EEEBEA;
-$medium-grey: #5f5f5f;
-$yellow: #F7EE80;
-
 $global-width: rem-calc(1100);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
@@ -59,12 +52,12 @@ $secondary-color: $medium-grey;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #C87C7A;
-$light-gray: #e6e6e6;
+$light-gray: #F3F9F9;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
+$body-background: $light-gray;
 $body-font-color: $black;
 $body-font-family: 'rooney-web', Georgia, Cambria, "Times New Roman", Times, serif;
 $body-antialiased: true;
@@ -544,7 +537,7 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0.5rem 4rem;
 $topbar-background: $dark-teal;
 $topbar-link-color: $warm-grey;
 $topbar-input-width: 200px;

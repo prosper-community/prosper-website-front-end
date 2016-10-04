@@ -1,0 +1,17 @@
+.social-icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    width: $base-leading;
+    height: $base-leading;
+    display: inline-block;
+    margin-bottom: $base-leading;
+    &:not(.last) {
+      margin-right: $base-leading;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+}

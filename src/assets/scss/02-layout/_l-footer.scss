@@ -41,20 +41,6 @@ footer.l-site-footer {
       font-family: $sans-serif;
     }
   }
-  .l-social-icon-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      width: $base-leading;
-      height: $base-leading;
-      display: inline-block;
-      margin-bottom: $base-leading;
-      &:not(.last) {
-        margin-right: $base-leading;
-      }
-    }
-  }
   .l-facts-figures-list {
     list-style: none;
   }
