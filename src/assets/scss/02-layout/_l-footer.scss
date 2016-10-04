@@ -11,6 +11,11 @@ footer.l-site-footer {
     &:hover {
       opacity: 1;
     }
+    &.button {
+      background-color: lighten($teal, 15%);
+      opacity: 1;
+      margin-bottom: $base-leading;
+    }
   }
   .l-footer-columns-wrapper {
     background: $dark-teal;
@@ -30,7 +35,7 @@ footer.l-site-footer {
       margin-right: 0;
     }
     h4 {
-      color: $white;
+      color: lighten($teal, 15%);
       margin-top: 0;
     }
   }
