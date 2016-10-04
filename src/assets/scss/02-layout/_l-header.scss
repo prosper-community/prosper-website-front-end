@@ -16,7 +16,7 @@
     color: $warm-grey;
     transition: all 0.2s ease-in-out;
     &:not(.logo) {
-      opacity: .75;
+      opacity: .85;
       &:hover {
         opacity: 1;
         transition: opacity 0.2s ease-in-out;

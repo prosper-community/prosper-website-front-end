@@ -6,9 +6,10 @@ footer.l-site-footer {
   font-weight: 300;
   a {
     color: $warm-grey;
-    transition: all 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: .85;
     &:hover {
-      color: $yellow;
+      opacity: 1;
     }
   }
   .l-footer-columns-wrapper {
@@ -29,7 +30,7 @@ footer.l-site-footer {
       margin-right: 0;
     }
     h4 {
-      color: $teal;
+      color: $white;
       margin-top: 0;
     }
   }
