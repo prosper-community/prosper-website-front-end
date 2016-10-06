@@ -1,3 +1,63 @@
+// Marquee is the large banner that oftens contains h1 and h2 subheader
+.marquee__bg {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  @include overlay-bg(.65, $teal, $yellow);
+  &#index {
+    background-image: url('/assets/img/sunrays-morning-grass-1280x720.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &#journey {
+    background-image: url('/assets/img/our-journey-bg-1280x667.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &#playbook {
+    background-image: url('/assets/img/playbook-bg-1280x720.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &#volunteer {
+    background-image: url('/assets/img/volunteer-bg-1280x720.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    @include overlay-bg(.85, $teal, $yellow);
+  }
+}
+
+.marquee__wrapper {
+  @include grid-row;
+  display: flex;
+  min-height: 40vh;
+}
+
+.marquee__header {
+  position: relative;
+  width: 100%;
+  padding: 8rem 1rem;
+  margin-bottom: 0;
+  min-height: 200px;
+  @include breakpoint(large) {
+    @include grid-col(10);
+    @include grid-col-off(1);
+    min-height: 300px;
+  }
+  @include breakpoint(xlarge) {
+    @include grid-col(8);
+    @include grid-col-off(2);
+  }
+  @include breakpoint(xxlarge) {
+    @include grid-col(10);
+    @include grid-col-off(1);
+  }
+  .subheader {
+    margin-bottom: 0;
+  }
+}
+
+
 .marquee--secondary {
   border-bottom: 1px solid $medium-gray;
   background: linear-gradient(90deg, $white, #F6FDFD);
