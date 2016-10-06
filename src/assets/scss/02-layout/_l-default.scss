@@ -40,106 +40,39 @@
   }
 }
 
+.l-main-content__wrapper {
+  @include grid-row;
+  padding: $base-leading*2;
+}
+
+.l-main-content {
+  @include grid-col;
+  @include breakpoint(medium) {
+    @include grid-col(8);
+  }
+  @include breakpoint(large) {
+    @include grid-col(10);
+  }
+}
+
+.l-cta {
+  padding-bottom: .5rem;
+  @include grid-col;
+  @include breakpoint(medium) {
+    @include grid-col(4);
+  }
+  @include breakpoint(large) {
+    @include grid-col(2);
+  }
+  h6 {
+    margin-top: 0.7rem;
+  }
+  border-left: 1px solid $medium-gray;
+}
+
 .l-content-section--full {
   position: relative;
   @include grid-col;
-}
-
-// Marquee is the large banner that oftens contains h1 and h2 subheader
-.l-marquee__bg {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  @include overlay-bg(.65, $teal, $yellow);
-  &#index {
-    background-image: url('/assets/img/sunrays-morning-grass-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#journey {
-    background-image: url('/assets/img/our-journey-bg-1280x667.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#refugee-projects {
-    background-image: url('/assets/img/rotating-starry-sky-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#academy {
-    background-image: url('/assets/img/bursary-program-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#playbook {
-    background-image: url('/assets/img/playbook-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#uxd-track {
-    background-image: url('/assets/img/ux-design-track-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#dev-track {
-    background-image: url('/assets/img/web-development-track-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#bursary-program {
-    background-image: url('/assets/img/bursary-program-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#volunteer {
-    background-image: url('/assets/img/volunteer-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    @include overlay-bg(.85, $teal, $yellow);
-  }
-  &#getting-started {
-    background-image: url('/assets/img/getting-started-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#feedback {
-    background-image: url('/assets/img/feedback-bg-1280x720.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  &#who-we-are {
-    @include overlay-bg(.65, $teal, $yellow);
-  }
-}
-
-.l-marquee__wrapper {
-  @include grid-row;
-  display: flex;
-  min-height: 40vh;
-}
-
-.l-marquee__header {
-  position: relative;
-  width: 100%;
-  padding: 8rem 1rem;
-  margin-bottom: 0;
-  min-height: 200px;
-  @include breakpoint(large) {
-    @include grid-col(10);
-    @include grid-col-off(1);
-    min-height: 300px;
-  }
-  @include breakpoint(xlarge) {
-    @include grid-col(8);
-    @include grid-col-off(2);
-  }
-  @include breakpoint(xxlarge) {
-    @include grid-col(10);
-    @include grid-col-off(1);
-  }
-  .subheader {
-    margin-bottom: 0;
-  }
 }
 
 .l-join-content {

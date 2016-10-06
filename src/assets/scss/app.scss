@@ -9,6 +9,7 @@
 // Foundation Components
 @include foundation-global-styles;
 @include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 // @include foundation-button;
 // @include foundation-forms;
@@ -71,6 +72,7 @@
         '03-components/people-list',
         '03-components/explore-next',
         '03-components/dropdown',
+        '03-components/marquee',
         '03-components/social-icon-list';
 
 // Debug

@@ -1,0 +1,34 @@
+.marquee--secondary {
+  border-bottom: 1px solid $medium-gray;
+  background: linear-gradient(90deg, $white, #F6FDFD);
+  @include grid-row;
+  @include breakpoint(medium) {
+    @include flex-grid-row;
+    @include flex-grid-row-align(justify, middle);
+    max-width: 100%;
+  }
+  .marquee__content {
+    @include grid-column;
+    // @include flex-grid-column-align(middle);
+    padding: 2rem 1rem;
+    @include breakpoint(medium) {
+      @include flex-grid-column(6);
+    }
+    @include breakpoint(large) {
+      padding: 4rem 0rem 4rem 16rem;
+    }
+  }
+
+  .marquee__image {
+    @include grid-column;
+    padding: 0;
+    @include breakpoint(medium) {
+      @include flex-grid-column(6);
+      padding-right: 0;
+    }
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
