@@ -18,15 +18,6 @@
     "foundation-sites": "~6.1.1",
     "motion-ui": "~1.1.0"
   },
-  "overrides": {
-    "foundation-sites": {
-      "main": [
-        "js/foundation/foundation.core.js",
-        "js/foundation/foundation.reveal.js",
-        "js/foundation/foundation.responsiveMenu.js",
-        "js/foundation/foundation.responsiveToggle.js"
-      ]
-    },
   "private": true,
   "devDependencies": {
     "modular-scale": "~2.1.1"
