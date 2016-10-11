@@ -47,27 +47,26 @@
 
 .l-main-content {
   @include grid-col;
-  @include breakpoint(medium) {
-    @include grid-col(8);
-  }
-  @include breakpoint(large) {
-    @include grid-col(10);
+  @include breakpoint(850px) {
+    @include grid-col(9, 50);
+    @include grid-column-position(-3);
   }
 }
 
 .l-cta {
   padding-bottom: .5rem;
   @include grid-col;
-  @include breakpoint(medium) {
-    @include grid-col(4);
-  }
-  @include breakpoint(large) {
-    @include grid-col(2);
+  margin-bottom: $base-leading*2;
+  @include breakpoint(850px) {
+    @include grid-col(3);
+    @include grid-column-position(9);
   }
   h6 {
     margin-top: 0.7rem;
   }
-  border-left: 1px solid $medium-gray;
+  @include breakpoint(850px) {
+    border-left: 1px solid $medium-gray;
+  }
 }
 
 .l-content-section--full {
