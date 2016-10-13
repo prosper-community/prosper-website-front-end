@@ -154,11 +154,12 @@ blockquote {
   border: none;
   color: $header-font-color;
   font-style: italic;
-  &:before {
+  p:before {
     content: "\201C";
   }
-  &:after {
+  p:after {
     content: "\201D";
+    float: right;
   }
 }
 

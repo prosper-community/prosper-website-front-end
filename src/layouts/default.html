@@ -106,6 +106,34 @@
       </script>
     {{/ifpage}}
 
+    {{#ifpage 'about'}}
+      <script>
+        (function($){
+          //- All h2 id's must come in the format of subject-heading-words
+          //- For it to work as a link in the table of contents
+          var $h2s = $('.l-main-content h2');
+
+
+          //- Create list items for each h2 in array
+          for (var i = 0; i < $h2s.length; i++) {
+            var h2Text = $($h2s[i]).text();
+
+            //- Takes any text and removes spaces, capitals
+            function convertToInPageLink(text) {
+              return text.replace(/\s+/g, '-').toLowerCase();
+            }
+
+            //- Adds to the table of contents a link to each h2 in playbook
+            $('.no-bullet').append(
+              $('<li>').append(
+                $('<a>').attr('href', '#' + convertToInPageLink(h2Text)).append(h2Text)
+            ));
+          }
+
+        }(jQuery));
+      </script>
+    {{/ifpage}}
+
     <!-- this should be able to accept multiple pages as an argument, but since it isn't I've had to duplicate the codeblock below...  -->
     {{#ifpage 'volunteer'}}
       <script>
