@@ -5,7 +5,9 @@ $header-font-color: $dark-teal;
 $body-font-color: #0a0a0a;
 $base-leading: 1.6em;
 
-$ms-range: 1.1 26em, $fifth 175em;
+$ms-range:
+  $minor-third 26em,
+  $fourth 175em;
 
 $sans-serif: 'museo-sans-rounded', Helvetica, Verdana, Geneva, sans-serif;
 
