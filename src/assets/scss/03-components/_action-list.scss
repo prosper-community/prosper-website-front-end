@@ -20,11 +20,11 @@ ul.action-list {
     a {
       position: relative;
       display: block;
-      @include ms-respond(font-size, 7);
+      @include ms-respond(font-size, 8);
       text-transform: none;
       line-height: 1;
       font-weight: 600;
-      padding: .5rem 0;
+      padding: .25rem 0;
       font-family: $sans-serif;
       &:after {
         content: "";
