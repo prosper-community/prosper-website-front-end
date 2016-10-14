@@ -3,36 +3,16 @@
 .title-bar {
   width: 100%;
   z-index: 99;
-  padding: .4rem 1.2rem;
+  padding: .4rem 1.25rem;
   .menu-icon {
     float: right;
-    margin: 1.15rem .5rem 0 .5rem;
+    margin: 0.65rem .5rem 0 .5rem;
   }
   .title-bar-title {
     text-transform: uppercase;
     float: right;
     width: auto;
-    padding-top: .8rem;
-  }
-  .title-bar-logo {
-    width: auto;
-    display: inline-block;
-    padding: .5rem;
-  }
-  .logo {
-    background-image: url('/assets/img/no-bg_Prosper.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 125px;
-    height: 0px;
-    padding: 2rem 0 0 0;
-    overflow: hidden;
-    display: block;
-    box-sizing: border-box;
-    margin: .25rem 0;
-    @include breakpoint(large) {
-      margin: .25rem 1rem;
-    }
+    padding-top: .3rem;
   }
 }
 
@@ -41,12 +21,6 @@
   width: 100%;
   background-color: $dark-teal;
   font-weight: 300;
-  li.has-logo {
-    display: none;
-    @media (min-width: 1080px) {
-      display: block;
-    }
-  }
   .menu a {
     color: $warm-grey;
     transition: all 0.2s ease-in-out;
@@ -59,9 +33,6 @@
     }
     &.social-icon {
       margin-top: .75rem;
-      @include breakpoint(small-only) {
-        padding: 0.7rem 3rem 1.2rem 3rem;
-      }
     }
     &#facebook {
       background-image: url('/assets/img/facebook.svg');

@@ -1,5 +1,5 @@
-# Prosper Landing Page
-This is a public repository for the prosper landing page. The front-end of the website is made from the [Generator Gulp Webapp](https://github.com/yeoman/generator-gulp-webapp). If you want to learn more about the website's scaffold, read the Gulp Webapp documentation first.
+# Prosper Front-End
+This is a public repository for the Prosper front-end. It is based upon [Zurb Foundation 6 Template](https://github.com/zurb/foundation-sites-template) which is a front-end framework with [Gulp]() and basic templating with [Handlebars]() and [Panini]().
 
 ## Trello Board
 We've created a public trello board if anyone wants to help move this project forward they can assign themselves to a specific task and join the Prosper Community.
