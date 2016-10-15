@@ -106,8 +106,8 @@ If you're curious how all the pieces of the fit together, here's a basic overvie
 - [Foundation-CLI](https://github.com/zurb/foundation-cli) acts as a layer of abstraction *above* gulp to simplify things a bit. When you run `foundation`, you're really running `gulp watch`. When you run `foundation build` you're really running `gulp build --production`
 - Once satisfied with the state of `src`, you can run the `foundation build` task which will compile and minify all your scripts into one script, process  and minify all your styles into one stylesheet, and all your pages through the layouts into individual HTML pages. It will also compress your images using [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin). It puts everything into a root-level `dist` folder which can then be put into the CMS in production.
 
-## Front-End & Prosper CMS + Blog
-All changes to the website should start at this [Prosper Website Front-End ](https://github.com/prosper-community/prosper-website-front-end) repo and when everything is good to go built into a `dist` folder that can be then extended into the [Prosper CMS + Blog](https://github.com/prosper-community/prosper-website-cms-and-blog). If you find an issue with the front-end of the Prosper CMS + Blog, please fix it in this front-end repo *first* and then add it to the CMS. This will keep the two repos consistent and up-to-date.
+## Front-End & Prosper CMS
+All changes to the website should start at this [Prosper Website Front-End ](https://github.com/prosper-community/prosper-website-front-end) repo and when everything is good to go built into a `dist` folder that can be then extended into the [Prosper CMS](https://github.com/prosper-community/prosper-website-cms). If you find an issue with the *front-end* of the Prosper CMS, please fix it in this front-end repo *first* and then add it to the CMS. This will keep the two repos consistent and up-to-date.
 
 A basic workflow for this could be:
 
@@ -115,4 +115,4 @@ A basic workflow for this could be:
 - Fire up the front-end and replicate bug
 - Fix bug on the front-end
 - Build for production
-- Copy necessary files / assets into the [Prosper CMS + Blog](https://github.com/prosper-community/prosper-website-cms-and-blog)
+- Copy necessary files / assets into the [Prosper CMS](https://github.com/prosper-community/prosper-website-cms)
