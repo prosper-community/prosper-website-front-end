@@ -1,5 +1,5 @@
-# Prosper Front-End
-This is a public repository for the Prosper front-end. It is based upon [Zurb Foundation 6 Template](https://github.com/zurb/foundation-sites-template) which is a front-end framework with [Gulp](https://github.com/gulpjs/gulp) and basic templating with [Handlebars](http://handlebarsjs.com/) and [Panini](https://github.com/zurb/panini).
+# Prosper Website Front-End
+This is a public repository for the Prosper website's front-end. It is based upon [Zurb Foundation 6 Template](https://github.com/zurb/foundation-sites-template) which is a front-end framework with [Gulp](https://github.com/gulpjs/gulp) and basic templating with [Handlebars](http://handlebarsjs.com/) and [Panini](https://github.com/zurb/panini).
 
 ## Trello Board
 We've created a public trello board if anyone wants to help move this project forward they can assign themselves to a specific task and join the Prosper Community.
@@ -33,7 +33,7 @@ This template can be installed with the Foundation CLI, or downloaded and set up
 ## Getting Started
 You should be comfortable with the command line interface (CLI). If you're not this tutorial won't help you get started and you'll need to learn how to use the CLI first. It's super easy.
 
-1. Git clone repo `git clone git@github.com:prosper-community/REPO-NAME`
+1. Git clone repo `git clone git@github.com:prosper-community/prosper-website-front-end.git`
 
 2. Change directory into your cloned repo.
 
@@ -107,7 +107,7 @@ If you're curious how all the pieces of the fit together, here's a basic overvie
 - Once satisfied with the state of `src`, you can run the `foundation build` task which will compile and minify all your scripts into one script, process  and minify all your styles into one stylesheet, and all your pages through the layouts into individual HTML pages. It will also compress your images using [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin). It puts everything into a root-level `dist` folder which can then be put into the CMS in production.
 
 ## Front-End & Prosper CMS + Blog
-All changes to the website should start at this front-end repo and when everything is good to go built into a `dist` folder that can be then extended into the [Prosper CMS + Blog](). If you find an issue with the front-end of the Prosper CMS + Blog, please fix it in this front-end repo *first* and then add it to the CMS. This will keep the two repos consistent and up-to-date.
+All changes to the website should start at this [Prosper Website Front-End ](https://github.com/prosper-community/prosper-website-front-end) repo and when everything is good to go built into a `dist` folder that can be then extended into the [Prosper CMS + Blog](https://github.com/prosper-community/prosper-website-cms-and-blog). If you find an issue with the front-end of the Prosper CMS + Blog, please fix it in this front-end repo *first* and then add it to the CMS. This will keep the two repos consistent and up-to-date.
 
 A basic workflow for this could be:
 
@@ -115,4 +115,4 @@ A basic workflow for this could be:
 - Fire up the front-end and replicate bug
 - Fix bug on the front-end
 - Build for production
-- Copy necessary files / assets into the Prosper Blog + CMS
+- Copy necessary files / assets into the [Prosper CMS + Blog](https://github.com/prosper-community/prosper-website-cms-and-blog)
