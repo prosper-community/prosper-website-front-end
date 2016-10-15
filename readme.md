@@ -116,3 +116,6 @@ A basic workflow for this could be:
 - Fix bug on the front-end
 - Build for production
 - Copy necessary files / assets into the [Prosper CMS](https://github.com/prosper-community/prosper-website-cms)
+
+# Copyright
+Copyright (c) 2015-2016 Prosper Community 
