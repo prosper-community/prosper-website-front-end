@@ -10,7 +10,7 @@ We've created a public trello board if anyone wants to help move this project fo
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). ZURB uses this template to deliver static code to their clients. It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -118,4 +118,4 @@ A basic workflow for this could be:
 - Copy necessary files / assets into the [Prosper CMS](https://github.com/prosper-community/prosper-website-cms)
 
 # Copyright
-Copyright (c) 2015-2016 Prosper Community 
+Copyright (c) 2015-2016 Prosper Community
